@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Proyects from '../../../data/proyects.json';
+import proyects from '../../../data/proyects.json';
 
 function Proyecto() {
   return (

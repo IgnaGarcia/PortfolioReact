@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Levels from '../../../data/levels.json';
-import Jobs from '../../../data/jobs.json';
+import levels from '../../../data/levels.json';
+import jobs from '../../../data/jobs.json';
 
 function Trayectoria() {
   return (

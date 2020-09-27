@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Social from '../../data/socialmed.json';
+import social from '../../data/socialmed.json';
 
 function Pie() {
   return (
