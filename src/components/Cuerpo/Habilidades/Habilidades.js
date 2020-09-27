@@ -5,7 +5,7 @@ import skills from '../../../data/skills.json';
 function Habilidades() {
   return (
     <div>
-      <p>lenguaje/tecnologia, nivel, y años de experiencia</p>
+      lenguaje/tecnologia, nivel, y años de experiencia
     </div>
   );
 }
