@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 import Inicio from './Inicio/Inicio';
 import Habilidades from './Habilidades/Habilidades';
@@ -8,14 +9,15 @@ import Contacto from './Contacto/Contacto';
 
 function Cuerpo() {
   return (
-    <div>
-      router outlet aca
-      <Inicio />
-      <Habilidades />
-      <Proyectos />
-      <Trayectoria />
-      <Contacto />
-    </div>
+    <Router>
+      <Route exact path="/" component={Inicio}/>
+      <Route path="/Habilidades" component={Habilidades}/>
+      <Route path="/Proyectos" component={Proyectos}/>
+      <Route path="/Trayectoria" component={Trayectoria}/>
+      <Route path="/Contacto" component={Contacto}/>
+
+      <Route path="/" render={()=>{}}/>
+    </Router>
   );
 }
 
