@@ -1,5 +1,6 @@
 import React from 'react';
-import Navegacion from './Navegacion';
+
+import Navegacion from './Navegacion/Navegacion';
 
 
 function Cabecera() {

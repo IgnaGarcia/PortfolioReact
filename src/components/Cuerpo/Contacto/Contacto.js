@@ -1,12 +1,11 @@
 import React from 'react';
 
-
-function Cuerpo() {
+function Contacto() {
   return (
     <div>
-      Body
+      Contacto
     </div>
   );
 }
 
-export default Cuerpo;
+export default Contacto;
