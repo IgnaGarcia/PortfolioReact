@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Habilidades from '../../../data/habilidades.json';
+import skills from '../../../data/skills.json';
 
 function Habilidades() {
   return (
     <div>
-      lenguaje/tecnologia, nivel, y años de experiencia
+      <p>lenguaje/tecnologia, nivel, y años de experiencia</p>
     </div>
   );
 }
