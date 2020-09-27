@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-function App() {
+function Pie() {
   return (
     <div>
-      hola
+      Footer
     </div>
   );
 }
 
-export default App;
+export default Pie;

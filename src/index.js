@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Cabecera from './components/Cabecera';
+import Cuerpo from './components/Cuerpo';
+import Pie from './components/Pie';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Cabecera />
+    <Cuerpo /> 
+    <Pie />
   </React.StrictMode>,
   document.getElementById('root')
 );
