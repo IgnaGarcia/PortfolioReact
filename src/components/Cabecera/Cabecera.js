@@ -2,9 +2,9 @@ import React from 'react';
 
 function Cabecera() {
   return (
-    <div>
-      Header
-    </div>
+   <div>
+     Header
+   </div>
   );
 }
 

@@ -5,9 +5,9 @@ import jobs from '../../../data/jobs.json';
 
 function Trayectoria() {
   return (
-    <div>
-        Estudios y Proyectos/Trabajos realizados
-    </div>
+   <div>
+      Estudios y Proyectos/Trabajos realizados
+   </div>
   );
 }
 

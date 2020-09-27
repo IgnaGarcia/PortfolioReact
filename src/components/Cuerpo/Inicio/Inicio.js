@@ -4,9 +4,9 @@ import personal from '../../../data/personal.json';
 
 function Inicio() {
   return (
-    <div>
-      Inicio
-    </div>
+   <div>
+     Inicio
+   </div>
   );
 }
 
