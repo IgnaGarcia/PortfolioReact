@@ -1,9 +1,11 @@
 import React from 'react';
 
+import Redes from '../../../data/redes.json';
+
 function Contacto() {
   return (
     <div>
-      Contacto
+      Redes en general y seccion para formulario
     </div>
   );
 }

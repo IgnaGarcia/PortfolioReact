@@ -1,10 +1,12 @@
 import React from 'react';
 
+import Redes from '../../data/redes.json';
 
 function Pie() {
   return (
     <div>
-      Footer
+      Redes aqui Github Linkedin
+      Desarrollado por IGNA GARCIA RAVLIC
     </div>
   );
 }

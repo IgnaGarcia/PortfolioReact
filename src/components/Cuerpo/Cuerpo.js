@@ -9,7 +9,12 @@ import Contacto from './Contacto/Contacto';
 function Cuerpo() {
   return (
     <div>
-      Body
+      router outlet aca
+      <Inicio />
+      <Habilidades />
+      <Proyectos />
+      <Trayectoria />
+      <Contacto />
     </div>
   );
 }
