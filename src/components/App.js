@@ -11,7 +11,7 @@ import Contacto from './Cuerpo/Contacto/Contacto';
 
 import Pie from './Pie/Pie';
 
-function App() {
+export default function App() {
 	return (
 		<div>
 			<Cabecera />
@@ -32,5 +32,3 @@ function App() {
 		</div>
 	);
 }
-
-export default App;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import social from '../../data/socialmed.json';
 
-function Pie() {
+export default function Pie() {
    return (
       <div>
          Redes aqui Github Linkedin
@@ -10,5 +10,3 @@ function Pie() {
       </div>
    );
 }
-
-export default Pie;
