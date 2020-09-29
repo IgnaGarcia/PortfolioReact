@@ -1,10 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {MiniDiv} from '../../assets/styles';
+import {colors, fonts} from '../../assets/styles';
 
-
-const Algo = styled(MiniDiv)``
+export const MiniDiv = styled.div`
+   color: ${colors.txtBgOscuro};
+   background: ${colors.bgOscuro};
+   font-family: ${fonts.txtFamily2};
+`
 const OtroAlgo = styled(MiniDiv)``
 
 const StyledCabecera = styled.header`
@@ -14,12 +17,12 @@ const StyledCabecera = styled.header`
 export default function Cabecera() {
    return (
       <StyledCabecera>
-         <Algo>
-            <OtroAlgo>   
+         <OtroAlgo>
+            <MiniDiv>   
                <h1>IGNA GARCIA RAVLIC</h1>
                <h2>DESARROLLADOR</h2>
-            </OtroAlgo>
-         </Algo>
+            </MiniDiv>
+         </OtroAlgo>
       </StyledCabecera>
    )
 }
