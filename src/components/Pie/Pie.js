@@ -1,6 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import social from '../../data/socialmed.json';
+
+const Container = styled.div``
 
 export default function Pie() {
    return (

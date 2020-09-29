@@ -4,7 +4,7 @@ import './styles.css';
 const txtFamily1 = 'Ubuntu'
 const txtFamily2 = 'Oswald'
 
-const bgOscuro  = '#333'
+const bgOscuro  = '#373737'
 /*const bgClaro = ''
 
 const detalle1 = ''
