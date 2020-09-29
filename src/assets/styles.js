@@ -1,19 +1,27 @@
 import styled from 'styled-components';
+import './styles.css';
 
-const bgOscuro  = ''
-const bgClaro = ''
+const txtFamily1 = 'Ubuntu'
+const txtFamily2 = 'Oswald'
+
+const bgOscuro  = '#333'
+/*const bgClaro = ''
 
 const detalle1 = ''
 const detalleClaro = ''
 const detalleOscuro = ''
+*/
+const txtBgOscuro = 'white'
+//const txtBgClaro = ''
 
-const txtBgOscuro = ''
-const txtBgClaro = ''
 
-
-const MiniDiv = styled.div`
+export const MiniDiv = styled.div`
    color: ${txtBgOscuro};
    background: ${bgOscuro};
+   font-family: ${txtFamily2};
+`
+export const Container = styled.div`
+   
 `
 
-export default {MiniDiv};
+export default {MiniDiv, Container}
