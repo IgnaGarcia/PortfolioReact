@@ -21,27 +21,35 @@ export const colors = {
    txtBgClaro: '#212121'
 }
 
-export const breackpoints = {
-   mobile: '0px',
-   tablet: '576px',
-   laptop: '768px',
-   desktop: '992px'
+const size = {
+   mobileS: '320px',
+   mobileM: '375px',
+   mobileL: '425px',
+   tablet: '768px',
+   laptop: '1024px',
+   laptopL: '1440px',
+   desktop: '2560px'
 }
+
+export const breackpoints = {
+   mobileS: `(min-width: ${size.mobileS})`,
+   mobileM: `(min-width: ${size.mobileM})`,
+   mobileL: `(min-width: ${size.mobileL})`,
+   tablet: `(min-width: ${size.tablet})`,
+   laptop: `(min-width: ${size.laptop})`,
+   laptopL: `(min-width: ${size.laptopL})`,
+   desktop: `(min-width: ${size.desktop})`,
+   desktopL: `(min-width: ${size.desktop})`
+};
 
 export const Container = styled.div`
   width: 90%;
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (min-width: ${breackpoints.tablet}){
-     max-width: '540px';
-  };
-  @media screen and (min-width: ${breackpoints.laptop}){
-     max-width: '720px';
-  };
-  @media screen and (min-width: ${breackpoints.desktop}){
-     max-width: '960px';
-  };
+  @media ${breackpoints.tablet}{max-width: '540px'};
+  @media ${breackpoints.tablet}{max-width: '720px'};
+  @media ${breackpoints.tablet}{max-width: '960px'};
 `
 
 export default {Container, colors, fonts, breackpoints}

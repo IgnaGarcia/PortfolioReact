@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 import { Container, colors, fonts, breackpoints } from '../../assets/styles';
 
-export const MiniDiv = styled.div`
+function medquery(breack, prop, size)
+
+const MiniDiv = styled.div`
    border-left: .1em solid ${colors.detalle1};
    padding: .4em;
 `
@@ -14,22 +16,34 @@ const StyledCabecera = styled.header`
    background: ${colors.bgOscuro};
    
    @media screen and (min-width: ${breackpoints.mobile}){
-		padding: 2em;
+		padding: 2em 0em;
 	};
    @media screen and (min-width: ${breackpoints.tablet}){
-		padding: 3em;
+		padding: 3em 0em;
 	};
 	@media screen and (min-width: ${breackpoints.laptop}){
-		padding: 5em;
+		padding: 5em 0em;
 	};
 	@media screen and (min-width: ${breackpoints.desktop}){
-		padding: 8em;
+		padding: 8em 0em;
 	};
 `
 
 const H1 = styled.h1`
    color: ${colors.detalle1};
-   font-family: ${fonts.txtFamily2};
+	font-family: ${fonts.txtFamily2};
+	@media screen and (min-width: ${breackpoints.mobile}){
+		font-size: 2em 0em;
+	};
+   @media screen and (min-width: ${breackpoints.tablet}){
+		padding: 3em 0em;
+	};
+	@media screen and (min-width: ${breackpoints.laptop}){
+		padding: 5em 0em;
+	};
+	@media screen and (min-width: ${breackpoints.desktop}){
+		padding: 8em 0em;
+	};
 `;
 
 const H2 = styled.h2`
