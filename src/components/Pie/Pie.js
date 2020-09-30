@@ -1,9 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { Container, colors, fonts, breackpoints } from '../../assets/styles';
+
 import social from '../../data/socialmed.json';
 
-const Container = styled.div``
+const StyledContainer = styled(Container)`
+   color: ${colors.txtBgOscuro};
+   background: ${colors.bgOscuro};
+`
 
 export default function Pie() {
    return (

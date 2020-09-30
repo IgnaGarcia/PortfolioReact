@@ -30,20 +30,20 @@ const H1 = styled.h1`
    @media ${breackpoints.tablet}{font-size: 3.5em; display: inline;};
 	@media ${breackpoints.laptop}{font-size: 4em; display: inline;};
 	@media ${breackpoints.desktop}{font-size: 5em; display: inline;};
-`;
+`
 
 const H2 = styled.h2`
 	color: ${colors.detalle1};
    font-family: ${fonts.txtFamily1};
    padding: .25em .1em;
-   
+
 	@media ${breackpoints.mobileS}{font-size: 1.4em};
 	@media ${breackpoints.mobileM}{font-size: 1.3em};
 	@media ${breackpoints.mobileL}{font-size: 1.4em};
    @media ${breackpoints.tablet}{font-size: 1.2em};
 	@media ${breackpoints.laptop}{font-size: 1.3em};
 	@media ${breackpoints.desktop}{font-size: 1.6em};
-`;
+`
 
 export default function Cabecera() {
 	return (
