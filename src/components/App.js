@@ -4,6 +4,8 @@ import styled from 'styled-components';
 
 import { Container, colors, fonts, breackpoints } from '../assets/styles';
 
+import PageNotFound from './PageNotFound/PageNotFound';
+
 import Cabecera from './Cabecera/Cabecera';
 
 import Inicio from './Cuerpo/Inicio/Inicio';
@@ -15,21 +17,30 @@ import Contacto from './Cuerpo/Contacto/Contacto';
 import Pie from './Pie/Pie';
 
 export default function App() {
-   const Navegacion = styled(Container)`
+   const Navegacion = styled.div`
+      color: ${colors.txtBgOscuro};
+      background: ${colors.bgOscuro};
+      a{
+         :visited{
+            text-decoration: none;
+         }
+      }
    `
    const Contenedor = styled(Container)`
    `
 
 	return (
 		<div>
-			<Cabecera />
+         <Cabecera />
 			<Router>
             <Navegacion>
-               <Link to="/">Inicio</Link>
-               <Link to="/Trayectoria">Trayectoria</Link>
-               <Link to="/Habilidades">Habilidades</Link>
-               <Link to="/Proyectos">Proyectos</Link>
-               <Link to="/Contacto">Contacto</Link>
+               <Contenedor>
+                  <Link to="/">Inicio</Link>
+                  <Link to="/Trayectoria">Trayectoria</Link>
+                  <Link to="/Habilidades">Habilidades</Link>
+                  <Link to="/Proyectos">Proyectos</Link>
+                  <Link to="/Contacto">Contacto</Link>
+               </Contenedor>
             </Navegacion>
             <Contenedor>
                <Route exact path="/" render={() => <Inicio />} />
@@ -37,6 +48,7 @@ export default function App() {
                <Route exact path="/Habilidades" render={() => <Habilidades />} />
                <Route exact path="/Proyectos" render={() => <Proyectos />} />
                <Route exact path="/Contacto" render={() => <Contacto />} />
+               <Route render={() => <PageNotFound />} />
             </Contenedor>
          </Router>
 			<Pie />
