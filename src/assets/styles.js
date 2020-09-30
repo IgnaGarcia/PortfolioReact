@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import './fuente.css';
 
 export const fonts = {
-   txtFamily1: 'Ubuntu',
-   txtFamily2: 'Oswald'
+   txtFamily1: "'Ubuntu', sans-serif",
+   txtFamily2: "'Oswald', sans-serif"
 }
 
 export const colors = {
