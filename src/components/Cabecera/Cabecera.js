@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import { Container, colors, fonts, breackpoints } from '../../assets/styles';
 
 const MiniDiv = styled.div`
-   border-left: .1em solid ${colors.detalle1};
-   padding: .4em;
+   border-left: .25em solid ${colors.detalle1};
+   padding: 0em .4em;
 `
 const StyledContainer = styled(Container)``
 
@@ -35,6 +35,14 @@ const H1 = styled.h1`
 const H2 = styled.h2`
 	color: ${colors.detalle1};
    font-family: ${fonts.txtFamily1};
+   padding: .25em .1em;
+   
+	@media ${breackpoints.mobileS}{font-size: 1.4em};
+	@media ${breackpoints.mobileM}{font-size: 1.3em};
+	@media ${breackpoints.mobileL}{font-size: 1.4em};
+   @media ${breackpoints.tablet}{font-size: 1.2em};
+	@media ${breackpoints.laptop}{font-size: 1.3em};
+	@media ${breackpoints.desktop}{font-size: 1.6em};
 `;
 
 export default function Cabecera() {
