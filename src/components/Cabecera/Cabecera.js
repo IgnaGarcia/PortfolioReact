@@ -12,7 +12,7 @@ const StyledContainer = styled(Container)``
 const StyledCabecera = styled.header`
    color: ${colors.txtBgOscuro};
    background: ${colors.bgOscuro};
-	
+
 	@media ${breackpoints.mobileS}{padding: 3em 0em};
    @media ${breackpoints.mobileL}{padding: 2.75em 0em};
    @media ${breackpoints.tablet}{padding: 3em 0em};
@@ -23,7 +23,7 @@ const StyledCabecera = styled.header`
 const H1 = styled.h1`
    color: ${colors.txtBgOscuro2};
 	font-family: ${fonts.txtFamily2};
-
+   font-weight: 500;
 	@media ${breackpoints.mobileS}{font-size: 4em};
 	@media ${breackpoints.mobileM}{font-size: 3.75em};
 	@media ${breackpoints.mobileL}{font-size: 3.5em};
@@ -36,7 +36,8 @@ const H2 = styled.h2`
 	color: ${colors.detalle1};
    font-family: ${fonts.txtFamily1};
    padding: .25em .1em;
-
+   font-weight: 300;
+   font-style: italic;
 	@media ${breackpoints.mobileS}{font-size: 1.4em};
 	@media ${breackpoints.mobileM}{font-size: 1.3em};
 	@media ${breackpoints.mobileL}{font-size: 1.4em};
