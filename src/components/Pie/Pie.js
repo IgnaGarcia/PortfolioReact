@@ -19,7 +19,7 @@ const Contenedor = styled(Container)`
    font-style: italic;
    @media ${breackpoints.mobileS}{font-size: 1em};
 	@media ${breackpoints.laptop}{font-size: 1.2em};
-	@media ${breackpoints.desktop}{font-size: 1.4em};
+   @media ${breackpoints.desktop}{font-size: 1.4em};
    span{
       font-family: ${fonts.txtFamily2};
       font-weight: 400;
