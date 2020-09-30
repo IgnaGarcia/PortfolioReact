@@ -18,29 +18,13 @@ import Contacto from './Cuerpo/Contacto/Contacto';
 import Pie from './Pie/Pie';
 
 export default function App() {
-   const Navegacion = styled.div`
-      background: ${colors.bgOscuro};
-      Link{
-         text-decoration: none;
-         color: ${colors.txtBgOscuro};
-         :active{
-            text-decoration: none;
-            color: ${colors.txtBgOscuro};
-         }
-      }
-   `
-   const Contenedor = styled(Container)`
-   `
+   const Contenedor = styled(Container)``
 
 	return (
 		<div>
          <Cabecera />
 			<Router>
-            <Navegacion>
-               <Contenedor>
-                  <NavLinks />
-               </Contenedor>
-            </Navegacion>
+            <NavLinks />
             <Contenedor>
                <Switch>
                   <Route exact strict path="/" render={() => <Inicio />} />
