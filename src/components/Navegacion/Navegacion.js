@@ -5,17 +5,21 @@ import styled from 'styled-components';
 import { Container, colors, fonts, breackpoints } from '../../assets/styles';
 
 const Contenedor = styled(Container)`
+   display: flex;
+   justify-content: space-around;
 `
 
 export default function Navegacion() {
    const Navegacion = styled.div`
       background: ${colors.bgOscuro};
       font-family: ${fonts.txtFamily1};
-      padding: .4em 0em;
-      box-shadow: ;
+      margin: 0em 0em 1em 0em;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       a{
+         flex-grow: 1;
+         text-align: center;
          outline: none;
-         padding: .3em .75em .3em .75em;
+         padding: .4em 0em;
          color: ${colors.detalle1};
          text-decoration:none;
          :hover{

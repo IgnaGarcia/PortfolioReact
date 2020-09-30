@@ -8,6 +8,8 @@ import social from '../../data/socialmed.json';
 const StyledPie = styled.footer`
    color: ${colors.txtBgOscuro};
    background: ${colors.bgOscuro};
+   margin-top: 1em;
+   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
    @media ${breackpoints.mobileS}{padding: 3em 0em};
 	@media ${breackpoints.laptop}{padding: 4.5em 0em};
 	@media ${breackpoints.desktop}{padding: 7em 0em};
