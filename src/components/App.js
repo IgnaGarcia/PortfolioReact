@@ -7,7 +7,7 @@ import { Container, colors, fonts, breackpoints } from '../assets/styles';
 import PageNotFound from './PageNotFound/PageNotFound';
 
 import Cabecera from './Cabecera/Cabecera';
-import NavLinks from './Navegacion/Navegacion';
+import Navegacion from './Navegacion/Navegacion';
 
 import Inicio from './Cuerpo/Inicio/Inicio';
 import Trayectoria from './Cuerpo/Trayectoria/Trayectoria';
@@ -24,7 +24,7 @@ export default function App() {
 		<div>
          <Cabecera />
 			<Router>
-            <NavLinks />
+            <Navegacion />
             <Contenedor>
                <Switch>
                   <Route exact strict path="/" render={() => <Inicio />} />

@@ -8,6 +8,8 @@ export const fonts = {
 
 export const colors = {
    bgOscuro : '#373737',
+   bgGrisOscuro : '#474747',
+   bgGrisClaro : '#777777',
    bgClaro: '#eeeeee',
    detalle1: '#fb8c00',
    /*verde 43a047 
@@ -15,8 +17,8 @@ export const colors = {
    azul 039be5
    naranja fb8c00
    */
-   detalle1Claro: '#ff7043',
-   detalle1Oscuro: '#d84315',
+   detalle1Claro: '#ffa726',
+   detalle1Oscuro: '#f57c00',
    txtBgOscuro: '#f5f5f5',
    txtBgOscuro2: '#e0e0e0',
    txtBgClaro: '#212121',
