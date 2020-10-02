@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
+import 'animation.css';
 
-import { Container, colors, fonts, breackpoints } from '../assets/styles';
+import { Container } from '../assets/styles';
 
 import PageNotFound from './PageNotFound/PageNotFound';
 

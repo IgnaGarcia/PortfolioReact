@@ -23,6 +23,7 @@ const StyledCabecera = styled.header`
 const H1 = styled.h1`
    color: ${colors.txtBgOscuro2};
 	font-family: ${fonts.txtFamily2};
+   text-shadow: 3px 4px rgba(245, 124, 0, 0.75);
    font-weight: 500;
 	@media ${breackpoints.mobileS}{font-size: 4em};
 	@media ${breackpoints.mobileM}{font-size: 3.75em};
@@ -35,7 +36,7 @@ const H1 = styled.h1`
 const H2 = styled.h2`
 	color: ${colors.detalle1};
    font-family: ${fonts.txtFamily1};
-   padding: .25em .1em;
+   padding: .45em .1em;
    font-weight: 300;
    font-style: italic;
 	@media ${breackpoints.mobileS}{font-size: 1.4em};
@@ -51,7 +52,7 @@ export default function Cabecera() {
 		<StyledCabecera>
 			<StyledContainer>
 				<MiniDiv>
-					<H1>IGNA</H1> <H1>GARCIA RAVLIC</H1>
+					<H1 className='puffin'>IGNA</H1> <H1>GARCIA RAVLIC</H1>
 					<H2>DESARROLLADOR</H2>
 				</MiniDiv>
 			</StyledContainer>
