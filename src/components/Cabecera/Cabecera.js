@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Container, colors, fonts, breackpoints } from '../../assets/styles';
+import { PuffIn } from '../../assets/animation'
 
 const MiniDiv = styled.div`
    border-left: .25em solid ${colors.detalle1};
