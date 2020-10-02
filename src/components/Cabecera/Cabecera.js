@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Container, colors, fonts, breackpoints } from '../../assets/styles';
-import { PuffIn } from '../../assets/animation'
 
 const MiniDiv = styled.div`
    border-left: .25em solid ${colors.detalle1};
@@ -53,8 +52,8 @@ export default function Cabecera() {
 		<StyledCabecera>
 			<StyledContainer>
 				<MiniDiv>
-					<H1 className='puffin'>IGNA</H1> <H1>GARCIA RAVLIC</H1>
-					<H2>DESARROLLADOR</H2>
+                  <H1>IGNA</H1> <H1>GARCIA RAVLIC</H1>
+					   <H2>DESARROLLADOR</H2>
 				</MiniDiv>
 			</StyledContainer>
 		</StyledCabecera>
