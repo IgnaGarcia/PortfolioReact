@@ -34,6 +34,12 @@ export default function Navegacion() {
       }
    `
 
+/*TO DO-----------------
+-focus con transicion lenta
+-click con ripple
+-responsive para touchscreen
+*/
+
 	return (
       <Navegacion>
          <Contenedor>

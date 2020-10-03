@@ -29,6 +29,13 @@ const Contenedor = styled(Container)`
    }
 `
 
+/*TO DO-----------------
+-Iconos de Redes
+-Efecto zoom en iconos
+-Efecto de transicion en el p
+-Efecto de fade in del span
+*/
+
 export default function Pie() {
    return (
       <StyledPie>
