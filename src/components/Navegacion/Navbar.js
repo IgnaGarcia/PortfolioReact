@@ -6,18 +6,6 @@ import { Container, colors, fonts, breackpoints } from '../../assets/styles';
 
 
 const Nav = styled.nav`
-   justify-content: space-around;
-
-   @media ${breackpoints.mobileS}{
-      display: ${props => (props.open ? "flex" : "none")};
-      flex-direction: column;
-   };
-   @media ${breackpoints.laptop}{
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-   };
-
    a{
       flex-grow: 1;
       outline: none;
@@ -38,6 +26,17 @@ const Nav = styled.nav`
    i{
       padding: 0em .7em;
    }
+
+   @media ${breackpoints.mobileS}{
+      display: ${props => (props.open ? "flex" : "none")};
+      flex-direction: column;
+   };
+   @media ${breackpoints.laptop}{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+   };
+   justify-content: space-around;
 `
 
 function Navbar({ open }) {
