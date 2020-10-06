@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from 'react-router-dom'
 
-import { Container, colors, fonts, breackpoints } from '../../assets/styles';
+import { colors, breackpoints } from '../../assets/styles';
 
 
 const Nav = styled.nav`

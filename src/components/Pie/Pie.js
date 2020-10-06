@@ -8,10 +8,11 @@ import social from '../../data/socialmed.json';
 const StyledPie = styled.footer`
    color: ${colors.txtBgOscuro};
    background: ${colors.bgOscuro};
+   margin-top: 1em;
    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
-   @media ${breackpoints.mobileS}{padding: 3em 0em};
-	@media ${breackpoints.laptop}{padding: 4.5em 0em};
-   @media ${breackpoints.desktop}{padding: 7em 0em};
+   @media ${breackpoints.mobileS}{padding: 2em 0em 1.3em 0em};
+	@media ${breackpoints.laptop}{padding: 3.5em 0em 2.3em 0em};
+   @media ${breackpoints.desktop}{padding: 4.5em 0em 3.3em 0em};
    
    a{
       color: ${colors.txtBgOscuro};
@@ -28,11 +29,21 @@ const Contenedor = styled(Container)`
    font-weight: 500;
    font-style: italic;
    display: flex;
-   flex-wrap: wrap;
-   align-items: center;
+   flex-direction: column;
+   .padre{
+      display: flex;
+      justify-content: space-between;
+   }
+   .hijo1 , .hijo2{
+      display: flex;
+      flex-direction: column;
+   }
+   .hijo2{
+         font-size: .9em;
+         i{ margin-right: .3em; }
+   }
    @media ${breackpoints.mobileS}{
       font-size: 1em;
-      justify-content: center;
       p{
          margin: .5em .3em;
       }
@@ -42,11 +53,9 @@ const Contenedor = styled(Container)`
    };
 	@media ${breackpoints.laptop}{
       font-size: 1.2em;
-      justify-content: space-between;
    };
    @media ${breackpoints.desktop}{
       font-size: 1.4em;
-      justify-content: space-between;
    };
    span{
       font-family: ${fonts.txtFamily2};
@@ -70,8 +79,21 @@ export default function Pie() {
    return (
       <StyledPie>
          <Contenedor>
+            <div className="padre">
+               <div className="hijo1">
+                  Redes: {redes.map(x => x)}
+               </div>
+               <div className="hijo2">
+                  Links: 
+                  <a href="/"><i className="fas fa-address-book"></i>Inicio</a>
+                  <a href="/Trayectoria"><i className="fas fa-project-diagram"></i>Trayectoria</a>
+                  <a href="/Habilidades"><i className="fas fa-brain"></i>Habilidades</a>
+                  <a href="/Proyectos"><i className="fas fa-folder-open"></i>Proyectos</a>
+                  <a href="/Contacto"><i className="fas fa-comments"></i>Contacto</a>
+               </div>
+            </div>
             <p>Desarrollado por <span>IGNA GARCIA RAVLIC</span></p>
-            <div>{redes.map(x => x)}</div>
+            
          </Contenedor>
       </StyledPie>
    );

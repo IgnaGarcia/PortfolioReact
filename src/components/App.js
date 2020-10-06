@@ -35,8 +35,8 @@ export default function App() {
                   <Route render={() => <PageNotFound />} />
                </Switch>
             </Contenedor>
+            <Pie />
          </Router>
-			<Pie />
 		</div>
 	);
 }

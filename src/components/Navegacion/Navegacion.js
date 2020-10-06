@@ -1,7 +1,7 @@
 import React, { useState }  from 'react';
 import styled from 'styled-components';
 
-import { Container, colors, fonts, breackpoints } from '../../assets/styles';
+import { Container, colors, fonts } from '../../assets/styles';
 
 import Navbar from "./Navbar";
 import MenuButton from "./MenuButton";
