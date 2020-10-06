@@ -8,22 +8,18 @@ import social from '../../data/socialmed.json';
 const StyledPie = styled.footer`
    color: ${colors.txtBgOscuro};
    background: ${colors.bgOscuro};
-   margin-top: .5em;
    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
    @media ${breackpoints.mobileS}{padding: 3em 0em};
 	@media ${breackpoints.laptop}{padding: 4.5em 0em};
    @media ${breackpoints.desktop}{padding: 7em 0em};
    
-   p{
-      margin: .5em 0em;
-   }
    a{
       color: ${colors.txtBgOscuro};
       transition: font-size .5s, color .5s;
       :hover{
          color: ${colors.detalle1Claro};
       }
-      i{padding: .5em .5em;}
+      padding: .0em .5em;
    }
 `
 const Contenedor = styled(Container)`
@@ -37,6 +33,12 @@ const Contenedor = styled(Container)`
    @media ${breackpoints.mobileS}{
       font-size: 1em;
       justify-content: center;
+      p{
+         margin: .5em .3em;
+      }
+      a{
+         padding: .5em; 
+      }
    };
 	@media ${breackpoints.laptop}{
       font-size: 1.2em;
@@ -54,7 +56,6 @@ const Contenedor = styled(Container)`
 `
 
 /*TO DO-----------------
--Iconos de Redes
 -Efecto zoom en iconos
 -Efecto de transicion en el p
 -Efecto de fade in del span

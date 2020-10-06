@@ -11,6 +11,7 @@ const Nav = styled.nav`
       text-align: center;
       padding: .4em 0em;
       color: ${colors.detalle1};
+      transition: background-color .5s, color .5s;
       :hover{
          color: ${colors.detalle1Claro};
          background: ${colors.bgGrisClaro};
