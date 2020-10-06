@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import './fuente.css';
+import './basics.css';
 
 export const fonts = {
    txtFamily1: "'Ubuntu', sans-serif",

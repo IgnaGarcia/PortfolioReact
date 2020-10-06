@@ -8,16 +8,13 @@ import { Container, colors, fonts, breackpoints } from '../../assets/styles';
 const Nav = styled.nav`
    a{
       flex-grow: 1;
-      outline: none;
       text-align: center;
       padding: .4em 0em;
       color: ${colors.detalle1};
-      text-decoration:none;
       :hover{
          color: ${colors.detalle1Claro};
          background: ${colors.bgGrisClaro};
       }
-      :visited{text-decoration:none;}
    }
    .is-active{
       color: ${colors.txtBgClaro2};
