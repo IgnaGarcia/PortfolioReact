@@ -6,7 +6,8 @@ import social from '../../../data/socialmed.json';
 import Formulario from './Formulario';
 
 const Background = styled.div`
-   background: ${colors.detalle1Claro};
+   background: ${colors.bgClaro};
+   padding: 1em 0em;
 `
 
 const FlexDiv = styled.div`
@@ -19,19 +20,23 @@ const Hijo = styled.div`
    padding: 1em;
    display: flex;
    font-family: ${fonts.txtFamily1};
+   justify-content: space-around;
+   text-align: center;
    a{
+      padding: .5em;
       color: ${colors.txtBgClaro};
       i{color: ${colors.detalle1Oscuro}}
    }
    @media ${breackpoints.mobileS}{
       font-size: 1em;
       flex-flow: row wrap;
-      div{flex: 1 0 50%;}
+      justify-content: space-around;
+      a{flex: 1 0 30%;}
    };
 	@media ${breackpoints.laptop}{
       font-size: 1.2em;
       flex-direction: column;
-      div{flex: 0 1;}
+      a{flex: 0 ;}
    };
    @media ${breackpoints.desktop}{
       font-size: 1.3em;

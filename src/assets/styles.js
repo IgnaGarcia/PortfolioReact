@@ -9,8 +9,10 @@ export const fonts = {
 
 export const colors = {
    bgOscuro : '#373737',
-   bgGrisOscuro : '#474747',
-   bgGrisClaro : '#777777',
+   bgGris1 : '#474747',
+   bgGris2 : '#777777',
+   bgGris3 : '#bdbdbd',
+   bgGris4 : '#e0e0e0',
    bgClaro: '#eeeeee',
    detalle1: '#fb8c00',
    /*verde 43a047 
