@@ -1,8 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import styled from 'styled-components';
-
-import { Container } from '../assets/styles';
 
 import PageNotFound from './PageNotFound/PageNotFound';
 
@@ -18,23 +15,20 @@ import Contacto from './Cuerpo/Contacto/Contacto';
 import Pie from './Pie/Pie';
 
 export default function App() {
-   const Contenedor = styled(Container)``
 
 	return (
 		<div>
          <Cabecera />
 			<Router>
             <Navegacion />
-            <Contenedor>
-               <Switch>
-                  <Route exact strict path="/" render={() => <Inicio />} />
-                  <Route exact strict path="/Trayectoria" render={() => <Trayectoria />} />
-                  <Route exact strict path="/Habilidades" render={() => <Habilidades />} />
-                  <Route exact strict path="/Proyectos" render={() => <Proyectos />} />
-                  <Route exact strict path="/Contacto" render={() => <Contacto />} />
-                  <Route render={() => <PageNotFound />} />
-               </Switch>
-            </Contenedor>
+            <Switch>
+               <Route exact strict path="/" render={() => <Inicio />} />
+               <Route exact strict path="/Trayectoria" render={() => <Trayectoria />} />
+               <Route exact strict path="/Habilidades" render={() => <Habilidades />} />
+               <Route exact strict path="/Proyectos" render={() => <Proyectos />} />
+               <Route exact strict path="/Contacto" render={() => <Contacto />} />
+               <Route render={() => <PageNotFound />} />
+            </Switch>
             <Pie />
          </Router>
 		</div>
