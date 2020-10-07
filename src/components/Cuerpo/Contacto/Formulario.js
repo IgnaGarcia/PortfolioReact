@@ -1,15 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Input = styled.input``
+import { colors, fonts, breackpoints } from '../../../assets/styles';
 
-export default function Contacto() {
+const Form = styled.form`
+   padding: 1em;
+   @media ${breackpoints.mobileS}{
+      
+   };
+	@media ${breackpoints.laptop}{
+      
+   };  
+`
+
+const Input = styled.input`
+   margin: 1em;
+`
+
+export default function Formulario() {
 	return (
-      <div>
-         <form>
+      <Form>
             <Input></Input>
-            <input></input>
-         </form>
-      </div>
+            <Input></Input>
+      </Form>
 	);
 }

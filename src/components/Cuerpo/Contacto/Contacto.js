@@ -13,6 +13,8 @@ const Background = styled.div`
 const FlexDiv = styled.div`
    display: flex;
    justify-content: space-between;
+   align-content: center;
+   text-align: center;
    flex-wrap: wrap;
 `
 
@@ -20,26 +22,41 @@ const Hijo = styled.div`
    padding: 1em;
    display: flex;
    font-family: ${fonts.txtFamily1};
-   justify-content: space-around;
-   text-align: center;
    a{
       padding: .5em;
       color: ${colors.txtBgClaro};
-      i{color: ${colors.detalle1Oscuro}}
+      i{
+         color: ${colors.detalle1Oscuro};
+         padding-right: .5em;
+      }
    }
    @media ${breackpoints.mobileS}{
       font-size: 1em;
       flex-flow: row wrap;
-      justify-content: space-around;
       a{flex: 1 0 30%;}
+      border-bottom: .15em solid ${colors.bgGris2};
+      border-right: none;
    };
 	@media ${breackpoints.laptop}{
       font-size: 1.2em;
       flex-direction: column;
-      a{flex: 0 ;}
+      justify-content: start;
+      a{
+         flex: 0 ;
+         display: flex;
+         
+         i{flex: 1 0 30%;}
+         span{
+            text-align:left;
+            flex: 2 0 70%;
+         }
+      }
+      border-right: .15em solid ${colors.bgGris2};
+      border-bottom: none;
    };
    @media ${breackpoints.desktop}{
       font-size: 1.3em;
+      justify-content: space-around;
       i{
          font-size: 1.5em;
       }
@@ -49,7 +66,7 @@ const Hijo = styled.div`
 export default function Contacto() {
    let redes = []
    for(let i=0; i<6; i++){
-      redes[i]= <a href={social[i].url}><i className={social[i].icon}></i>{social[i].name}</a>
+      redes[i]= <a href={social[i].url}><i className={social[i].icon}></i><span>{social[i].name}</span></a>
    }
 
 	return (
