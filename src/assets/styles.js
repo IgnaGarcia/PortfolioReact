@@ -48,8 +48,8 @@ export const breackpoints = {
 
 export const Container = styled.div`
   width: 80%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0em auto;
+  padding: 2em 0em;
 
   @media ${breackpoints.mobileM}{max-width: '360px'};
   @media ${breackpoints.mobileL}{max-width: '400px'};

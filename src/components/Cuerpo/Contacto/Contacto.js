@@ -1,9 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { fonts, colors, breackpoints } from '../../../assets/styles';
+import { Container, fonts, colors, breackpoints } from '../../../assets/styles';
 import social from '../../../data/socialmed.json';
 import Formulario from './Formulario';
+
+const Background = styled.div`
+   background: ${colors.detalle1Claro};
+`
 
 const FlexDiv = styled.div`
    display: flex;
@@ -38,14 +42,21 @@ const Hijo = styled.div`
 `
 
 export default function Contacto() {
+   let redes = []
+   for(let i=0; i<6; i++){
+      redes[i]= <a href={social[i].url}><i className={social[i].icon}></i>{social[i].name}</a>
+   }
+
 	return (
-      <FlexDiv>
-         <Hijo>
-            {social.map(x => {
-               return <div><a href={x.url}><i className={x.icon}></i></a><span>{x.name}</span></div>
-            })}
-         </Hijo>
-         <Formulario></Formulario>
-      </FlexDiv>
+      <Background>
+         <Container>   
+            <FlexDiv>
+               <Hijo>
+                  {redes.map(x => x)}
+               </Hijo>
+               <Formulario></Formulario>
+            </FlexDiv>
+         </Container>
+      </Background>
 	);
 }

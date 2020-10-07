@@ -7,7 +7,6 @@ const MiniDiv = styled.div`
    border-left: .25em solid ${colors.detalle1};
    padding: 0em .4em;
 `
-const StyledContainer = styled(Container)``
 
 const StyledCabecera = styled.header`
    color: ${colors.txtBgOscuro};
@@ -56,12 +55,12 @@ const H2 = styled.h2`
 export default function Cabecera() {
 	return (
 		<StyledCabecera>
-			<StyledContainer>
+			<Container>
 				<MiniDiv>
                   <H1>IGNA</H1> <H1>GARCIA RAVLIC</H1>
 					   <H2>DESARROLLADOR</H2>
 				</MiniDiv>
-			</StyledContainer>
+			</Container>
 		</StyledCabecera>
 	)
 }
