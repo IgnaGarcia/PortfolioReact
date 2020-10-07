@@ -41,8 +41,16 @@ const Contenedor = styled(Container)`
    }
    .hijo1{i{ padding: .5em }}
    .hijo2 a{
+      display: flex;
       font-size: .9em; 
       margin: .35em;
+      i{
+         flex: 1 0 30%;
+      }
+      span{
+         text-align:left;
+         flex: 2 0 70%;
+      }
    }
    p{
          margin: .5em .3em;
@@ -56,7 +64,7 @@ const Contenedor = styled(Container)`
    @media ${breackpoints.desktop}{
       font-size: 1.4em;
    };
-   span{
+   p span{
       font-family: ${fonts.txtFamily2};
       font-weight: 400;
       color: ${colors.detalle1};
@@ -80,19 +88,18 @@ export default function Pie() {
          <Contenedor>
             <div className="padre">
                <div className="hijo1">
-                  <span>Redes:</span> {redes.map(x => x)}
+                  <p><span>Redes:</span></p> {redes.map(x => x)}
                </div>
                <div className="hijo2">
-                  <span>Links:</span> 
-                  <NavLink exact strict activeClassName='is-active' to="/"><i className="fas fa-address-book"></i>Inicio</NavLink>
-                  <NavLink exact strict activeClassName='is-active' to="/Trayectoria"><i className="fas fa-project-diagram"></i>Trayectoria</NavLink>
-                  <NavLink exact strict activeClassName='is-active' to="/Habilidades"><i className="fas fa-brain"></i>Habilidades</NavLink>
-                  <NavLink exact strict activeClassName='is-active' to="/Proyectos"><i className="fas fa-folder-open"></i>Proyectos</NavLink>
-                  <NavLink exact strict activeClassName='is-active' to="/Contacto"><i className="fas fa-comments"></i>Contacto</NavLink>
+                  <p><span>Links:</span></p> 
+                  <NavLink exact strict activeClassName='is-active' to="/"><i className="fas fa-address-book"></i><span>Inicio</span></NavLink>
+                  <NavLink exact strict activeClassName='is-active' to="/Trayectoria"><i className="fas fa-project-diagram"></i><span>Trayectoria</span></NavLink>
+                  <NavLink exact strict activeClassName='is-active' to="/Habilidades"><i className="fas fa-brain"></i><span>Habilidades</span></NavLink>
+                  <NavLink exact strict activeClassName='is-active' to="/Proyectos"><i className="fas fa-folder-open"></i><span>Proyectos</span></NavLink>
+                  <NavLink exact strict activeClassName='is-active' to="/Contacto"><i className="fas fa-comments"></i><span>Contacto</span></NavLink>
                </div>
             </div>
             <p>Desarrollado por <span>IGNA GARCIA RAVLIC</span></p>
-            
          </Contenedor>
       </StyledPie>
    );
