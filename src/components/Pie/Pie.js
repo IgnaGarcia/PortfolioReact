@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom'
 
 import { Container, colors, fonts, breackpoints } from '../../assets/styles';
 
 import social from '../../data/socialmed.json';
 
 const StyledPie = styled.footer`
-   color: ${colors.txtBgOscuro};
+   color: ${colors.txtBgOscuro2};
    background: ${colors.bgOscuro};
    margin-top: 1em;
    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -15,7 +16,7 @@ const StyledPie = styled.footer`
    @media ${breackpoints.desktop}{padding: 4.5em 0em 3.3em 0em};
    
    a{
-      color: ${colors.txtBgOscuro};
+      color: ${colors.txtBgOscuro2};
       transition: font-size .5s, color .5s;
       :hover{
          color: ${colors.detalle1Claro};
@@ -37,19 +38,18 @@ const Contenedor = styled(Container)`
    .hijo1 , .hijo2{
       display: flex;
       flex-direction: column;
+      font-style: normal;
    }
-   .hijo2{
-         font-size: .9em;
-         i{ margin-right: .3em; }
+   .hijo1{i{ padding: .5em }}
+   .hijo2 a{
+      font-size: .9em; 
+      margin: .35em;
+   }
+   p{
+         margin: .5em .3em;
    }
    @media ${breackpoints.mobileS}{
       font-size: 1em;
-      p{
-         margin: .5em .3em;
-      }
-      a{
-         padding: .5em; 
-      }
    };
 	@media ${breackpoints.laptop}{
       font-size: 1.2em;
@@ -81,15 +81,15 @@ export default function Pie() {
          <Contenedor>
             <div className="padre">
                <div className="hijo1">
-                  Redes: {redes.map(x => x)}
+                  <span>Redes:</span> {redes.map(x => x)}
                </div>
                <div className="hijo2">
-                  Links: 
-                  <a href="/"><i className="fas fa-address-book"></i>Inicio</a>
-                  <a href="/Trayectoria"><i className="fas fa-project-diagram"></i>Trayectoria</a>
-                  <a href="/Habilidades"><i className="fas fa-brain"></i>Habilidades</a>
-                  <a href="/Proyectos"><i className="fas fa-folder-open"></i>Proyectos</a>
-                  <a href="/Contacto"><i className="fas fa-comments"></i>Contacto</a>
+                  <span>Links:</span> 
+                  <NavLink exact strict activeClassName='is-active' to="/"><i className="fas fa-address-book"></i>Inicio</NavLink>
+                  <NavLink exact strict activeClassName='is-active' to="/Trayectoria"><i className="fas fa-project-diagram"></i>Trayectoria</NavLink>
+                  <NavLink exact strict activeClassName='is-active' to="/Habilidades"><i className="fas fa-brain"></i>Habilidades</NavLink>
+                  <NavLink exact strict activeClassName='is-active' to="/Proyectos"><i className="fas fa-folder-open"></i>Proyectos</NavLink>
+                  <NavLink exact strict activeClassName='is-active' to="/Contacto"><i className="fas fa-comments"></i>Contacto</NavLink>
                </div>
             </div>
             <p>Desarrollado por <span>IGNA GARCIA RAVLIC</span></p>
