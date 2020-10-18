@@ -27,15 +27,15 @@ const Hijo = styled.div`
       color: ${colors.txtBgClaro};
       i{
          color: ${colors.detalle1Oscuro};
-         padding-right: .5em;
+         padding-left: .5em;
       }
    }
    @media ${breackpoints.mobileS}{
       font-size: 1em;
       flex-flow: row wrap;
       a{flex: 1 0 30%;}
-      border-bottom: .15em solid ${colors.bgGris2};
-      border-right: none;
+      border-top: .15em solid ${colors.bgGris2};
+      border-left: none;
    };
 	@media ${breackpoints.laptop}{
       font-size: 1.2em;
@@ -51,8 +51,8 @@ const Hijo = styled.div`
             flex: 2 0 70%;
          }
       }
-      border-right: .15em solid ${colors.bgGris2};
-      border-bottom: none;
+      border-left: .15em solid ${colors.bgGris2};
+      border-top: none;
    };
    @media ${breackpoints.desktop}{
       font-size: 1.3em;
@@ -73,10 +73,10 @@ export default function Contacto() {
       <Background>
          <Container>   
             <FlexDiv>
+               <Formulario></Formulario>
                <Hijo>
                   {redes.map(x => x)}
                </Hijo>
-               <Formulario></Formulario>
             </FlexDiv>
          </Container>
       </Background>
