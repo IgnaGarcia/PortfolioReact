@@ -7,7 +7,7 @@ import Formulario from './Formulario';
 
 const Background = styled.div`
    background: ${colors.bgClaro};
-   padding: 1em 0em;
+   padding: 1.5em 0em;
 `
 
 const FlexDiv = styled.div`
@@ -19,7 +19,6 @@ const FlexDiv = styled.div`
 `
 
 const Hijo = styled.div`
-   padding: 1em;
    display: flex;
    font-family: ${fonts.txtFamily1};
    a{
@@ -35,12 +34,13 @@ const Hijo = styled.div`
       flex-flow: row wrap;
       a{flex: 1 0 30%;}
       border-top: .15em solid ${colors.bgGris2};
+      padding: 2em 1em 1.5em 1em;
       border-left: none;
    };
 	@media ${breackpoints.laptop}{
       font-size: 1.2em;
       flex-direction: column;
-      justify-content: start;
+      justify-content: space-around;
       a{
          flex: 0 ;
          display: flex;
@@ -52,11 +52,11 @@ const Hijo = styled.div`
          }
       }
       border-left: .15em solid ${colors.bgGris2};
+      padding: 1em 2em;
       border-top: none;
    };
    @media ${breackpoints.desktop}{
       font-size: 1.3em;
-      justify-content: space-around;
       i{
          font-size: 1.5em;
       }
