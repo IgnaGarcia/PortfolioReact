@@ -14,12 +14,16 @@ const Nav = styled.nav`
       transition: background-color .5s, color .5s;
       :hover{
          color: ${colors.detalle1Claro};
-         background: ${colors.bgGrisClaro};
+         background: ${colors.bgGris1};
       }
    }
    .is-active{
       color: ${colors.txtBgClaro2};
       background: ${colors.detalle1};
+      :hover{
+         color: ${colors.txtBgClaro};
+         background: ${colors.detalle1Oscuro};
+      }
    }
    i{
       padding: 0em .7em;
