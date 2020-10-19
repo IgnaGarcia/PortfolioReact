@@ -58,10 +58,10 @@ const Caja = styled.div`
    margin: .5em 0em;
    text-align: left;
    
-   background: #fff;
+   background: ${colors.bgClaro};
    box-shadow: -2px 3px 3px rgba(20, 20, 20, 0.25);
    border-radius: 10px;
-   border: 1px solid ${colors.detalle1};
+   border: 1px solid #fff;
    i{
       text-align: center;
       color: ${colors.bgGris3};
@@ -70,6 +70,9 @@ const Caja = styled.div`
    label{
       text-align: center;
       flex: 2 0;
+   }
+   input , textarea{
+      background: inherit;
    }
    @media ${breackpoints.mobileS}{
       label{display:none}
