@@ -2,56 +2,56 @@
    {
       "id": 0,
       "name": "LinkedIn",
-      "contenido": "Ignacio Agustin Garcia Ravlic",
+      "content": "Ignacio Agustin Garcia Ravlic",
       "url": "https://www.linkedin.com/in/ignacio-agustin-garcia-ravlic-491b9a188/",
       "icon": "fab fa-linkedin-in"
    },
    {
       "id": 1,
       "name": "GitHub",
-      "contenido": "IgnaGarcia",
+      "content": "IgnaGarcia",
       "url": "https://github.com/IgnaGarcia",
       "icon": "fab fa-github"
    },
    {
       "id": 2,
       "name": "Telegram",
-      "contenido": "@IgnaGarciaRavlic",
+      "content": "@IgnaGarciaRavlic",
       "url": "https://t.me/IgnaGarciaRavlic",
       "icon": "fab fa-telegram-plane"
    },
    {
       "id": 3,
       "name": "Discord",
-      "contenido": "Igna98#9782",
+      "content": "Igna98#9782",
       "url": "https://discord.com/channels/@me/698004380506652754",
       "icon": "fab fa-discord"
    },
    {
       "id": 4,
       "name": "Instagram",
-      "contenido": "@ignagarcia_98",
+      "content": "@ignagarcia_98",
       "url": "https://www.instagram.com/ignagarcia_98",
       "icon": "fab fa-instagram"
    },
    {
       "id": 5,
       "name": "Facebook",
-      "contenido": "/IgnaGarciaRavlic",
+      "content": "/IgnaGarciaRavlic",
       "url": "https://www.facebook.com/IgnaGarciaRavlic/",
       "icon": "fab fa-facebook"
    },
    {
       "id": 6,
       "name": "Gmail",
-      "contenido": "gnachoxp@gmail.com",
+      "content": "gnachoxp@gmail.com",
       "url": "",
       "icon": "fas fa-at"
    },
    {
       "id": 7,
       "name": "Gmail",
-      "contenido": "gnachoxp@gmail.com",
+      "content": "gnachoxp@gmail.com",
       "url": "mailto:gnachoxp@gmail.com",
       "icon": "far fa-envelope"
    }

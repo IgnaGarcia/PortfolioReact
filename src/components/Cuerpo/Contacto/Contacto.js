@@ -34,7 +34,7 @@ const Hijo = styled.div`
       flex-flow: row wrap;
       a{flex: 1 0 30%;}
       border-top: .15em solid ${colors.bgGris2};
-      padding: 2em 1em 1.5em 1em;
+      padding: 1.5em 1em 1.5em 1em;
       border-left: none;
    };
 	@media ${breackpoints.laptop}{
@@ -57,9 +57,6 @@ const Hijo = styled.div`
    };
    @media ${breackpoints.desktop}{
       font-size: 1.3em;
-      i{
-         font-size: 1.5em;
-      }
    };
 `
 
