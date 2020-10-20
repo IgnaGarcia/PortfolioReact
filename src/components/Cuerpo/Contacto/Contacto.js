@@ -24,7 +24,11 @@ const Hijo = styled.div`
    a{
       padding: .5em;
       color: ${colors.txtBgClaro};
+      :hover{
+         i{color: ${colors.txtBgClaro};}
+      }
       i{
+         transition: color .5s;
          color: ${colors.detalle1Oscuro};
          padding-left: .5em;
       }
@@ -60,6 +64,23 @@ const Hijo = styled.div`
    };
 `
 
+const Text = styled.div`
+   text-align: center;
+   margin: .5em;
+   span{
+      
+      font-size: 2em;
+      font-family: ${fonts.txtFamily2};
+      color: ${colors.bgGris2};
+   }
+   p{
+      margin: 1em;
+      font-size: 1.15em;
+      font-family: ${fonts.txtFamily1};
+      color: ${colors.txtBgClaro};
+   }
+`
+
 export default function Contacto() {
    let redes = []
    for(let i=0; i<6; i++){
@@ -68,7 +89,11 @@ export default function Contacto() {
 
 	return (
       <Background>
-         <Container>   
+         <Container>  
+            <Text>
+               <span>CHARLEMOS</span>
+               <p>Puedes contactarme rellenando el siguiente formulario, o siguiendome en mis redes</p>
+            </Text> 
             <FlexDiv>
                <Formulario></Formulario>
                <Hijo>

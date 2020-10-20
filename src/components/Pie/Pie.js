@@ -16,7 +16,7 @@ const StyledPie = styled.footer`
    
    a{
       color: ${colors.txtBgOscuro2};
-      transition: font-size .5s, color .5s;
+      transition: color .5s;
       :hover{
          color: ${colors.detalle1Claro};
       }

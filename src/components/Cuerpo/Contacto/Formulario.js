@@ -69,7 +69,7 @@ const Caja = styled.div`
    }
    label{
       text-align: center;
-      flex: 2 0;
+      flex: 1 0;
    }
    input , textarea{
       background: inherit;
