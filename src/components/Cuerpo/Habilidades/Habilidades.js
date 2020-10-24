@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import SkillCard from './SkillCard';
-import { Container, colors } from '../../../assets/styles';
+import { Container, colors, breackpoints } from '../../../assets/styles';
 
 import skills from '../../../data/skills.json';
 
@@ -14,12 +14,24 @@ const Background = styled.div`
       padding: 1em 0em;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      @media ${breackpoints.mobileS}{
+         justify-content: center;
+      };
+
    }
 `
 
 export default function Habilidades() {
-
+   function compare(a, b){
+      if(a.type < b.type) return -1
+      else if(a.type > b.type) return 1
+      else if(a.type === b.type){
+         if(a.level > b.level) return -1
+         else if(a.level < b.level) return 1
+         else return 0
+      }
+   }
+   console.log(skills.sort(compare))
 	return (
 		<Background>
          <Container>

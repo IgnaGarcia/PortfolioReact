@@ -5,7 +5,6 @@ import { fonts, colors, breackpoints } from '../../../assets/styles';
 
 const Card = styled.div`
    display: flex;
-   align-items: center;
    border-radius: .5em;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
    border: 1px solid white;
@@ -13,29 +12,65 @@ const Card = styled.div`
    margin: .4em;
    font-family: ${fonts.txtFamily1};
    @media ${breackpoints.mobileS}{
-      flex: 1 1 25%;
+      flex-direction: column;
+      flex: 1 0 30%;
+      align-items: stretch;
+      .icono{
+         flex: 0 0 auto;
+         border-radius: .2em .2em 0 0;
+      }
+   };
+   @media ${breackpoints.tablet}{
+      flex: 1 0 20%;
+      max-width: 295px;
    };
    @media ${breackpoints.laptop}{
-      flex: 0 0 25%;
+      flex-direction: row;
+      align-items: center;
+      flex: 1 0 30%;
+      max-width: 260px;
+      .icono{
+         flex: 0 0 25%;
+         border-radius: .2em 0 0 .2em;
+      }
    };
 
-   i{
+   .icono{
       font-size: 2.5em;
       text-align: center;
-      flex: 0 0 25%;
-      padding: .2em;
+      padding: 8px 6px 6px 6px;
+      align-self: stretch;
       color: ${colors.bgGris1};
-      border-radius: .2em 0 0 .2em;
       background: ${colors.detalle1};
    }
 `
 
 const Content = styled.div`
-   flex: 1 0 auto;
    background: ${colors.bgGris1};
    color: ${colors.detalle1};
-   padding: .3em;
-   border-radius: 0 .5em .5em 0;
+   padding: 5px;
+   @media ${breackpoints.mobileS}{
+      border-radius: 0 0 .5em .5em;
+      text-align: center;
+      flex: 0 0 auto;
+   };
+   @media ${breackpoints.laptop}{
+      border-radius: 0 .5em .5em 0;
+      text-align: left;
+      flex: 1 0 auto;
+   };
+   .titulo{
+      font-weight: bold;
+      opacity: .95;
+   }
+   .nivel{
+      opacity: .85;
+
+   }
+   .exp{
+      opacity: .75;
+      font-size: .9em;
+   }
 `
 
 export default function SkillCard(props) {
@@ -49,11 +84,11 @@ export default function SkillCard(props) {
 
 	return (
 		<Card>
-         <i className={skill.icon}></i>
+         <div className="icono"><i className={skill.icon}></i></div>
          <Content>
-            <div> {skill.name} </div>
-            <div> {experience(skill.level)} </div>
-            <div> {currentTime.getFullYear() - skill.years + 1} años de uso</div>
+            <div className="titulo"> {skill.name} </div>
+            <div className="nivel"> {experience(skill.level)} </div>
+            <div className="exp"> {currentTime.getFullYear() - skill.years + 1} años de uso</div>
          </Content>
 		</Card>
 	);

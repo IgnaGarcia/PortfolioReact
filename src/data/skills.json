@@ -98,29 +98,22 @@
       "type": 0
    },
    {
-      "name": "C#",
-      "icon": "",
-      "level": 0,
-      "years": 2018.5,
-      "type": 0
-   },
-   {
       "name": "C",
-      "icon": "",
+      "icon": "icon-cRelleno",
       "level": 1,
       "years": 2016,
       "type": 0
    },
    {
       "name": "C++",
-      "icon": "",
+      "icon": "icon-cppRelleno",
       "level": 1,
       "years": 2016,
       "type": 0
    },
    {
       "name": "LaTeX",
-      "icon": "",
+      "icon": "icon-tex",
       "level": 1,
       "years": 2020.5,
       "type": 1
