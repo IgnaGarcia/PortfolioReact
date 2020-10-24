@@ -93,7 +93,7 @@ const Text = styled.div`
 export default function Contacto() {
    let redes = []
    for(let i=0; i<6; i++){
-      redes[i]= <a key={i} href={social[i].url}><i className={social[i].icon}></i><span>{social[i].name}</span></a>
+      redes[i]= <a key={i+""+social[i].name} href={social[i].url}><i className={social[i].icon}></i><span>{social[i].name}</span></a>
    }
 
 	return (

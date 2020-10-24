@@ -80,7 +80,7 @@ const Contenedor = styled(Container)`
 export default function Pie() {
    let redes = []
    for (let i=0; i<3; i++) {
-      redes[i] = <a key={i} href={social[i].url}><i className={social[i].icon.concat(" fa-lg")}></i></a>
+      redes[i] = <a key={i+""+social[i].name} href={social[i].url}><i className={social[i].icon.concat(" fa-lg")}></i></a>
    }
 
    return (
