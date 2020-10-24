@@ -21,27 +21,32 @@ const FlexDiv = styled.div`
 const Hijo = styled.div`
    display: flex;
    font-family: ${fonts.txtFamily1};
-   background: ${colors.detalle1};
-   opacity: .9;
-   box-shadow: 2px 3px 3px rgba(20, 20, 20, 0.25);
+   background-color: ${(colors.bgOscuro)+"dd"};
+   box-shadow: 4px 6px 8px rgba(20, 20, 20, 0.5);
    border-radius: 10px;
-   
    a{
       padding: .5em;
-      color: ${colors.txtBgClaro};
-      :hover{
-         i{color: ${colors.txtBgClaro};}
-      }
+      color: ${colors.txtBgOscuro2};
+      transition: color .5s;
       i{
          transition: color .5s;
-         color: ${colors.detalle1Oscuro};
-         padding-left: .5em;
+         color: ${colors.txtBgOscuro2};
+         margin-right: 8px;
+      }
+      :hover{
+         color: ${colors.detalle1};
+         i{
+            color: ${colors.detalle1};
+         }
       }
    }
    @media ${breackpoints.mobileS}{
       font-size: 1em;
       flex-flow: row wrap;
-      a{flex: 1 0 30%;}
+      a{
+         flex: 1 0 30%;
+         i{ font-size: 1.2em;}
+         }
       padding: 1.5em 1em 1.5em 1em;
       border-left: none;
    };
@@ -49,6 +54,8 @@ const Hijo = styled.div`
       font-size: 1.2em;
       flex-direction: column;
       justify-content: space-around;
+      align-items: flex-start;
+      text-align: left;
       a{
          flex: 0 ;
          display: flex;
