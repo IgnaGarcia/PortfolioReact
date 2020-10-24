@@ -6,7 +6,6 @@ import social from '../../../data/socialmed.json';
 import Formulario from './Formulario';
 
 const Background = styled.div`
-   background: ${colors.bgExtraClaro};
    padding: 1.5em 0em;
 `
 

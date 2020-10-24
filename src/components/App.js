@@ -21,6 +21,12 @@ export default function App() {
          <Cabecera />
 			<Router>
             <Navegacion />
+            {/*
+            <Habilidades />
+            <Contacto />
+            */}
+            
+            {/* */
             <Switch style={{background: "#fafafa"}}>
                <Route exact strict path="/" render={() => <Inicio />} />
                <Route exact strict path="/Trayectoria" render={() => <Trayectoria />} />
@@ -28,7 +34,8 @@ export default function App() {
                <Route exact strict path="/Proyectos" render={() => <Proyectos />} />
                <Route exact strict path="/Contacto" render={() => <Contacto />} />
                <Route render={() => <PageNotFound />} />
-            </Switch>
+            </Switch> 
+            /* */}
             <Pie />
          </Router>
 		</div>
