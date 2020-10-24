@@ -7,6 +7,7 @@ const Form = styled.form`
    font-family: ${fonts.txtFamily1};
    margin: auto;
    text-align: center;
+   
    @media ${breackpoints.mobileS}{
       width: 100%;
    };

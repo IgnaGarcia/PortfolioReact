@@ -15,6 +15,7 @@ export const colors = {
    bgGris3 : '#bdbdbd',
    bgGris4 : '#e0e0e0',
    bgClaro: '#eeeeee',
+   bgExtraClaro: '#fafafa',
    detalle1: '#fb8c00',
    /*verde 43a047 
    verde agua 00acc1

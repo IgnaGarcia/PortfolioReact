@@ -21,7 +21,7 @@ export default function App() {
          <Cabecera />
 			<Router>
             <Navegacion />
-            <Switch>
+            <Switch style={{background: "#fafafa"}}>
                <Route exact strict path="/" render={() => <Inicio />} />
                <Route exact strict path="/Trayectoria" render={() => <Trayectoria />} />
                <Route exact strict path="/Habilidades" render={() => <Habilidades />} />

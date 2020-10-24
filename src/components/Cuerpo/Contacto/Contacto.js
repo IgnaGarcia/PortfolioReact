@@ -6,7 +6,7 @@ import social from '../../../data/socialmed.json';
 import Formulario from './Formulario';
 
 const Background = styled.div`
-   background: ${colors.bgClaro};
+   background: ${colors.bgExtraClaro};
    padding: 1.5em 0em;
 `
 
@@ -21,6 +21,11 @@ const FlexDiv = styled.div`
 const Hijo = styled.div`
    display: flex;
    font-family: ${fonts.txtFamily1};
+   background: ${colors.detalle1};
+   opacity: .9;
+   box-shadow: 2px 3px 3px rgba(20, 20, 20, 0.25);
+   border-radius: 10px;
+   
    a{
       padding: .5em;
       color: ${colors.txtBgClaro};
@@ -37,7 +42,6 @@ const Hijo = styled.div`
       font-size: 1em;
       flex-flow: row wrap;
       a{flex: 1 0 30%;}
-      border-top: .15em solid ${colors.bgGris2};
       padding: 1.5em 1em 1.5em 1em;
       border-left: none;
    };
@@ -55,7 +59,6 @@ const Hijo = styled.div`
             flex: 2 0 70%;
          }
       }
-      border-left: .15em solid ${colors.bgGris2};
       padding: 1em 2em;
       border-top: none;
    };

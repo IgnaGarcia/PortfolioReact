@@ -8,7 +8,6 @@ import skills from '../../../data/skills.json';
 
 
 const Background = styled.div`
-   background: ${colors.bgClaro};
    padding: 1.5em 0em;
    ${Container}{
       padding: 1em 0em;
