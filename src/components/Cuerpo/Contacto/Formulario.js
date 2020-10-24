@@ -110,23 +110,23 @@ export default function Formulario() {
 	return (
       <Form autocomplete="off">
             <Caja>
-               <i class="fas fa-user"></i>
-               <label for="nombre">Nombre:</label>
+               <i className="fas fa-user"></i>
+               <label htmlFor="nombre">Nombre:</label>
                <Input id="nombre" name="nombre" placeholder="Ej Igna Garcia" required/>
             </Caja>
             <Caja>
-               <i class="fas fa-at"></i>
-               <label for="mail">Correo:</label>
+               <i className="fas fa-at"></i>
+               <label htmlFor="mail">Correo:</label>
                <Input id="mail" name="mail" type="email" placeholder="Ej garcia@mail.com" required/>
             </Caja>
             <Caja>
-               <i class="fas fa-tags"></i>
-               <label for="asunto">Asunto:</label>
+               <i className="fas fa-tags"></i>
+               <label htmlFor="asunto">Asunto:</label>
                <Input id="asunto" name="asunto" placeholder="Ej Propuesta" required/>
             </Caja>
             <Caja>
-               <i class="fas fa-pen-alt"></i>
-               <label for="mensaje">Mensaje:</label>
+               <i className="fas fa-pen-alt"></i>
+               <label htmlFor="mensaje">Mensaje:</label>
                <Text id="mensaje" name="mensaje" rows="6" placeholder="Ej Hola ..." required/>
             </Caja>
             <Input id="subir" name="subir" type="submit" value="Enviar Mensaje"/>
