@@ -98,14 +98,7 @@
       "type": 0
    },
    {
-      "name": "C",
-      "icon": "icon-cRelleno",
-      "level": 1,
-      "years": 2016,
-      "type": 0
-   },
-   {
-      "name": "C++",
+      "name": "C/C++",
       "icon": "icon-cppRelleno",
       "level": 1,
       "years": 2016,
