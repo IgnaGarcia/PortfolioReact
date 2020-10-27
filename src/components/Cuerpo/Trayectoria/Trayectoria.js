@@ -1,25 +1,41 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Container, breackpoints, colors, forts } from '../../../assets/styles';
+import { Container, colors, fonts } from '../../../assets/styles';
+import Card from './Card';
 
 import studies from '../../../data/studies.json';
 import activities from '../../../data/otherActivities.json';
 import jobs from '../../../data/jobs.json';
 
 const Lista = styled.ul`
-   li{
-      padding: 1em 0em 0em 1.5em;
+   padding: 1.5em 0em;
+   margin: 0 auto;
+   font-family: ${fonts.txtFamily1};
+   li ul{
+      margin-left: 10px;
+      padding: 10px 0px;
+      border-left: 2px dashed black;
    }
 `
 
 const Ball = styled.div`
    border-radius: 50%;
-   padding: .5em;
+   padding: .45em;
    display: inline-block;
    background: ${colors.bgGris1};
    border: .3em solid ${colors.bgGris3};
+`
 
+const FlexBox = styled.div`
+   display: flex;
+   align-items: center;
+   h2{
+      margin-left: 7px;
+      font-weight: 700;
+      font-size: 1.2em;
+      color: ${colors.txtBgClaro2};
+   }
 `
 
 export default function Trayectoria() {
@@ -28,38 +44,43 @@ export default function Trayectoria() {
       <Container>
          <Lista> 
             <li>
-               <div>
+               <FlexBox>
                   <Ball/>
-                  <span>Experiencia Laboral:</span>
-               </div>
+                  <h2>Experiencia Laboral:</h2>
+               </FlexBox>
 
-               <Lista>
-                  {jobs.map(x => <li> {x.name} </li>)}
-               </Lista>
+               <ul>
+                  {jobs.map(x => <Card element={x} key={x.title}></Card>)}
+               </ul>
             </li>
 
             <li>
-               <div>
+               <FlexBox>
                   <Ball/>
-                  <span>Historia Academica:</span>
-               </div>
+                  <h2>Historia Academica:</h2>
+               </FlexBox>
 
-               <Lista>
-                  {studies.map(x => <li> {x.name} </li>)}
-               </Lista>
+               <ul>
+                  {studies.map(x => <Card element={x} key={x.title}></Card>)}
+               </ul>
             </li>
 
             <li>
-               <div>
+               <FlexBox>
                   <Ball/>
-                  <span>Otras Actividades:</span>
-               </div>
+                  <h2>Otras Actividades:</h2>
+               </FlexBox>
 
-               <Lista>
-                  {activities.map(x => <li> {x.name} </li>)}
-               </Lista>
+               <ul>
+                  {activities.map(x => <Card element={x} key={x.title}></Card>)}
+               </ul>
             </li>
-            
+
+            <li>
+               <FlexBox>
+                  <Ball/>
+               </FlexBox>
+            </li>
          </Lista>
       </Container>
    );

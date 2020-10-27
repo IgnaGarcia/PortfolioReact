@@ -1,10 +1,18 @@
 [
 	{
-      "name": "Transcriptor",
-      "employer-company": "Coaching para Microemprendimientos",
-      "start": "1/2017",
+      "title": "Transcriptor",
+      "subtitle": "Coaching para Microemprendimientos",
+      "start": "1/2017-",
       "end": "9/2017",
       "isActive": false,
       "description": "Tanscripcion de audios basados en entrevistas. Completar Formularios en Word a partir de la transcipcion de la entrevista"
+   },
+   {
+      "title": "",
+      "subtitle": "",
+      "start": "",
+      "end": "",
+      "isActive": true,
+      "description": ""
    }
 ]

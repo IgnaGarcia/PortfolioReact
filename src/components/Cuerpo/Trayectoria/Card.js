@@ -1,11 +1,80 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Container, breackpoints, colors, forts } from '../../../assets/styles';
+import { colors } from '../../../assets/styles';
 
-export default function Card() {
+const Item = styled.li`
+   padding: 0em 0em 0em 1.5em;
+   max-width: 600px;
+`
 
+const Ball = styled.div`
+   border-radius: 50%;
+   padding: .3em;
+   display: inline-block;
+   background: ${colors.bgGris1};
+   border: .25em solid ${colors.detalle1};
+`
+
+const HeadElement = styled.div`
+   display: flex;
+   align-items: flex-start;
+   h3{
+      flex: 2 0;
+      margin-left: 6px;
+      font-weight: 500;
+      font-size: 1.1em;
+      color: ${colors.txtBgClaro2};
+   }
+   span{
+      color: ${colors.txtBgClaro2+'99'};
+      white-space: nowrap;
+      font-size: .8em;
+      border-radius: 30px;
+      align-self: flex-end;
+      display: inline-block;
+      padding: .15em .4em;
+   }
+`
+
+const ContentElement = styled.div`
+   margin-left: 8px;
+   padding: 0px 8px 15px 15px;
+   border-left: 2px dashed black;
+   h4{
+      font-weight: lighter;
+      font-size: 1.05em;
+      color: ${colors.bgGris1};
+      margin-bottom: 7px;
+   }
+   p{
+      color: ${colors.txtBgClaro2};
+      font-size: .95em;
+      margin-top: 5px
+   }
+   span{
+      color: ${colors.detalle1Oscuro};
+      font-size: .95em;
+   }
+`
+
+export default function Card(props) {
+   let element = props.element
    return (
-      <div></div>
+      <Item>
+         <HeadElement>
+            <Ball/>
+            <h3> {element.title} </h3>
+            {element.start? <span style={{ background: element.isActive? colors.detalle1 : colors.bgGris3}}> {element.start}{element.isActive?  "Actualidad" : element.end} </span> : "" }
+         </HeadElement>
+         {element.start? 
+            <ContentElement>
+               <h4> {element.subtitle} </h4>
+               {element.progress? <span> {element.progress} Completo </span> : ""}
+               <p> {element.description} </p>
+            </ContentElement>
+            : ""
+         }
+      </Item>
    );
 }

@@ -1,52 +1,56 @@
 [
    {
-      "name": "Licenciado en Informatica",
-      "academy": "Universiadad Nacional del Oeste",
-      "start": "2017",
+      "title": "Licenciado en Informatica",
+      "subtitle": "Universiadad Nacional del Oeste",
+      "start": "2017-",
       "end": "-",
       "isActive": true,
-      "progress": 47,
-      "schedule": "planDeEstudios.pdf",
-      "description": "Carrera diversa, con materias de varias areas de la Informatica como la Programacion, la Ingenieria de Software, la Almacenamiento y Explotacion de Datos, las Redes, los Sistemas Operativos y demas. <br/> Esta carrera esta validada por la CONEAU"
+      "progress": "47%",
+      "description": "Carrera diversa, con materias de varias areas de la Informatica como la Programacion, la Ingenieria de Software, la Almacenamiento y Explotacion de Datos, las Redes, los Sistemas Operativos y demas. \n Esta carrera esta validada por la CONEAU"
    },
    {
-      "name": "Analista de Datos Masivos",
-      "academy": "Coursera + Universitat Autono de Barcelona",
-      "start": "2020",
+      "title": "Analista de Datos Masivos",
+      "subtitle": "Coursera + Universitat Autono de Barcelona",
+      "start": "2020-",
       "end": "-",
       "isActive": true,
-      "progress": 0.25,
-      "schedule": "",
+      "progress": "25%",
       "description": "Curso completo, desde los la importancia del aplicar Big Data, el proceso que esto conlleva y la puesta en practica, partiendo de la Adquisicion y Almacenamiento de Datos, el Procesamiento y Analisis, y la Visualizacion de Datos y Resultados, con varios cuestionarios y evaluaciones practicas"
    },
    {
-      "name": "Programador Python",
-      "academy": "Coursera + Universiadad Austral",
-      "start": "2020",
+      "title": "Programador Python",
+      "subtitle": "Coursera + Universiadad Austral",
+      "start": "2020-",
       "end": "-",
       "isActive": true,
-      "progress": 0.25,
-      "schedule": "",
+      "progress": "25%",
       "description": "Curso completo, desde los Tipos de Datos y Operadores Basicos, hasta manejo de Bases de Datos y Programacion Orientada a Objetos, con varios cuestionarios y evaluaciones practicas"
    },
    {
-      "name": "Asistente en Informatica",
-      "academy": "EES N6 Hipolito Irigoyen",
-      "start": "2013",
+      "title": "Asistente en Informatica",
+      "subtitle": "EES N6 Hipolito Irigoyen",
+      "start": "2013-",
       "end": "2016",
       "isActive": false,
-      "progress": 100,
-      "schedule": "",
+      "progress": "100%",
       "description": "Manejo de Paquete Office, Herramientas de Edicion de Multimedia, Introduccion a la Programacion y Diseño Web"
    },
 	{
-      "name": "Bachiller en Ciencias Naturales",
-      "academy": "EES N6 Hipolito Irigoyen",
-      "start": "2010",
+      "title": "Bachiller en Ciencias Naturales",
+      "subtitle": "EES N6 Hipolito Irigoyen",
+      "start": "2010-",
       "end": "2016",
       "isActive": false,
-      "progress": 100,
-      "schedule": "",
+      "progress": "100%",
       "description": "Mejor Promedio (8.7)"
+   }, 
+   {
+      "title": "",
+      "subtitle": "",
+      "start": "",
+      "end": "",
+      "isActive": true,
+      "progress": null,
+      "description": ""
    }  
 ]
