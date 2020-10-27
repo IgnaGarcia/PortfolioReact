@@ -19,6 +19,7 @@ const Ball = styled.div`
    display: inline-block;
    background: ${colors.bgGris1};
    border: .3em solid ${colors.bgGris3};
+
 `
 
 export default function Trayectoria() {
