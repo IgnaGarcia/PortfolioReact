@@ -1,7 +1,9 @@
 import React from 'react';
 
-import levels from '../../../data/levels.json';
+import studies from '../../../data/studies.json';
+import activities from '../../../data/otherActivities.json';
 import jobs from '../../../data/jobs.json';
+
 
 export default function Trayectoria() {
    return (
