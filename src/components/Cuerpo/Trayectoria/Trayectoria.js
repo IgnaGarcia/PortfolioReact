@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import { Container, breackpoints, colors, forts } from '../../../assets/styles';
 
@@ -6,35 +7,59 @@ import studies from '../../../data/studies.json';
 import activities from '../../../data/otherActivities.json';
 import jobs from '../../../data/jobs.json';
 
+const Lista = styled.ul`
+   li{
+      padding: 1em 0em 0em 1.5em;
+   }
+`
+
+const Ball = styled.div`
+   border-radius: 50%;
+   padding: .5em;
+   display: inline-block;
+   background: ${colors.bgGris1};
+   border: .3em solid ${colors.bgGris3};
+`
 
 export default function Trayectoria() {
 
    return (
       <Container>
-         Estudios y Proyectos/Trabajos realizados
-         <ul> 
+         <Lista> 
             <li>
-               <h3>Experiencia Laboral:</h3>
-               <ul>
+               <div>
+                  <Ball/>
+                  <span>Experiencia Laboral:</span>
+               </div>
+
+               <Lista>
                   {jobs.map(x => <li> {x.name} </li>)}
-               </ul>
+               </Lista>
             </li>
 
             <li>
-               <h3>Historia Academica:</h3>
-               <ul>
+               <div>
+                  <Ball/>
+                  <span>Historia Academica:</span>
+               </div>
+
+               <Lista>
                   {studies.map(x => <li> {x.name} </li>)}
-               </ul>
+               </Lista>
             </li>
 
             <li>
-               <h3>Otras Actividades:</h3>
-               <ul>
+               <div>
+                  <Ball/>
+                  <span>Otras Actividades:</span>
+               </div>
+
+               <Lista>
                   {activities.map(x => <li> {x.name} </li>)}
-               </ul>
+               </Lista>
             </li>
             
-         </ul>
+         </Lista>
       </Container>
    );
 }
