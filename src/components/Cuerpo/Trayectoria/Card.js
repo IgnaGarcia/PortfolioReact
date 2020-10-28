@@ -38,9 +38,10 @@ const HeadElement = styled.div`
 `
 
 const ContentElement = styled.div`
-   margin-left: 8px;
+   margin-left: 6px;
    padding: 0px 8px 15px 15px;
-   border-left: 2px dashed black;
+   border-left: 6px solid transparent;
+   border-image: linear-gradient(to right, ${colors.bgGris3+'40'} 0%, ${colors.detalle1+'aa'} 0.5%, ${colors.bgGris3+'40'} 1%) 1% stretch;
    h4{
       font-weight: lighter;
       font-size: 1.05em;
@@ -73,7 +74,7 @@ export default function Card(props) {
                {element.progress? <span> {element.progress} Completo </span> : ""}
                <p> {element.description} </p>
             </ContentElement>
-            : ""
+            : <div style={{paddingBottom: '12px'}}></div>
          }
       </Item>
    );

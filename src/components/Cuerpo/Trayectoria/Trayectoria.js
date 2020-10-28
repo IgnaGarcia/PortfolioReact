@@ -13,9 +13,9 @@ const Lista = styled.ul`
    margin: 0 auto;
    font-family: ${fonts.txtFamily1};
    li ul{
-      margin-left: 10px;
-      padding: 10px 0px;
-      border-left: 2px dashed black;
+      margin-left: 8px;
+      border-left: 8px solid transparent;
+      border-image: linear-gradient(to right, ${colors.bgGris3+'40'} 0%, ${colors.bgGris3} 0.5%, ${colors.bgGris3+'40'} 1%) 1% stretch;
    }
 `
 
@@ -38,6 +38,17 @@ const FlexBox = styled.div`
    }
 `
 
+const Diagonal = styled.div`
+   border-left: 35px solid red;
+   border-top: 38px solid #4c4c4c;
+   border-image: linear-gradient(to bottom left , ${colors.bgGris4+'20'} 40%, ${colors.detalle1+'aa'}, ${colors.bgGris4+'20'} 60%) 100% stretch;
+   position: relative;
+   z-index: -10;
+   left: 0px;
+   bottom: 7px;
+   margin-bottom: -18px;
+`
+
 export default function Trayectoria() {
 
    return (
@@ -47,9 +58,11 @@ export default function Trayectoria() {
                <FlexBox>
                   <Ball/>
                   <h2>Experiencia Laboral:</h2>
+                  
                </FlexBox>
-
+               
                <ul>
+                  <Diagonal/>
                   {jobs.map(x => <Card element={x} key={x.title}></Card>)}
                </ul>
             </li>
@@ -61,6 +74,7 @@ export default function Trayectoria() {
                </FlexBox>
 
                <ul>
+                  <Diagonal/>
                   {studies.map(x => <Card element={x} key={x.title}></Card>)}
                </ul>
             </li>
@@ -72,6 +86,7 @@ export default function Trayectoria() {
                </FlexBox>
 
                <ul>
+                  <Diagonal/>
                   {activities.map(x => <Card element={x} key={x.title}></Card>)}
                </ul>
             </li>
