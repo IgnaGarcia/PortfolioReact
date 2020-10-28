@@ -58,7 +58,7 @@ export default function Habilidades() {
                <p>Aqui podras ver las tecnologias y lenguajes que manejo, aclarando el nivel de 
                   experiencia de cada uno y el tiempo que paso desde mi primera interaccion con tal</p>
             </Text>
-            {skills.map( x => <SkillCard skill={x} ></SkillCard>)}
+            {skills.map( x => <SkillCard skill={x} key={x.name}></SkillCard>)}
          </Container>
 		</Background>
 	);

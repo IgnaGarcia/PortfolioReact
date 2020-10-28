@@ -10,7 +10,6 @@ import jobs from '../../../data/jobs.json';
 
 const Lista = styled.ul`
    padding: 1.5em 0em;
-   margin: 0 auto;
    font-family: ${fonts.txtFamily1};
    li ul{
       margin-left: 8px;
@@ -54,7 +53,7 @@ export default function Trayectoria() {
    return (
       <Container>
          <Lista> 
-            <li>
+            <li style={{display: "block",maxWidth: "700px", margin: "auto"}}>
                <FlexBox>
                   <Ball/>
                   <h2>Experiencia Laboral:</h2>
@@ -67,7 +66,7 @@ export default function Trayectoria() {
                </ul>
             </li>
 
-            <li>
+            <li style={{display: "block",maxWidth: "700px", margin: "auto"}}>
                <FlexBox>
                   <Ball/>
                   <h2>Historia Academica:</h2>
@@ -79,7 +78,7 @@ export default function Trayectoria() {
                </ul>
             </li>
 
-            <li>
+            <li style={{display: "block",maxWidth: "700px", margin: "auto"}}>
                <FlexBox>
                   <Ball/>
                   <h2>Otras Actividades:</h2>
@@ -91,7 +90,7 @@ export default function Trayectoria() {
                </ul>
             </li>
 
-            <li>
+            <li style={{display: "block",maxWidth: "700px", margin: "auto"}}>
                <FlexBox>
                   <Ball/>
                </FlexBox>

@@ -5,7 +5,6 @@ import { colors } from '../../../assets/styles';
 
 const Item = styled.li`
    padding: 0em 0em 0em 1.5em;
-   max-width: 600px;
 `
 
 const Ball = styled.div`
