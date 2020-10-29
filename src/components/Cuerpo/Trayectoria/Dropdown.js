@@ -60,7 +60,7 @@ export default function Trayectoria(props) {
 
    return (
       <li style={{display: "block",maxWidth: "700px", margin: "auto"}}>
-         <FlexBox open={open} onClick={handleClick}>
+         <FlexBox open={open} style={open? {marginBottom: "0px"}:{marginBottom: "5px"}} onClick={handleClick}>
             <Ball/>
             {props.titulo? 
                <h2>{props.titulo} 
