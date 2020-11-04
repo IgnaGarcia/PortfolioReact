@@ -1,14 +1,34 @@
 [
    {
       "id": 1,
-      "titulo": "dsadsa",
+      "portada": "url aqui",
+      "titulo": "Modelo de Regresion Lineal",
       "estado": false,
-      "tecnologias": ["R"],
+      "tecnologias": ["R", "Git"],
       "descripcion": "dsadsadsadsad",
       "link": "dsadsadsadsadsa"
    },
    {
       "id": 2,
+      "portada": "../../assets/attachments/Penguins.png",
+      "titulo": "Speech To Text",
+      "estado": true,
+      "tecnologias": ["Python", "Git"],
+      "descripcion": "dsadsadsadsa",
+      "link": "dsadsadsa"
+   },
+   {
+      "id": 3,
+      "portada": "../../assets/attachments/Penguins.png",
+      "titulo": "dsadsa",
+      "estado": false,
+      "tecnologias": ["R", "Git"],
+      "descripcion": "dsadsadsadsad",
+      "link": "dsadsadsadsadsa"
+   },
+   {
+      "id": 4,
+      "portada": "../../assets/attachments/Penguins.png",
       "titulo": "dsadsa",
       "estado": false,
       "tecnologias": ["Python", "Git"],
