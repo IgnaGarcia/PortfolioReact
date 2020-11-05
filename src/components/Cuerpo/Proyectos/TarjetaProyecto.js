@@ -3,34 +3,47 @@ import styled from 'styled-components';
 
 import { breackpoints, colors } from '../../../assets/styles';
 import imagenPrueba from '../../../assets/attachments/Penguins.jpg';
+import imagenPrueba2 from '../../../assets/attachments/SpeechToText.png';
+
+const Imagen = styled.div`
+   .imagen{
+      border-radius: 10px 10px 0px 0px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.45);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+`
 
 const Background = styled.div`
    background: ${colors.detalle1Oscuro+'cc'};
    border-radius: 10px;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border: 1px solid ${colors.bgClaro};
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
    @media ${breackpoints.mobileS}{
-      flex: 0 1 80%;
+      flex: 0 1 70%;
       margin: .8em auto;
+      ${Imagen}{
+         height: 230px;
+         margin-bottom: .3em;
+      }
    }
    @media ${breackpoints.tablet}{
-      flex: 0 1 30%;
+      flex: 0 1 35%;
+      ${Imagen}{
+         height: 200px;
+         margin-bottom: .5em;
+      }
    }
    @media ${breackpoints.laptop}{
       flex: 0 0 20%;
    }
    a{
       color: ${colors.txtBgClaro2};
-      display: block;
    }
-`
-
-const Imagen = styled.div`
-   .imagen{
-      border-radius: 10px 10px 0px 0px;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-      width: 100%;
-      height: 70%;
-      object-fit: cover;
+   cursor: pointer;
+   :hover{
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
    }
 `
 
@@ -43,11 +56,6 @@ const Content = styled.div`
    h3{
       font-size: 1em;
       font-weight: bold;
-   }
-   span{
-      color: ${colors.bgGris2};
-      margin: 5px 0px 0px;
-      font-size: .8em;
    }
    ul{
       text-align: center;
@@ -72,10 +80,11 @@ export default function TarjetaProyectos(prop) {
    return (
       <Background>
          <a href={proyects.link}>
-            <Imagen><img className="imagen" src={imagenPrueba}></img></Imagen>
+            <Imagen>{proyects.estado? 
+               <img className="imagen" src={imagenPrueba2} ></img>:
+               <img className="imagen" src={imagenPrueba} ></img> }</Imagen>
             <Content>
                <h3> {proyects.titulo} </h3>
-               {proyects.estado? <span className="finish"> Finalizado </span>: <span className="develop"> En Desarrollo </span>}
                <ul>
                   {proyects.tecnologias.map( x=> <li key={x}> {x} </li> )}
                </ul>

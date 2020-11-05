@@ -49,7 +49,6 @@ export default function Habilidades() {
          else return 0
       }
    }
-   console.log(skills.sort(compare))
 	return (
 		<Background> 
          <Container>
