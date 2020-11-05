@@ -49,6 +49,7 @@ export default function Habilidades() {
          else return 0
       }
    }
+   skills.sort(compare)
 	return (
 		<Background> 
          <Container>

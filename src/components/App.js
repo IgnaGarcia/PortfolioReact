@@ -33,7 +33,7 @@ export default function App() {
                <Route exact strict path="/Trayectoria" render={() => <Trayectoria />} />
                <Route exact strict path="/Habilidades" render={() => <Habilidades />} />
                <Route exact strict path="/Proyectos" render={() => <Proyectos />} />
-               <Route exact strict path="/Proyectos/:id" render={() => <Proyecto />} />
+               <Route exact strict path="/Proyectos/:name" render={() => <Proyecto />} />
                <Route exact strict path="/Contacto" render={() => <Contacto />} />
                <Route render={() => <PageNotFound />} />
             </Switch> 
