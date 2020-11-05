@@ -33,7 +33,7 @@ export default function Navegacion() {
       <Nav>
          <Contenedor>
             <MenuButton open={open} handleClick={handleClick}></MenuButton>
-            <Navbar open={open}></Navbar>
+            <Navbar open={open} handleClick={handleClick}></Navbar>
          </Contenedor>
       </Nav>
 	)

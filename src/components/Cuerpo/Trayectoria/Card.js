@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { colors } from '../../../assets/styles';
+import { colors, breackpoints } from '../../../assets/styles';
 
 const Item = styled.li`
    padding: 0em 0em 0em 1.5em;
@@ -22,7 +22,6 @@ const HeadElement = styled.div`
       flex: 2 0;
       margin-left: 6px;
       font-weight: 500;
-      font-size: 1.1em;
       color: ${colors.txtBgClaro2};
    }
    span{
@@ -33,6 +32,14 @@ const HeadElement = styled.div`
       align-self: flex-end;
       display: inline-block;
       padding: .15em .4em;
+   }
+   @media ${breackpoints.mobileS}{
+      h3{ font-size: 1em; }
+      span{ display: none; }
+   }
+   @media ${breackpoints.tablet}{
+      h3{ font-size: 1.1em; }
+      span{ display: block; }
    }
 `
 
@@ -55,6 +62,14 @@ const ContentElement = styled.div`
    span{
       color: ${colors.detalle1Oscuro};
       font-size: .95em;
+   }
+   @media ${breackpoints.mobileS}{
+      h4{ font-size: .95em; }
+      p,span{ font-size: .85em; }
+   }
+   @media ${breackpoints.tablet}{
+      h4{ font-size: 1.05em; }
+      p,span{ font-size: .95em; }
    }
 `
 

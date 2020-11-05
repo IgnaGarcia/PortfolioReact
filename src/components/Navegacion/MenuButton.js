@@ -10,6 +10,7 @@ const MenuButtonWrapper = styled.button`
   padding-left: 95%;
   font-size: 1.1em;
   color: ${colors.detalle1};
+  outline: none;
 
   @media ${breackpoints.laptop}{ display: none; }
 `;
