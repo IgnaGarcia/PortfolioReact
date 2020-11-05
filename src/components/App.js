@@ -10,6 +10,7 @@ import Inicio from './Cuerpo/Inicio/Inicio';
 import Trayectoria from './Cuerpo/Trayectoria/Trayectoria';
 import Habilidades from './Cuerpo/Habilidades/Habilidades';
 import Proyectos from './Cuerpo/Proyectos/Proyectos';
+import Proyecto from './Cuerpo/Proyecto/Proyecto';
 import Contacto from './Cuerpo/Contacto/Contacto';
 
 import Pie from './Pie/Pie';
@@ -32,6 +33,7 @@ export default function App() {
                <Route exact strict path="/Trayectoria" render={() => <Trayectoria />} />
                <Route exact strict path="/Habilidades" render={() => <Habilidades />} />
                <Route exact strict path="/Proyectos" render={() => <Proyectos />} />
+               <Route exact strict path="/Proyectos/:id" render={() => <Proyecto />} />
                <Route exact strict path="/Contacto" render={() => <Contacto />} />
                <Route render={() => <PageNotFound />} />
             </Switch> 

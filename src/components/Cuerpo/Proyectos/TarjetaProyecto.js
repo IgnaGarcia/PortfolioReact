@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom'
 
 import { breackpoints, colors } from '../../../assets/styles';
 import imagenPrueba from '../../../assets/attachments/Penguins.jpg';
@@ -64,11 +65,12 @@ const Content = styled.div`
       li{
          font-size: .8em;
          display: inline;
+         text-align: center;
          background: ${colors.bgGris1};
          color: ${colors.bgGris4};
          box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
-         border-radius: 10px;
-         padding: 2px 7px;
+         border-radius: 8px;
+         padding: 2px 15px;
          margin: 0px 3px;
       }
    }
@@ -79,17 +81,18 @@ export default function TarjetaProyectos(prop) {
    let proyects = prop.proyects
    return (
       <Background>
-         <a href={proyects.link}>
+         <NavLink exact strict to={"/Proyectos/"+proyects.link}>
             <Imagen>{proyects.estado? 
                <img className="imagen" src={imagenPrueba2} ></img>:
-               <img className="imagen" src={imagenPrueba} ></img> }</Imagen>
+               <img className="imagen" src={imagenPrueba} ></img> }
+            </Imagen>
             <Content>
                <h3> {proyects.titulo} </h3>
                <ul>
-                  {proyects.tecnologias.map( x=> <li key={x}> {x} </li> )}
+                  {proyects.tecnologias.map( x=> <li key={x}>{x}</li> )}
                </ul>
             </Content>
-         </a>
+         </NavLink>
       </Background>
    );
 }

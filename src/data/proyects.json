@@ -6,7 +6,8 @@
       "estado": false,
       "tecnologias": ["R", "Git"],
       "descripcion": "dsadsadsadsad",
-      "link": "dsadsadsadsadsa"
+      "link": "RegresionLineal",
+      "repositorio": ""
    },
    {
       "id": 2,
@@ -15,7 +16,8 @@
       "estado": true,
       "tecnologias": ["Python", "Git"],
       "descripcion": "dsadsadsadsa",
-      "link": "dsadsadsa"
+      "link": "SpeechToText",
+      "repositorio": ""
    },
    {
       "id": 3,
@@ -24,7 +26,8 @@
       "estado": false,
       "tecnologias": ["R", "Git"],
       "descripcion": "dsadsadsadsad",
-      "link": "dsadsadsadsadsa"
+      "link": "dsadsadsadsadsa",
+      "repositorio": ""
    },
    {
       "id": 4,
@@ -33,6 +36,7 @@
       "estado": false,
       "tecnologias": ["Python", "Git"],
       "descripcion": "dsadsadsadsa",
-      "link": "dsadsadsa"
+      "link": "dsadsadsa",
+      "repositorio": ""
    }
 ]
