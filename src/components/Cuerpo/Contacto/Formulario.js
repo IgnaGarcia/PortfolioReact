@@ -5,18 +5,24 @@ import { colors, fonts, breackpoints } from "../../../assets/styles";
 
 const Form = styled.form`
   font-family: ${fonts.txtFamily1};
-  margin: auto;
   text-align: center;
 
   @media ${breackpoints.mobileS} {
     width: 100%;
+    margin: auto;
   }
   @media ${breackpoints.tablet} {
     width: 75%;
     padding: 1em;
   }
   @media ${breackpoints.laptop} {
-    width: 65%;
+    flex: 0 1 60%;
+    margin: 0px;
+    padding: 0px;
+  }
+  @media ${breackpoints.desktop}{
+    flex: 0 1 65%;
+    padding: 1em;
   }
 
   #subir {

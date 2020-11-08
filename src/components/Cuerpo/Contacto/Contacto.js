@@ -53,6 +53,7 @@ const Hijo = styled.div`
   }
   @media ${breackpoints.laptop} {
     font-size: 1.2em;
+    flex: 0 1 20%;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
@@ -74,6 +75,7 @@ const Hijo = styled.div`
   }
   @media ${breackpoints.desktop} {
     font-size: 1.3em;
+    flex: 0 1 15%;
   } ;
 `;
 
