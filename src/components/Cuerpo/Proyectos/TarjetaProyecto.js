@@ -9,7 +9,7 @@ import imagenPrueba2 from '../../../assets/attachments/SpeechToText.png';
 const Imagen = styled.div`
    .imagen{
       border-radius: 10px 10px 0px 0px;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.45);
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
       width: 100%;
       height: 100%;
       object-fit: cover;

@@ -50,21 +50,18 @@ const ContentElement = styled.div`
    border-image: linear-gradient(to right, ${colors.bgGris3+'40'} 0%, ${colors.detalle1+'aa'} 0.5%, ${colors.bgGris3+'40'} 1%) 1% stretch;
    h4{
       font-weight: lighter;
-      font-size: 1.05em;
       color: ${colors.bgGris1};
       margin-bottom: 7px;
    }
    p{
       color: ${colors.txtBgClaro2};
-      font-size: .95em;
       margin-top: 5px
    }
    span{
       color: ${colors.detalle1Oscuro};
-      font-size: .95em;
    }
    @media ${breackpoints.mobileS}{
-      h4{ font-size: .95em; }
+      h4{ font-size: .92em; }
       p,span{ font-size: .85em; }
    }
    @media ${breackpoints.tablet}{

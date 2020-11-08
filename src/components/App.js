@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import styled from 'styled-components';
 
 import PageNotFound from './PageNotFound/PageNotFound';
 
@@ -15,10 +16,14 @@ import Contacto from './Cuerpo/Contacto/Contacto';
 
 import Pie from './Pie/Pie';
 
+const Main = styled.div`
+   margin: 0px;
+`
+
 export default function App() {
 
 	return (
-		<div>
+		<Main>
          <Cabecera />
 			<Router>
             <Navegacion />
@@ -40,6 +45,6 @@ export default function App() {
             /* */}
             <Pie />
          </Router>
-		</div>
+		</Main>
 	);
 }
