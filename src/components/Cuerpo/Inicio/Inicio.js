@@ -23,23 +23,16 @@ const Content = styled.div`
   @media ${breackpoints.mobileS}{
     flex: 1 0 70%;
     a{
-        margin: 1em .3em 0em .3em;
-        padding: .5em .7em;
+      margin: 1em .3em 0em .3em;
+      padding: .5em .7em;
     }
-  }
-  @media ${breackpoints.tablet}{
-    flex: 0 1 45%;
-    
   }
   @media ${breackpoints.laptop}{
-    a{
-        padding: .7em .95em;
-        margin: 1.4em .7em 0px .7em;
-    }
+    flex: 0 1 50%;
   }
   @media ${breackpoints.desktop}{
     a{
-        margin: 1.4em 1.2em 0em 1.2em;
+      margin: 1.4em 1.2em 0em 1.2em;
     }
   }
   a{
@@ -71,12 +64,21 @@ const Imagen = styled.div`
     flex: 0 1 60%;
     order: -1;
   }
-  @media ${breackpoints.tablet} {
-    flex: 0 1 30%;
-    order: 0;
+  @media ${breackpoints.tablet}{
+    flex: 0 1 45%;
+    min-width: 190px;
+    max-width: 250px;
+    display: block;
   }
   @media ${breackpoints.laptop} {
+    flex: 0 1 25%;
+    min-width: none;
+    max-width: none;
+    order: 0;
+  }
+  @media ${breackpoints.desktop} {
     flex: 0 1 20%;
+    max-width: 230px;
   }
 `;
 

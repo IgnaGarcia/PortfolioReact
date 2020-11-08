@@ -23,12 +23,6 @@ export default function Navegacion() {
     setOpen(!open);
   };
 
-  /*TO DO-----------------
--focus con transicion lenta
--click con ripple
--responsive para touchscreen
-*/
-
   return (
     <Nav>
       <Contenedor>

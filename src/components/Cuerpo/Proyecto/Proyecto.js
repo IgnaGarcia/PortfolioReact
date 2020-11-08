@@ -65,15 +65,18 @@ const Imagen = styled.div`
       object-fit: cover;
     }
   }
-  @media ${breackpoints.tablet} {
+  @media ${breackpoints.tablet}{
+    flex: 1 0 80%;
+  }
+  @media ${breackpoints.laptop} {
     order: 0;
-    flex: 0 1 40%;
+    flex: 0 1 45%;
     .imagen {
       width: 100%;
     }
   }
   @media ${breackpoints.desktop} {
-    flex: 0 1 30%;
+    flex: 0 1 35%;
   }
 `;
 
@@ -95,8 +98,11 @@ const Content = styled.div`
       margin: 10px 0px;
     }
   }
-  @media ${breackpoints.tablet} {
-    flex: 0 1 50%;
+  @media ${breackpoints.laptop} {
+    flex: 0 1 40%;
+  }
+  @media ${breackpoints.desktop}{
+    flex: 0 1 55%;
   }
 `;
 

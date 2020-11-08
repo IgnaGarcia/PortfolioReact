@@ -13,7 +13,7 @@ const Background = styled.div`
 const Flex = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 `;
 
 export default function Proyectos() {

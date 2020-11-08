@@ -47,6 +47,15 @@ const Nav = styled.nav`
     width: 100%;
     display: flex;
     flex-direction: row;
+    a {
+      i {
+        flex: 1 0 10%;
+      }
+      span {
+        text-align: left;
+        flex: 2 0 auto;
+      }
+    }
   }
   justify-content: space-around;
 `;

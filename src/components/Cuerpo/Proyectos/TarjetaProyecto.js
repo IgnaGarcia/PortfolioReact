@@ -23,21 +23,26 @@ const Background = styled.div`
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   @media ${breackpoints.mobileS} {
     flex: 0 1 70%;
-    margin: 0.8em auto;
+    margin: 0.8em;
     ${Imagen} {
       height: 230px;
       margin-bottom: 0.3em;
     }
   }
   @media ${breackpoints.tablet} {
-    flex: 0 1 35%;
+    flex: 0 0 35%;
     ${Imagen} {
       height: 200px;
       margin-bottom: 0.5em;
     }
+    min-width: 190px;
   }
   @media ${breackpoints.laptop} {
-    flex: 0 0 20%;
+    flex: 0 0 25%;
+    min-width: 210px;
+  }
+  @media ${breackpoints.desktop}{
+    flex: 0 0 18%;
   }
   a {
     color: ${colors.txtBgClaro2};
