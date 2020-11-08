@@ -1,4 +1,5 @@
-a, a:visited{
-   text-decoration: none;
-   outline: none;
+a,
+a:visited {
+  text-decoration: none;
+  outline: none;
 }

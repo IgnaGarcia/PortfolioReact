@@ -1,42 +1,42 @@
 [
-	{
-      "title": "Investigador",
-      "subtitle": "Universidad Nacional del Oeste",
-      "start": "6/2019-",
-      "end": "-",
-      "isActive": true,
-      "description": "Ayudante en proyecto de investigacion de la UNO, sobre Ingenieria del Software. \n Desarrolle pruebas para comparar y evaluar una metodologia de obtencion de requisitos basada en el Lenguaje Natural, tambien comence a diseñar un programa capaz de aplicar esta metodologia a travez de una transcripcion y palabras clave."
-   },
-   {
-      "title": "Activista",
-      "subtitle": "Grupo de Estudiantes Autoconvocados de la UNO",
-      "start": "6/2019-",
-      "end": "-",
-      "isActive": true,
-      "description": "Centro de Estudiantes en el que participe en varias actividades como la difusion de informacion, coordinacion de actividades y varias tutorias personalizadas en materias problematicas. \n Me nombraron Secretario de la Escuela de Informatica, un rol interno el cual consistia en ser el responsable de pensar y realizar actividades para la escuela de informando, con el apoyo de los demas integrantes para esto"
-   },
-   {
-      "title": "Edu-tuber",
-      "subtitle": "Grupo de Estudiantes Autoconvocados de la UNO",
-      "start": "3/2020-",
-      "end": "-",
-      "isActive": true,
-      "description": "Me encargue de un canal de Youtube en el que fui subiendo Tutoriales sobre diferentes temas y materias, esto requeria que estudie en relativa profundidad el tema a desarrollar, prepare material, grabe el video y lo edite para su publicacion y difusion. \n Me alegra y enorgullece decir que varias de las Listas de Reproduccion fueron exitosas (1000 visualizaciones luego de 6 meses), siendo varios los mensajes de agradecimiento por tal labor"
-   },
-   {
-      "title": "Desarrollador y Diseñador",
-      "subtitle": "Grupo ForoUNO",
-      "start": "6/2020-",
-      "end": "-",
-      "isActive": true,
-      "description": "Participacion desde el primer momento en el proyecto de desarrollo de un repositorio digital de apuntes, examenes, bibliografia y demas contenido relacionado con la universidad."
-   }, 
-   {
-      "title": "",
-      "subtitle": "",
-      "start": "",
-      "end": "",
-      "isActive": true,
-      "description": ""
-   }  
+  {
+    "title": "Investigador",
+    "subtitle": "Universidad Nacional del Oeste",
+    "start": "6/2019-",
+    "end": "-",
+    "isActive": true,
+    "description": "Ayudante en proyecto de investigacion de la UNO, sobre Ingenieria del Software. \n Desarrolle pruebas para comparar y evaluar una metodologia de obtencion de requisitos basada en el Lenguaje Natural, tambien comence a diseñar un programa capaz de aplicar esta metodologia a travez de una transcripcion y palabras clave."
+  },
+  {
+    "title": "Activista",
+    "subtitle": "Grupo de Estudiantes Autoconvocados de la UNO",
+    "start": "6/2019-",
+    "end": "-",
+    "isActive": true,
+    "description": "Centro de Estudiantes en el que participe en varias actividades como la difusion de informacion, coordinacion de actividades y varias tutorias personalizadas en materias problematicas. \n Me nombraron Secretario de la Escuela de Informatica, un rol interno el cual consistia en ser el responsable de pensar y realizar actividades para la escuela de informando, con el apoyo de los demas integrantes para esto"
+  },
+  {
+    "title": "Edu-tuber",
+    "subtitle": "Grupo de Estudiantes Autoconvocados de la UNO",
+    "start": "3/2020-",
+    "end": "-",
+    "isActive": true,
+    "description": "Me encargue de un canal de Youtube en el que fui subiendo Tutoriales sobre diferentes temas y materias, esto requeria que estudie en relativa profundidad el tema a desarrollar, prepare material, grabe el video y lo edite para su publicacion y difusion. \n Me alegra y enorgullece decir que varias de las Listas de Reproduccion fueron exitosas (1000 visualizaciones luego de 6 meses), siendo varios los mensajes de agradecimiento por tal labor"
+  },
+  {
+    "title": "Desarrollador y Diseñador",
+    "subtitle": "Grupo ForoUNO",
+    "start": "6/2020-",
+    "end": "-",
+    "isActive": true,
+    "description": "Participacion desde el primer momento en el proyecto de desarrollo de un repositorio digital de apuntes, examenes, bibliografia y demas contenido relacionado con la universidad."
+  },
+  {
+    "title": "",
+    "subtitle": "",
+    "start": "",
+    "end": "",
+    "isActive": true,
+    "description": ""
+  }
 ]

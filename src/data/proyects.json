@@ -1,42 +1,42 @@
 [
-   {
-      "id": 1,
-      "portada": "url aqui",
-      "titulo": "Modelo de Regresion Lineal",
-      "estado": false,
-      "tecnologias": ["R", "Git"],
-      "descripcion": "dsadsadsadsad",
-      "link": "RegresionLineal",
-      "repositorio": ""
-   },
-   {
-      "id": 2,
-      "portada": "../../assets/attachments/Penguins.png",
-      "titulo": "Speech To Text",
-      "estado": true,
-      "tecnologias": ["Python", "Git"],
-      "descripcion": "dsadsa",
-      "link": "SpeechToText",
-      "repositorio": ""
-   },
-   {
-      "id": 3,
-      "portada": "../../assets/attachments/Penguins.png",
-      "titulo": "dsadsa",
-      "estado": false,
-      "tecnologias": ["R", "Git"],
-      "descripcion": "dsadsadsadsad",
-      "link": "dsadsadsadsadsa",
-      "repositorio": ""
-   },
-   {
-      "id": 4,
-      "portada": "../../assets/attachments/Penguins.png",
-      "titulo": "dsadsa",
-      "estado": false,
-      "tecnologias": ["Python", "Git"],
-      "descripcion": "dsadsadsadsa",
-      "link": "dsadsadsa",
-      "repositorio": ""
-   }
+  {
+    "id": 1,
+    "portada": "url aqui",
+    "titulo": "Modelo de Regresion Lineal",
+    "estado": false,
+    "tecnologias": ["R", "Git"],
+    "descripcion": "dsadsadsadsad",
+    "link": "RegresionLineal",
+    "repositorio": ""
+  },
+  {
+    "id": 2,
+    "portada": "../../assets/attachments/Penguins.png",
+    "titulo": "Speech To Text",
+    "estado": true,
+    "tecnologias": ["Python", "Git"],
+    "descripcion": "dsadsa",
+    "link": "SpeechToText",
+    "repositorio": ""
+  },
+  {
+    "id": 3,
+    "portada": "../../assets/attachments/Penguins.png",
+    "titulo": "dsadsa",
+    "estado": false,
+    "tecnologias": ["R", "Git"],
+    "descripcion": "dsadsadsadsad",
+    "link": "dsadsadsadsadsa",
+    "repositorio": ""
+  },
+  {
+    "id": 4,
+    "portada": "../../assets/attachments/Penguins.png",
+    "titulo": "dsadsa",
+    "estado": false,
+    "tecnologias": ["Python", "Git"],
+    "descripcion": "dsadsadsadsa",
+    "link": "dsadsadsa",
+    "repositorio": ""
+  }
 ]

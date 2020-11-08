@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { colors, breackpoints } from '../../assets/styles';
-
+import { colors, breackpoints } from "../../assets/styles";
 
 const MenuButtonWrapper = styled.button`
   border: none;
@@ -12,7 +11,9 @@ const MenuButtonWrapper = styled.button`
   color: ${colors.detalle1};
   outline: none;
 
-  @media ${breackpoints.laptop}{ display: none; }
+  @media ${breackpoints.laptop} {
+    display: none;
+  }
 `;
 
 function MenuButton({ open, handleClick }) {

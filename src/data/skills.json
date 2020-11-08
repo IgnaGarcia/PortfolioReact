@@ -1,114 +1,114 @@
 [
-   {
-      "name": "Git",
-      "icon": "fab fa-git-alt",
-      "level": 1,
-      "years": 2020.5,
-      "type": 2
-   },
-   {
-      "name": "React",
-      "icon": "fab fa-react",
-      "level": 1,
-      "years": 2020.5,
-      "type": 1
-   },
-   {
-      "name": "JavaScrip",
-      "icon": "fab fa-js",
-      "level": 2,
-      "years": 2020,
-      "type": 0
-   },
-   {
-      "name": "Angular",
-      "icon": "fab fa-angular",
-      "level": 0,
-      "years": 2020.5,
-      "type": 1
-   },
-   {
-      "name": "HTML",
-      "icon": "fab fa-html5",
-      "level": 2,
-      "years": 2020,
-      "type": 1
-   },
-   {
-      "name": "CSS",
-      "icon": "fab fa-css3-alt",
-      "level": 2,
-      "years": 2020,
-      "type": 1
-   },
-   {
-      "name": "Java",
-      "icon": "fab fa-java",
-      "level": 2,
-      "years": 2018,
-      "type": 0
-   },
-   {
-      "name": "Sass",
-      "icon": "fab fa-sass",
-      "level": 2,
-      "years": 2020.5,
-      "type": 1
-   },
-   {
-      "name": "SQL",
-      "icon": "fas fa-database",
-      "level": 2,
-      "years": 2019,
-      "type": 0
-   },
-   {
-      "name": "Bootstrap",
-      "icon": "fab fa-bootstrap",
-      "level": 1,
-      "years": 2020,
-      "type": 1
-   },
-   {
-      "name": "Linux Ubuntu",
-      "icon": "fab fa-ubuntu",
-      "level": 1,
-      "years": 2019,
-      "type": 2
-   },
-   {
-      "name": "PHP",
-      "icon": "fab fa-php",
-      "level": 0,
-      "years": 2020.5,
-      "type": 0
-   },
-   {
-      "name": "Python",
-      "icon": "fab fa-python",
-      "level": 1,
-      "years": 2020,
-      "type": 0
-   },
-   {
-      "name": "R",
-      "icon": "fab fa-r-project",
-      "level": 1,
-      "years": 2020.5,
-      "type": 0
-   },
-   {
-      "name": "C/C++",
-      "icon": "icon-cppRelleno",
-      "level": 1,
-      "years": 2016,
-      "type": 0
-   },
-   {
-      "name": "LaTeX",
-      "icon": "icon-tex",
-      "level": 1,
-      "years": 2020.5,
-      "type": 1
-   }
+  {
+    "name": "Git",
+    "icon": "fab fa-git-alt",
+    "level": 1,
+    "years": 2020.5,
+    "type": 2
+  },
+  {
+    "name": "React",
+    "icon": "fab fa-react",
+    "level": 1,
+    "years": 2020.5,
+    "type": 1
+  },
+  {
+    "name": "JavaScrip",
+    "icon": "fab fa-js",
+    "level": 2,
+    "years": 2020,
+    "type": 0
+  },
+  {
+    "name": "Angular",
+    "icon": "fab fa-angular",
+    "level": 0,
+    "years": 2020.5,
+    "type": 1
+  },
+  {
+    "name": "HTML",
+    "icon": "fab fa-html5",
+    "level": 2,
+    "years": 2020,
+    "type": 1
+  },
+  {
+    "name": "CSS",
+    "icon": "fab fa-css3-alt",
+    "level": 2,
+    "years": 2020,
+    "type": 1
+  },
+  {
+    "name": "Java",
+    "icon": "fab fa-java",
+    "level": 2,
+    "years": 2018,
+    "type": 0
+  },
+  {
+    "name": "Sass",
+    "icon": "fab fa-sass",
+    "level": 2,
+    "years": 2020.5,
+    "type": 1
+  },
+  {
+    "name": "SQL",
+    "icon": "fas fa-database",
+    "level": 2,
+    "years": 2019,
+    "type": 0
+  },
+  {
+    "name": "Bootstrap",
+    "icon": "fab fa-bootstrap",
+    "level": 1,
+    "years": 2020,
+    "type": 1
+  },
+  {
+    "name": "Linux Ubuntu",
+    "icon": "fab fa-ubuntu",
+    "level": 1,
+    "years": 2019,
+    "type": 2
+  },
+  {
+    "name": "PHP",
+    "icon": "fab fa-php",
+    "level": 0,
+    "years": 2020.5,
+    "type": 0
+  },
+  {
+    "name": "Python",
+    "icon": "fab fa-python",
+    "level": 1,
+    "years": 2020,
+    "type": 0
+  },
+  {
+    "name": "R",
+    "icon": "fab fa-r-project",
+    "level": 1,
+    "years": 2020.5,
+    "type": 0
+  },
+  {
+    "name": "C/C++",
+    "icon": "icon-cppRelleno",
+    "level": 1,
+    "years": 2016,
+    "type": 0
+  },
+  {
+    "name": "LaTeX",
+    "icon": "icon-tex",
+    "level": 1,
+    "years": 2020.5,
+    "type": 1
+  }
 ]
