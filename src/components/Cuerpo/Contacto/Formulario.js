@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import { colors, fonts, breackpoints } from "../../../assets/styles";
@@ -116,46 +116,99 @@ const Text = styled.textarea`
 `;
 
 export default function Formulario() {
+  const [ error, setError] = useState({
+    name: false,
+    mail: false,
+    asunt: false,
+    mesaje: false
+  })
+  const [ send, setSend ] = useState(false)
+  const [ contact, setContact] = useState({
+    name: '',
+    mail: '',
+    asunt: '',
+    mesaje: ''
+  })
+  
+  const handleChange = e =>{
+    setContact(
+      [e.target.name] = e.target.value
+    )
+  }
+
+  const validForm = () => {
+    let validInputs = true
+    let error = {'name': false, 'asunt': false, 'mesaje': false, 'mail': false}
+
+    if(!contact['name']){
+      validInputs = false
+      error['name'] = true
+    }
+    else error['name'] = false
+
+
+    if(!contact['asunt']){
+      validInputs = false
+      error['asunt'] = true
+    }
+    else error['asunt'] = false
+
+    if(!contact['mesaje']){
+      validInputs = false
+      error['mesaje'] = true
+    }
+    else error['mesaje'] = false
+
+    if(typeof contact['mail'] !== "undefined"){
+      let pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i)    
+      if(!pattern.test(contact['mail'])){
+        validInputs = false    
+        error['mail'] = true
+      }
+      else error['mail'] = false
+    }
+    
+    setError(error)
+    console.log(error)
+    console.log(contact)
+    return validInputs
+  }
+
+  const sendMail = e => {
+    e.preventDefault();
+    if(validForm()){
+      setSend(true)
+      //algo que verifique que se envio
+    }
+  }
+
   return (
-    <Form autocomplete="off">
+    <Form autocomplete="off" onSubmit={sendMail}>
       <Caja>
         <i className="fas fa-user"></i>
         <label htmlFor="nombre">Nombre:</label>
-        <Input
-          id="nombre"
-          name="nombre"
-          placeholder="Ej Igna Garcia"
-          required
-        />
+        <Input id="nombre" name="nombre" placeholder="Ej Igna Garcia" 
+          onChange={handleChange} value={contact['name']}/>
       </Caja>
       <Caja>
         <i className="fas fa-at"></i>
         <label htmlFor="mail">Correo:</label>
-        <Input
-          id="mail"
-          name="mail"
-          type="email"
-          placeholder="Ej garcia@mail.com"
-          required
-        />
+        <Input id="mail" name="mail" placeholder="Ej garcia@mail.com" 
+          onChange={handleChange} value={contact['mail']}/>
       </Caja>
       <Caja>
         <i className="fas fa-tags"></i>
         <label htmlFor="asunto">Asunto:</label>
-        <Input id="asunto" name="asunto" placeholder="Ej Propuesta" required />
+        <Input id="asunto" name="asunto" placeholder="Ej Propuesta" 
+          onChange={handleChange} value={contact['asunt']}/>
       </Caja>
       <Caja>
         <i className="fas fa-pen-alt"></i>
         <label htmlFor="mensaje">Mensaje:</label>
-        <Text
-          id="mensaje"
-          name="mensaje"
-          rows="6"
-          placeholder="Ej Hola ..."
-          required
-        />
+        <Text id="mensaje" name="mensaje" rows="6" placeholder="Ej Hola ..." 
+          onChange={handleChange} value={contact['mesaje']}/>
       </Caja>
-      <Input id="subir" name="subir" type="submit" value="Enviar Mensaje" />
+      <Input id="subir" name="subir" type="submit" value={send? "Mensaje Enviado" : "Enviar Mensaje"} />
     </Form>
   );
 }

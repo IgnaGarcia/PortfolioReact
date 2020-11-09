@@ -59,12 +59,12 @@ const Diagonal = styled.div`
   border-left: 35px solid red;
   border-top: 38px solid #4c4c4c;
   border-image: linear-gradient(
-      to bottom left,
-      ${colors.bgGris4 + "20"} 40%,
-      ${colors.detalle1 + "aa"},
-      ${colors.bgGris4 + "20"} 60%
-    )
-    100% stretch;
+    to bottom left,
+    ${colors.bgGris4 + "20"} 40%,
+    ${colors.detalle1 + "aa"},
+    ${colors.bgGris4 + "20"} 60%
+  )
+  100% stretch;
   position: relative;
   z-index: -10;
   left: 0px;
@@ -72,8 +72,22 @@ const Diagonal = styled.div`
   margin-bottom: -18px;
 `;
 
+/*const InvertDiagonal = styled(Diagonal)`
+  border-left: 32px solid red;
+  border-top: 38px solid #4c4c4c;
+  border-image: linear-gradient(
+    to bottom right,
+    ${colors.bgGris4 + "15"} 40%,
+    ${colors.detalle1 + "aa"},
+    ${colors.bgGris4 + "15"} 60%
+  )
+  100% stretch;
+  margin-top: -10px;
+  margin-bottom: -15px;
+`*/
+
 export default function Trayectoria(props) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const handleClick = () => {
     setOpen(!open);
@@ -112,6 +126,7 @@ export default function Trayectoria(props) {
           {props.lista.map((x) => (
             <Card element={x} key={x.title}></Card>
           ))}
+          {/*<InvertDiagonal />*/}
         </ul>
       ) : (
         ""

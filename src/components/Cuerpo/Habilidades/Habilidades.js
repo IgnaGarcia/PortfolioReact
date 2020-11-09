@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import SkillCard from "./SkillCard";
-import { Parrafo, Titulo, Container, colors, breackpoints, fonts } from "../../../assets/styles";
+import { Parrafo, Titulo, Container, colors, breackpoints } from "../../../assets/styles";
 
 import skills from "../../../data/skills.json";
 
