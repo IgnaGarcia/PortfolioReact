@@ -2,16 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-import { Container, breackpoints, colors, fonts } from "../../../assets/styles";
+import { Titulo, Container, breackpoints, colors, fonts } from "../../../assets/styles";
 import imagenPrueba2 from "../../../assets/attachments/SpeechToText.png";
-
-const Titulo = styled.h2`
-  font-family: ${fonts.txtFamily2};
-  font-size: 3em;
-  font-weight: bold;
-  color: ${colors.bgGris2};
-  margin-bottom: 20px;
-`;
 
 const Content = styled.div`
   padding: .2em .5em .5em .5em;
@@ -43,17 +35,17 @@ const Content = styled.div`
     box-shadow: 0px 2px 4px rgba(0,0,0,.25);
     display: inline-block;
     :hover{
-        background: ${colors.detalle1Oscuro}
+        background: ${colors.detalle1Oscuro};
         color: ${colors.bgOscuro};
         box-shadow: 0px 2px 6px rgba(0,0,0,.35);
     }
   }
-`;
+`
 
 const Imagen = styled.div`
   border-radius: 100%;
-  border: 4px solid ${colors.bgGris3};
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.45);
+  border: 2px solid ${colors.bgGris3};
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.45);
   .imagen {
     border-radius: 100%;
     width: 100%;
@@ -80,10 +72,10 @@ const Imagen = styled.div`
     flex: 0 1 20%;
     max-width: 230px;
   }
-`;
+`
 
 const Background = styled.div`
-  padding: 1.5em 0em;
+  padding: 4em 0em;
   ${Container} {
     font-family: ${fonts.txtFamily1};
     display: flex;
@@ -92,14 +84,14 @@ const Background = styled.div`
     flex-wrap: wrap;
     align-content: center;
   }
-`;
+`
 
 export default function Inicio() {
   return (
     <Background>
       <Container>
         <Content>
-          <Titulo>Bienveni@!</Titulo>
+          <Titulo>BIENVENID@!</Titulo>
           <p>
             Soy estudiante de la Universidad Nacional del Oeste de la carrera de
             Informatica, con casi un 50% de materias aprobadas. <br />

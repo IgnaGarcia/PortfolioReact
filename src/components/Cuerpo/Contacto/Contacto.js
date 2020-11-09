@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Container, fonts, colors, breackpoints } from "../../../assets/styles";
+import { Titulo, Container, fonts, colors, breackpoints } from "../../../assets/styles";
 import social from "../../../data/socialmed.json";
 import Formulario from "./Formulario";
 
 const Background = styled.div`
-  padding: 1.5em 0em;
+  padding: 3em 0em;
 `;
 
 const FlexDiv = styled.div`
@@ -82,11 +82,6 @@ const Hijo = styled.div`
 const Text = styled.div`
   text-align: center;
   margin: 0.5em;
-  span {
-    font-size: 2em;
-    font-family: ${fonts.txtFamily2};
-    color: ${colors.bgGris2};
-  }
   p {
     margin: 1em;
     font-size: 1.15em;
@@ -108,9 +103,10 @@ export default function Contacto() {
 
   return (
     <Background>
+      <a name="/Contacto"></a>
       <Container>
         <Text>
-          <span>CHARLEMOS</span>
+          <Titulo>CHARLEMOS</Titulo>
           <p>
             Puedes contactarme rellenando el siguiente formulario, o siguiendome
             en mis redes

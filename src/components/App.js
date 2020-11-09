@@ -25,45 +25,25 @@ export default function App() {
     <Main>
       <Cabecera />
       <Router>
-        <Navegacion />
-        {/*
-            <Habilidades />
-            <Contacto />
-            */}
-
-        {
-          /* */
-          <Switch style={{ background: "#fafafa" }}>
-            <Route exact strict path="/" render={() => <Inicio />} />
-            <Route
-              exact
-              strict
-              path="/Trayectoria"
-              render={() => <Trayectoria />}
-            />
-            <Route
-              exact
-              strict
-              path="/Habilidades"
-              render={() => <Habilidades />}
-            />
-            <Route
-              exact
-              strict
-              path="/Proyectos"
-              render={() => <Proyectos />}
-            />
-            <Route
-              exact
-              strict
-              path="/Proyectos/:name"
-              render={() => <Proyecto />}
-            />
-            <Route exact strict path="/Contacto" render={() => <Contacto />} />
-            <Route render={() => <PageNotFound />} />
-          </Switch>
-          /* */
-        }
+        <Navegacion />        
+        <Switch style={{ background: "#fafafa" }}>
+          <Route exact strict path="/" render={() => <> <Inicio /> <Habilidades /> <Contacto />  </> } />
+          <Route
+            exact
+            strict
+            path="/Trayectoria"
+            render={() => <Trayectoria />}
+          />
+          {/*
+          <Route exact strict path="/Habilidades" render={() => <Habilidades />} />
+          */}
+          <Route exact strict path="/Proyectos" render={() => <Proyectos />} />
+          <Route exact strict path="/Proyectos/:name" render={() => <Proyecto />} />
+          {/* 
+          <Route exact strict path="/Contacto" render={() => <Contacto />} />
+          */}
+          <Route render={() => <PageNotFound />} />
+        </Switch>
         <Pie />
       </Router>
     </Main>

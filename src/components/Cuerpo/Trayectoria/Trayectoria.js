@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Container, colors, fonts } from "../../../assets/styles";
+import { Titulo, Container, colors, fonts } from "../../../assets/styles";
 import Dropdown from "./Dropdown";
 
 import studies from "../../../data/studies.json";
@@ -27,6 +27,7 @@ const Lista = styled.ul`
 export default function Trayectoria() {
   return (
     <Container>
+      <Titulo> HOLA </Titulo>
       <Lista>
         <Dropdown lista={jobs} titulo={"Experiencia Laboral"} />
         <Dropdown lista={studies} titulo={"Historia Academica"} />

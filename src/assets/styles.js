@@ -72,4 +72,12 @@ export const Container = styled.div`
   } ;
 `;
 
-export default { Container, colors, fonts, breackpoints };
+export const Titulo = styled.h2`
+  font-family: ${fonts.txtFamily2};
+  font-size: 2.5em;
+  font-weight: bold;
+  color: ${colors.bgGris2};
+  margin-bottom: 20px;
+`
+
+export default { Container, colors, fonts, breackpoints, Titulo};

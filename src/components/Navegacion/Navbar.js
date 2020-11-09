@@ -63,56 +63,26 @@ const Nav = styled.nav`
 function Navbar({ open, handleClick }) {
   return (
     <Nav open={open}>
-      <NavLink
-        exact
-        strict
-        activeClassName="is-active"
-        to="/"
-        onClick={handleClick}
-      >
+      <NavLink exact strict activeClassName="is-active" to="/" onClick={handleClick} >
         <i className="fas fa-address-book"></i>
         <span>Inicio</span>
       </NavLink>
-      <NavLink
-        exact
-        strict
-        activeClassName="is-active"
-        to="/Trayectoria"
-        onClick={handleClick}
-      >
+      <NavLink exact strict activeClassName="is-active" to="/Trayectoria" onClick={handleClick} >
         <i className="fas fa-project-diagram"></i>
         <span>Trayectoria</span>
       </NavLink>
-      <NavLink
-        exact
-        strict
-        activeClassName="is-active"
-        to="/Habilidades"
-        onClick={handleClick}
-      >
+      <a href="#/Habilidades" onClick={handleClick}>
         <i className="fas fa-brain"></i>
         <span>Habilidades</span>
-      </NavLink>
-      <NavLink
-        exact
-        strict
-        activeClassName="is-active"
-        to="/Proyectos"
-        onClick={handleClick}
-      >
+      </a>
+      <NavLink exact strict activeClassName="is-active" to="/Proyectos" onClick={handleClick}>
         <i className="fas fa-folder-open"></i>
         <span>Proyectos</span>
       </NavLink>
-      <NavLink
-        exact
-        strict
-        activeClassName="is-active"
-        to="/Contacto"
-        onClick={handleClick}
-      >
+      <a href="#/Contacto" onClick={handleClick}>
         <i className="fas fa-comments"></i>
         <span>Contacto</span>
-      </NavLink>
+      </a>
     </Nav>
   );
 }

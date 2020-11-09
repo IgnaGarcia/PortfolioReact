@@ -2,12 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 import SkillCard from "./SkillCard";
-import { Container, colors, breackpoints, fonts } from "../../../assets/styles";
+import { Titulo, Container, colors, breackpoints, fonts } from "../../../assets/styles";
 
 import skills from "../../../data/skills.json";
 
 const Background = styled.div`
-  padding: 1.5em 0em;
+  padding: 3em 0em;
+  margin: 1em auto;
+  background: ${colors.detalle1Oscuro+"44"};
   ${Container} {
     padding: 1em 0em;
     display: flex;
@@ -23,11 +25,6 @@ const Text = styled.div`
   margin: 0.5em;
   flex: 2 0 100%;
   max-width: 80%;
-  span {
-    font-size: 2em;
-    font-family: ${fonts.txtFamily2};
-    color: ${colors.bgGris2};
-  }
   p {
     margin: 1em;
     font-size: 1.15em;
@@ -49,9 +46,10 @@ export default function Habilidades() {
   skills.sort(compare);
   return (
     <Background>
+      <a name="/Habilidades"></a>
       <Container>
         <Text>
-          <span>CON QUE TRABAJO?</span>
+          <Titulo>CON QUE TRABAJO?</Titulo>
           <p>
             Aqui podras ver las tecnologias y lenguajes que manejo, aclarando el
             nivel de experiencia de cada uno y el tiempo que paso desde mi

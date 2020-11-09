@@ -2,18 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { useParams } from "react-router";
 
-import { Container, breackpoints, colors, fonts } from "../../../assets/styles";
+import { Titulo, Container, breackpoints, colors, fonts } from "../../../assets/styles";
 import imagenPrueba from "../../../assets/attachments/Penguins.jpg";
 import imagenPrueba2 from "../../../assets/attachments/SpeechToText.png";
 
 import proyects from "../../../data/proyects.json";
-
-const Title = styled.h2`
-  font-family: ${fonts.txtFamily2};
-  font-size: 3em;
-  font-weight: bold;
-  color: ${colors.bgGris2};
-`;
 
 const Details = styled.div`
   margin: 15px 0px;
@@ -94,7 +87,7 @@ const Content = styled.div`
   }
   @media ${breackpoints.mobileS} {
     flex: 1 0 90%;
-    ${Title} {
+    ${Titulo} {
       margin: 10px 0px;
     }
   }
@@ -126,7 +119,7 @@ export default function Proyecto(props) {
     <Background>
       <Container>
         <Content>
-          <Title> {proyect.titulo} </Title>
+          <Titulo> {proyect.titulo} </Titulo>
           <Details>
             <a href={proyect.repositorio}>
               <i className="fab fa-github"></i>
