@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Titulo, Container, fonts, colors, breackpoints } from "../../../assets/styles";
+import { Parrafo, Titulo, Container, fonts, colors, breackpoints } from "../../../assets/styles";
 import social from "../../../data/socialmed.json";
 import Formulario from "./Formulario";
 
@@ -82,12 +82,6 @@ const Hijo = styled.div`
 const Text = styled.div`
   text-align: center;
   margin: 0.5em;
-  p {
-    margin: 1em;
-    font-size: 1.15em;
-    font-family: ${fonts.txtFamily1};
-    color: ${colors.txtBgClaro};
-  }
 `;
 
 export default function Contacto() {
@@ -107,10 +101,10 @@ export default function Contacto() {
       <Container>
         <Text>
           <Titulo>CHARLEMOS</Titulo>
-          <p>
+          <Parrafo>
             Puedes contactarme rellenando el siguiente formulario, o siguiendome
             en mis redes
-          </p>
+          </Parrafo>
         </Text>
         <FlexDiv>
           <Formulario></Formulario>

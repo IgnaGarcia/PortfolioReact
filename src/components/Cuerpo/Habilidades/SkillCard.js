@@ -38,7 +38,7 @@ const Card = styled.div`
   .icono {
     font-size: 2.5em;
     text-align: center;
-    padding: 8px 6px 6px 6px;
+    padding: 8px 5px 5px 5px;
     align-self: stretch;
     color: ${colors.bgGris1};
     background: ${colors.detalle1};

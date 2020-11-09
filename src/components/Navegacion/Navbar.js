@@ -33,7 +33,6 @@ const Nav = styled.nav`
     flex-direction: column;
     a {
       display: flex;
-
       i {
         flex: 1 0 30%;
       }

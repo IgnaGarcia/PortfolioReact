@@ -2,15 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-import { Titulo, Container, breackpoints, colors, fonts } from "../../../assets/styles";
+import { Titulo, Container, breackpoints, colors, fonts, Parrafo } from "../../../assets/styles";
 import imagenPrueba2 from "../../../assets/attachments/SpeechToText.png";
 
 const Content = styled.div`
   padding: .2em .5em .5em .5em;
   text-align: center;
-  p{
+  ${Parrafo}{
     text-align: justify;
-    color: ${colors.bgGris2};
   }
   @media ${breackpoints.mobileS}{
     flex: 1 0 70%;
@@ -92,13 +91,13 @@ export default function Inicio() {
       <Container>
         <Content>
           <Titulo>BIENVENID@!</Titulo>
-          <p>
+          <Parrafo>
             Soy estudiante de la Universidad Nacional del Oeste de la carrera de
             Informatica, con casi un 50% de materias aprobadas. <br />
             Tengo 21 años y soy un apasionado de la informatica y de la ciencia
             en general, pasion que se transforma en voluntad para crecer en este
             campo y hacerlo de la mejor manera posible
-          </p>
+          </Parrafo>
           <NavLink exact strict to={"/Trayectoria"}>
             {" "}
             Mi Trayectoria{" "}

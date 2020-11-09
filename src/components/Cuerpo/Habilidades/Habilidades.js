@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import SkillCard from "./SkillCard";
-import { Titulo, Container, colors, breackpoints, fonts } from "../../../assets/styles";
+import { Parrafo, Titulo, Container, colors, breackpoints, fonts } from "../../../assets/styles";
 
 import skills from "../../../data/skills.json";
 
@@ -25,12 +25,6 @@ const Text = styled.div`
   margin: 0.5em;
   flex: 2 0 100%;
   max-width: 80%;
-  p {
-    margin: 1em;
-    font-size: 1.15em;
-    font-family: ${fonts.txtFamily1};
-    color: ${colors.txtBgClaro};
-  }
 `;
 
 export default function Habilidades() {
@@ -50,11 +44,11 @@ export default function Habilidades() {
       <Container>
         <Text>
           <Titulo>CON QUE TRABAJO?</Titulo>
-          <p>
+          <Parrafo>
             Aqui podras ver las tecnologias y lenguajes que manejo, aclarando el
             nivel de experiencia de cada uno y el tiempo que paso desde mi
             primera interaccion con tal
-          </p>
+          </Parrafo>
         </Text>
         {skills.map((x) => (
           <SkillCard skill={x} key={x.name}></SkillCard>

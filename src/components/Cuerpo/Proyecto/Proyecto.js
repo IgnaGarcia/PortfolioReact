@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useParams } from "react-router";
 
-import { Titulo, Container, breackpoints, colors, fonts } from "../../../assets/styles";
+import { Parrafo, Titulo, Container, breackpoints, colors, fonts } from "../../../assets/styles";
 import imagenPrueba from "../../../assets/attachments/Penguins.jpg";
 import imagenPrueba2 from "../../../assets/attachments/SpeechToText.png";
 
@@ -77,9 +77,8 @@ const Content = styled.div`
   flex: 0 1 45%;
   padding: 0.2em 0.5em 0.5em 0.5em;
   text-align: center;
-  p {
+  ${Parrafo} {
     text-align: justify;
-    color: ${colors.bgGris2};
   }
   ul {
     display: block;
@@ -130,7 +129,7 @@ export default function Proyecto(props) {
               <span className="develop">En Desarrollo</span>
             )}
           </Details>
-          <p>
+          <Parrafo>
             {" "}
             Lorem ipsum dolor sit amet consectetur adipiscing elit rutrum
             himenaeos ac gravida, facilisis diam auctor eu blandit eleifend quam
@@ -143,7 +142,7 @@ export default function Proyecto(props) {
             libero venenatis, morbi praesent per rhoncus vulputate faucibus
             augue urna felis sagittis.
             {proyect.descripcion}{" "}
-          </p>
+          </Parrafo>
           <ul>
             {" "}
             {proyect.tecnologias.map((x) => (

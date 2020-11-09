@@ -6,7 +6,7 @@ import "./fonts/icons.css";
 export const fonts = {
   txtFamily1: "'Ubuntu', sans-serif",
   txtFamily2: "'Oswald', sans-serif",
-};
+}
 
 export const colors = {
   bgOscuro: "#373737",
@@ -28,7 +28,7 @@ export const colors = {
   txtBgOscuro2: "#e0e0e0",
   txtBgClaro: "#212121",
   txtBgClaro2: "#424242",
-};
+}
 
 const size = {
   mobileS: "0px",
@@ -38,7 +38,7 @@ const size = {
   laptop: "769px",
   desktop: "1025px",
   desktopL: "1441px",
-};
+}
 
 export const breackpoints = {
   mobileS: `(min-width: ${size.mobileS})`,
@@ -48,7 +48,7 @@ export const breackpoints = {
   laptop: `(min-width: ${size.laptop})`,
   desktop: `(min-width: ${size.desktop})`,
   desktopL: `(min-width: ${size.desktopL})`,
-};
+}
 
 export const Container = styled.div`
   margin: 0em auto;
@@ -69,15 +69,23 @@ export const Container = styled.div`
   }
   @media ${breackpoints.desktop} {
     max-width: "1280px";
-  } ;
-`;
+  } 
+`
 
 export const Titulo = styled.h2`
   font-family: ${fonts.txtFamily2};
   font-size: 2.5em;
   font-weight: bold;
-  color: ${colors.bgGris2};
+  color: ${colors.txtBgClaro2+"df"};
   margin-bottom: 20px;
 `
 
-export default { Container, colors, fonts, breackpoints, Titulo};
+export const Parrafo = styled.p`
+    margin: 1em;
+    font-size: 1.15em;
+    font-family: ${fonts.txtFamily1};
+    color: ${colors.bgGris2};
+    text-align: center;
+`
+
+export default { Container, colors, fonts, breackpoints, Titulo, Parrafo};
