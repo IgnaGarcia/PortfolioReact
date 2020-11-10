@@ -102,7 +102,7 @@ export default function Contacto() {
         <Text>
           <Titulo>CHARLEMOS</Titulo>
           <Parrafo>
-            Puedes contactarme rellenando el siguiente formulario, o siguiendome
+            Me puedes contactar rellenando el siguiente formulario, o siguiéndome
             en mis redes
           </Parrafo>
         </Text>

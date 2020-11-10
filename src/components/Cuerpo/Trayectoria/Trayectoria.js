@@ -30,7 +30,7 @@ export default function Trayectoria() {
       <Titulo> HOLA </Titulo>
       <Lista>
         <Dropdown lista={jobs} titulo={"Experiencia Laboral"} />
-        <Dropdown lista={studies} titulo={"Historia Academica"} />
+        <Dropdown lista={studies} titulo={"Historia Académica"} />
         <Dropdown lista={activities} titulo={"Otras Actividades"} />
         <Dropdown />
       </Lista>

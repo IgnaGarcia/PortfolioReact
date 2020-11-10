@@ -43,11 +43,11 @@ export default function Habilidades() {
       <a name="/Habilidades"></a>
       <Container>
         <Text>
-          <Titulo>CON QUE TRABAJO?</Titulo>
+          <Titulo>CON QUÉ TRABAJO?</Titulo>
           <Parrafo>
-            Aqui podras ver las tecnologias y lenguajes que manejo, aclarando el
+            Aqui podras ver las tecnologías y lenguajes que manejo, aclarando el
             nivel de experiencia de cada uno y el tiempo que paso desde mi
-            primera interaccion con tal
+            primera interacción con tal
           </Parrafo>
         </Text>
         {skills.map((x) => (

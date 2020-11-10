@@ -168,7 +168,7 @@ export default function Formulario() {
       <Caja className={errors.mesaje? "err":""}>
         <i className="fas fa-pen-alt"></i>
         <label htmlFor="mesaje">Mensaje:</label>
-        <Text id="mesaje" name="mesaje" rows="6" placeholder="Ej Hola ... (minimo 20 caracteres)" 
+        <Text id="mesaje" name="mesaje" rows="6" placeholder="Ej Hola ... (mínimo 20 caracteres)" 
           ref={register({ required: true, minLength: 20 })} />
       </Caja>
 
