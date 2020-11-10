@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
+import { useForm } from "react-hook-form";
 
 import { colors, fonts, breackpoints } from "../../../assets/styles";
 
@@ -24,8 +25,9 @@ const Form = styled.form`
     flex: 0 1 65%;
     padding: 1em;
   }
-
-  #subir {
+  .err{ border: 1.5px solid #d93025; }
+  
+  .submit {
     background: ${colors.detalle1};
     color: ${colors.bgOscuro};
     padding: 0.75em;
@@ -54,7 +56,23 @@ const Form = styled.form`
       float: right;
     }
   }
-`;
+  .notValid{
+    background: ${colors.bgGris2};
+    color: ${colors.bgGris4};
+    cursor: not-allowed;
+    :hover {
+      background: ${colors.bgGris2};
+    }
+  }
+  .submited{
+    background: ${colors.bgGris2};
+    color: ${colors.bgGris4};
+    cursor: default;
+    :hover {
+      background: ${colors.bgGris2};
+    }
+  }
+`
 
 const Caja = styled.div`
   display: flex;
@@ -68,13 +86,9 @@ const Caja = styled.div`
   box-shadow: -2px 3px 3px rgba(20, 20, 20, 0.25);
   border-radius: 10px;
   border: 1px solid #fff;
-  i {
+  i, label {
     text-align: center;
-    color: ${colors.bgGris3};
-    flex: 1 0;
-  }
-  label {
-    text-align: center;
+    color: ${colors.bgGris2};
     flex: 1 0;
   }
   input,
@@ -91,124 +105,74 @@ const Caja = styled.div`
       display: block;
     }
   } ;
-`;
+`
 
 const Input = styled.input`
   border: none;
   font-family: ${fonts.txtFamily1};
   outline: none;
   flex: 6 0;
-  :focus {
-    border-bottom: 1px solid ${colors.txtBgClaro2};
-  }
-`;
+`
 
 const Text = styled.textarea`
   border: none;
   font-family: ${fonts.txtFamily1};
-
   outline: none;
   flex: 6 0;
   resize: none;
-  :focus {
-    border-bottom: 1px solid ${colors.txtBgClaro2};
-  }
-`;
+`
 
 export default function Formulario() {
-  const [ error, setError] = useState({
-    name: false,
-    mail: false,
-    asunt: false,
-    mesaje: false
-  })
-  const [ send, setSend ] = useState(false)
-  const [ contact, setContact] = useState({
-    name: '',
-    mail: '',
-    asunt: '',
-    mesaje: ''
-  })
-  
-  const handleChange = e =>{
-    setContact(
-      [e.target.name] = e.target.value
-    )
-  }
+  const { register, handleSubmit, errors, formState  } = useForm({ mode: 'onChange' })
+  const onSubmit = data => console.log(data)
+  const { isValid, isSubmitted } = formState
 
-  const validForm = () => {
-    let validInputs = true
-    let error = {'name': false, 'asunt': false, 'mesaje': false, 'mail': false}
-
-    if(!contact['name']){
-      validInputs = false
-      error['name'] = true
+  const submitButton = () => {
+    if(isSubmitted){
+      return ( <Input id="submit" name="submit" type="submit" className="submit submited" value="Mensaje Enviado" disabled/> )
     }
-    else error['name'] = false
-
-
-    if(!contact['asunt']){
-      validInputs = false
-      error['asunt'] = true
-    }
-    else error['asunt'] = false
-
-    if(!contact['mesaje']){
-      validInputs = false
-      error['mesaje'] = true
-    }
-    else error['mesaje'] = false
-
-    if(typeof contact['mail'] !== "undefined"){
-      let pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i)    
-      if(!pattern.test(contact['mail'])){
-        validInputs = false    
-        error['mail'] = true
+    else {
+      if(isValid){
+        return ( <Input id="submit" name="submit" type="submit" className="submit" value="Enviar Mensaje"/> )
       }
-      else error['mail'] = false
-    }
-    
-    setError(error)
-    console.log(error)
-    console.log(contact)
-    return validInputs
-  }
-
-  const sendMail = e => {
-    e.preventDefault();
-    if(validForm()){
-      setSend(true)
-      //algo que verifique que se envio
+      else{
+        return ( <Input id="submit" name="submit" type="submit" className="submit notValid" value="Campos Incompletos" disabled/> )
+      }
     }
   }
 
   return (
-    <Form autocomplete="off" onSubmit={sendMail}>
-      <Caja>
+    <Form autocomplete="off" onSubmit={handleSubmit(onSubmit)}>
+      <Caja className={errors.name? "err":""}>
         <i className="fas fa-user"></i>
-        <label htmlFor="nombre">Nombre:</label>
-        <Input id="nombre" name="nombre" placeholder="Ej Igna Garcia" 
-          onChange={handleChange} value={contact['name']}/>
+        <label htmlFor="name">Nombre:</label>
+        <Input id="name" name="name" placeholder="Ej Igna Garcia" 
+          ref={register({ required: true, minLength: 4, maxLength: 50 })} />
       </Caja>
-      <Caja>
+
+      <Caja className={errors.mail? "err":""}>
         <i className="fas fa-at"></i>
         <label htmlFor="mail">Correo:</label>
         <Input id="mail" name="mail" placeholder="Ej garcia@mail.com" 
-          onChange={handleChange} value={contact['mail']}/>
+          ref={register({ required: true,
+            pattern: /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/ })} />
       </Caja>
-      <Caja>
+
+      <Caja className={errors.asunt? "err":""}>
         <i className="fas fa-tags"></i>
-        <label htmlFor="asunto">Asunto:</label>
-        <Input id="asunto" name="asunto" placeholder="Ej Propuesta" 
-          onChange={handleChange} value={contact['asunt']}/>
+        <label htmlFor="asunt">Asunto:</label>
+        <Input id="asunt" name="asunt" placeholder="Ej Propuesta" 
+          ref={register({ required: true, minLength: 4, maxLength: 50 })} />
       </Caja>
-      <Caja>
+
+      <Caja className={errors.mesaje? "err":""}>
         <i className="fas fa-pen-alt"></i>
-        <label htmlFor="mensaje">Mensaje:</label>
-        <Text id="mensaje" name="mensaje" rows="6" placeholder="Ej Hola ..." 
-          onChange={handleChange} value={contact['mesaje']}/>
+        <label htmlFor="mesaje">Mensaje:</label>
+        <Text id="mesaje" name="mesaje" rows="6" placeholder="Ej Hola ... (minimo 20 caracteres)" 
+          ref={register({ required: true, minLength: 20 })} />
       </Caja>
-      <Input id="subir" name="subir" type="submit" value={send? "Mensaje Enviado" : "Enviar Mensaje"} />
+
+      { submitButton() }
     </Form>
   );
 }
