@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import React from "react"
+import styled from "styled-components"
+import {NavLink} from "react-router-dom"
 
-import { Container, colors, fonts, breackpoints } from "../../assets/styles";
+import {Container, colors, fonts, breackpoints} from "../../assets/styles"
 
-import social from "../../data/socialmed.json";
+import social from "../../data/socialmed.json"
 
 const StyledPie = styled.footer`
   color: ${colors.txtBgOscuro2};
@@ -28,7 +28,7 @@ const StyledPie = styled.footer`
     }
     padding: 0em 0.5em;
   }
-`;
+`
 const Contenedor = styled(Container)`
   text-align: center;
   font-family: ${fonts.txtFamily1};
@@ -80,7 +80,7 @@ const Contenedor = styled(Container)`
     font-weight: 400;
     color: ${colors.detalle1};
   }
-`;
+`
 
 /*TO DO-----------------
 -Efecto zoom en iconos
@@ -89,13 +89,13 @@ const Contenedor = styled(Container)`
 */
 
 export default function Pie() {
-  let redes = [];
+  let redes = []
   for (let i = 0; i < 3; i++) {
     redes[i] = (
       <a key={social[i].id + " " + social[i].name} href={social[i].url}>
         <i className={social[i].icon.concat(" fa-lg")}></i>
       </a>
-    );
+    )
   }
 
   return (
@@ -139,5 +139,5 @@ export default function Pie() {
         </p>
       </Contenedor>
     </StyledPie>
-  );
+  )
 }

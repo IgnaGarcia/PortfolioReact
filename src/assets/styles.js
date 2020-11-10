@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import "./fuente.css";
-import "./basics.css";
-import "./fonts/icons.css";
+import styled from "styled-components"
+import "./fuente.css"
+import "./basics.css"
+import "./fonts/icons.css"
 
 export const fonts = {
   txtFamily1: "'Ubuntu', sans-serif",
-  txtFamily2: "'Oswald', sans-serif",
+  txtFamily2: "'Oswald', sans-serif"
 }
 
 export const colors = {
@@ -27,7 +27,7 @@ export const colors = {
   txtBgOscuro: "#f5f5f5",
   txtBgOscuro2: "#e0e0e0",
   txtBgClaro: "#212121",
-  txtBgClaro2: "#424242",
+  txtBgClaro2: "#424242"
 }
 
 const size = {
@@ -37,7 +37,7 @@ const size = {
   tablet: "426px",
   laptop: "769px",
   desktop: "1025px",
-  desktopL: "1441px",
+  desktopL: "1441px"
 }
 
 export const breackpoints = {
@@ -47,7 +47,7 @@ export const breackpoints = {
   tablet: `(min-width: ${size.tablet})`,
   laptop: `(min-width: ${size.laptop})`,
   desktop: `(min-width: ${size.desktop})`,
-  desktopL: `(min-width: ${size.desktopL})`,
+  desktopL: `(min-width: ${size.desktopL})`
 }
 
 export const Container = styled.div`
@@ -69,23 +69,27 @@ export const Container = styled.div`
   }
   @media ${breackpoints.desktop} {
     max-width: "1280px";
-  } 
+  }
 `
 
 export const Titulo = styled.h2`
   font-family: ${fonts.txtFamily2};
   font-size: 2.5em;
   font-weight: bold;
-  color: ${colors.txtBgClaro2+"df"};
+  color: ${colors.txtBgClaro2 + "df"};
   margin-bottom: 20px;
 `
 
 export const Parrafo = styled.p`
-    margin: 1em;
-    font-size: 1.15em;
-    font-family: ${fonts.txtFamily1};
-    color: ${colors.bgGris2};
-    text-align: center;
+  padding: 0.8em;
+  font-size: 1.15em;
+  font-family: ${fonts.txtFamily1};
+  color: ${colors.bgGris2};
+  text-align: center;
 `
 
-export default { Container, colors, fonts, breackpoints, Titulo, Parrafo};
+export const Text = styled.div`
+  text-align: center;
+  margin: 0.5em auto;
+  max-width: 80%;
+`

@@ -96,7 +96,11 @@ export default function Inicio() {
             InformÁtica, con casi un 50% de materias aprobadas. <br />
             Tengo 21 años y soy un apasionado de la informática y de la ciencia
             en general, pasion que se transforma en voluntad para crecer en este
-            campo y hacerlo de la mejor manera posible
+            campo y hacerlo de la mejor manera posible.
+          </Parrafo>
+          <Parrafo>
+            Puedes ver trayectoria profesional y acadéemica, o mis trabajos realizados
+            en los siguientes links.
           </Parrafo>
           <NavLink exact strict to={"/Trayectoria"}>
             {" "}

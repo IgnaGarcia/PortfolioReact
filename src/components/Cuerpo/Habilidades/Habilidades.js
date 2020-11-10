@@ -2,9 +2,20 @@ import React from "react";
 import styled from "styled-components";
 
 import SkillCard from "./SkillCard";
-import { Parrafo, Titulo, Container, colors, breackpoints } from "../../../assets/styles";
+import { Text, Parrafo, Titulo, Container, colors, breackpoints } from "../../../assets/styles";
 
 import skills from "../../../data/skills.json";
+
+const FlexBox = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  @media ${breackpoints.mobileS}{
+    justify-content: center;
+  }
+  @media ${breackpoints.laptop}{
+    justify-content: space-evenly;
+  }
+`
 
 const Background = styled.div`
   padding: 3em 0em;
@@ -12,20 +23,8 @@ const Background = styled.div`
   background: ${colors.detalle1Oscuro+"44"};
   ${Container} {
     padding: 1em 0em;
-    display: flex;
-    flex-wrap: wrap;
-    @media ${breackpoints.mobileS} {
-      justify-content: center;
-    }
   }
-`;
-
-const Text = styled.div`
-  text-align: center;
-  margin: 0.5em;
-  flex: 2 0 100%;
-  max-width: 80%;
-`;
+`
 
 export default function Habilidades() {
   function compare(a, b) {
@@ -50,10 +49,12 @@ export default function Habilidades() {
             primera interacción con tal
           </Parrafo>
         </Text>
-        {skills.map((x) => (
-          <SkillCard skill={x} key={x.name}></SkillCard>
-        ))}
+        <FlexBox>
+          {skills.map((x) => (
+            <SkillCard skill={x} key={x.name}></SkillCard>
+          ))}
+        </FlexBox>
       </Container>
     </Background>
-  );
+  )
 }

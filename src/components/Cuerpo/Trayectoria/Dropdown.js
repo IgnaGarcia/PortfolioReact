@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import React, {useState} from "react"
+import styled from "styled-components"
 
-import { colors } from "../../../assets/styles";
-import Card from "./Card";
+import {colors} from "../../../assets/styles"
+import Card from "./Card"
 
 const Ball = styled.div`
   border-radius: 50%;
@@ -10,7 +10,7 @@ const Ball = styled.div`
   display: inline-block;
   background: ${colors.bgGris1};
   border: 0.3em solid ${colors.bgGris3};
-`;
+`
 
 const FlexBox = styled.div`
   display: flex;
@@ -53,24 +53,24 @@ const FlexBox = styled.div`
       color: ${colors.bgGris1 + "bb"};
     }
   }
-`;
+`
 
 const Diagonal = styled.div`
   border-left: 35px solid red;
   border-top: 38px solid #4c4c4c;
   border-image: linear-gradient(
-    to bottom left,
-    ${colors.bgGris4 + "20"} 40%,
-    ${colors.detalle1 + "aa"},
-    ${colors.bgGris4 + "20"} 60%
-  )
-  100% stretch;
+      to bottom left,
+      ${colors.bgGris4 + "20"} 40%,
+      ${colors.detalle1 + "aa"},
+      ${colors.bgGris4 + "20"} 60%
+    )
+    100% stretch;
   position: relative;
   z-index: -10;
   left: 0px;
   bottom: 7px;
   margin-bottom: -18px;
-`;
+`
 
 /*const InvertDiagonal = styled(Diagonal)`
   border-left: 32px solid red;
@@ -87,19 +87,18 @@ const Diagonal = styled.div`
 `*/
 
 export default function Trayectoria(props) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(props.open)
 
   const handleClick = () => {
-    setOpen(!open);
-  };
+    setOpen(!open)
+  }
 
   return (
-    <li style={{ display: "block", maxWidth: "700px", margin: "auto" }}>
+    <li style={{display: "block", maxWidth: "700px", margin: "auto"}}>
       <FlexBox
         open={open}
-        style={open ? { marginBottom: "0px" } : { marginBottom: "5px" }}
         onClick={handleClick}
-      >
+        style={open ? {marginBottom: "0px"} : {marginBottom: "5px"}}>
         <Ball />
         {props.titulo ? (
           <h2>
@@ -121,7 +120,7 @@ export default function Trayectoria(props) {
         )}
       </FlexBox>
       {props.lista ? (
-        <ul style={open ? { display: "block" } : { display: "none" }}>
+        <ul style={open ? {display: "block"} : {display: "none"}}>
           <Diagonal />
           {props.lista.map((x) => (
             <Card element={x} key={x.title}></Card>
@@ -132,5 +131,5 @@ export default function Trayectoria(props) {
         ""
       )}
     </li>
-  );
+  )
 }
