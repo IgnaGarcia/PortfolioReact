@@ -112,23 +112,23 @@ export default function Pie() {
             <p>
               <span>Links:</span>
             </p>
-            <NavLink exact strict activeClassName="is-active" to="/">
+            <NavLink exact strict to="/">
               <i className="fas fa-address-book"></i>
               <span>Inicio</span>
             </NavLink>
-            <NavLink exact strict activeClassName="is-active" to="/Trayectoria">
+            <NavLink exact strict to="/Trayectoria">
               <i className="fas fa-project-diagram"></i>
               <span>Trayectoria</span>
             </NavLink>
-            <NavLink exact strict activeClassName="is-active" to="/Habilidades">
+            <NavLink exact strict to="/#Habilidades">
               <i className="fas fa-brain"></i>
               <span>Habilidades</span>
             </NavLink>
-            <NavLink exact strict activeClassName="is-active" to="/Proyectos">
+            <NavLink exact strict to="/Proyectos">
               <i className="fas fa-folder-open"></i>
               <span>Proyectos</span>
             </NavLink>
-            <NavLink exact strict activeClassName="is-active" to="/Contacto">
+            <NavLink exact strict to="/#Contacto">
               <i className="fas fa-comments"></i>
               <span>Contacto</span>
             </NavLink>

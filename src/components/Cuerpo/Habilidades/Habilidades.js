@@ -39,7 +39,7 @@ export default function Habilidades() {
   skills.sort(compare);
   return (
     <Background>
-      <a name="/Habilidades"></a>
+      <a name="Habilidades"></a>
       <Container>
         <Text>
           <Titulo>CON QUÉ TRABAJO?</Titulo>

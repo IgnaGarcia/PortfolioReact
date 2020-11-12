@@ -106,7 +106,7 @@ export default function Contacto() {
 
   return (
     <Background>
-      <a name="/Contacto"></a>
+      <a name="Contacto"></a>
       <Container>
         <Text>
           <Titulo>CHARLEMOS</Titulo>
