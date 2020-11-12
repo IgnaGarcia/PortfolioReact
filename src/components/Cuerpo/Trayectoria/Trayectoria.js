@@ -44,7 +44,7 @@ export default function Trayectoria() {
           <Titulo> TITULOOOO </Titulo>
           <Parrafo>
             Aquí podrás leer acerca de mi desarrollo profesional, académico y
-            personal resumido en actividades concretadas, ademas de poder ver
+            personal resumido en actividades concretadas, dando una breve descripción y si es una actividad en progreso o ya finalizada.
           </Parrafo>
         </Text>
         <Lista>

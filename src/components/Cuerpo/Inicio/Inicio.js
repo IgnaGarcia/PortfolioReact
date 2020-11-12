@@ -93,8 +93,8 @@ export default function Inicio() {
           <Titulo>BIENVENID@!</Titulo>
           <Parrafo>
             Soy estudiante de la Universidad Nacional del Oeste de la carrera de
-            InformÁtica, con casi un 50% de materias aprobadas. <br />
-            Tengo 21 años y soy un apasionado de la informática y de la ciencia
+            Informática, con casi un 50% de materias aprobadas. <br />
+            Tengo 21 años y soy un apasionado del desarrollo de software y de la ciencia
             en general, pasion que se transforma en voluntad para crecer en este
             campo y hacerlo de la mejor manera posible.
           </Parrafo>
