@@ -3,11 +3,17 @@ import styled from "styled-components"
 
 import TarjetaProyectos from "./TarjetaProyecto"
 import proyects from "../../../data/proyects.json"
-import {Text, Parrafo, Titulo, Container, fonts} from "../../../assets/styles"
+import {Text, Parrafo, Titulo, Container, fonts, colors} from "../../../assets/styles"
 
 const Background = styled.div`
   padding: 1.5em 0em;
   font-family: ${fonts.txtFamily1};
+  #githubA{
+    color: ${colors.detalle1};
+    i{
+      font-size: 1.2em;
+    }
+  }
 `
 
 const Flex = styled.div`
@@ -26,6 +32,9 @@ export default function Proyectos() {
             Por aca ire dejando mis trabajos realizados, con una breve
             descripción de mi labor, las tecnologías que use, unas imagenes y si
             en algunos casos una demo.
+          </Parrafo>
+          <Parrafo> Puedes encontrar mas de mis trabajos en mi 
+            <a id="githubA" href="https://github.com/IgnaGarcia"> GitHub <i className="fab fa-github"></i></a>
           </Parrafo>
         </Text>
         <Flex>

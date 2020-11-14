@@ -4,7 +4,7 @@ import { useParams } from "react-router";
 
 import { Parrafo, Titulo, Container, breackpoints, colors, fonts } from "../../../assets/styles";
 import proyects from "../../../data/proyects.json";
-import imagen from "../../../assets/attachments/imagenes/CEUNO2018.png";
+
 const Details = styled.div`
   margin: 15px 0px;
   display: flex;
@@ -137,7 +137,7 @@ export default function Proyecto(props) {
           </ul>
         </Content>
         <Imagen>
-          <img className="imagen" src={proyect.portada}></img>
+          <img className="imagen" alt={proyect.titulo} src="img.png"/*{proyect.portada}*/></img>
         </Imagen>
       </Container>
     </Background>
