@@ -89,10 +89,7 @@ export default function SkillCard(props) {
       <Content>
         <div className="titulo"> {skill.name} </div>
         <div className="nivel"> {experience(skill.level)} </div>
-        <div className="exp">
-          {" "}
-          {currentTime.getFullYear() - skill.years + 1} años de uso
-        </div>
+        <div className="exp"> {currentTime.getFullYear() - skill.years + 1} año/s de uso </div>
       </Content>
     </Card>
   );

@@ -82,12 +82,6 @@ const Contenedor = styled(Container)`
   }
 `
 
-/*TO DO-----------------
--Efecto zoom en iconos
--Efecto de transicion en el p
--Efecto de fade in del span
-*/
-
 export default function Pie() {
   let redes = []
   for (let i = 0; i < 3; i++) {

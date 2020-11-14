@@ -41,7 +41,7 @@ export default function Trayectoria() {
     <Background>
       <Container>
         <Text>
-          <Titulo> TITULOOOO </Titulo>
+          <Titulo> Mi Historia </Titulo>
           <Parrafo>
             Aquí podrás leer acerca de mi desarrollo profesional, académico y
             personal resumido en actividades concretadas, dando una breve descripción y si es una actividad en progreso o ya finalizada.
@@ -49,16 +49,8 @@ export default function Trayectoria() {
         </Text>
         <Lista>
           <Dropdown lista={jobs} open={true} titulo={"Experiencia Laboral"} />
-          <Dropdown
-            lista={studies}
-            open={false}
-            titulo={"Historia Académica"}
-          />
-          <Dropdown
-            lista={activities}
-            open={false}
-            titulo={"Otras Actividades"}
-          />
+          <Dropdown lista={studies} open={false} titulo={"Historia Académica"} />
+          <Dropdown lista={activities} open={false} titulo={"Otras Actividades"} />
           <Dropdown />
         </Lista>
       </Container>

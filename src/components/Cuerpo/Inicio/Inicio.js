@@ -102,14 +102,8 @@ export default function Inicio() {
             Puedes ver trayectoria profesional y acadéemica, o mis trabajos realizados
             en los siguientes links.
           </Parrafo>
-          <NavLink exact strict to={"/Trayectoria"}>
-            {" "}
-            Mi Trayectoria{" "}
-          </NavLink>
-          <NavLink exact strict to={"/Proyectos"}>
-            {" "}
-            Mis Proyectos{" "}
-          </NavLink>
+          <NavLink exact strict to={"/Trayectoria"}> Mi Trayectoria </NavLink>
+          <NavLink exact strict to={"/Proyectos"}> Mis Proyectos </NavLink>
         </Content>
         <Imagen>
           <img className="imagen" alt="Igna Garcia" src="img.png"/*{fotoPerfil}*/></img>

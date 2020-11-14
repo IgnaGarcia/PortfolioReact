@@ -83,12 +83,6 @@ const H2 = styled.h2`
   } ;
 `;
 
-/*TO DO-----------------
--Particulas en el fondo
--Fade in del h1, luego h2
--Desplazamiento del border del minidiv y del textshadow de h1
-*/
-
 export default function Cabecera() {
   return (
     <StyledCabecera>
