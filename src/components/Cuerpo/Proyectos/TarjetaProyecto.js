@@ -3,8 +3,6 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 import { breackpoints, colors } from "../../../assets/styles";
-import imagenPrueba from "../../../assets/attachments/Penguins.jpg";
-import imagenPrueba2 from "../../../assets/attachments/SpeechToText.png";
 
 const Imagen = styled.div`
   .imagen {
@@ -87,11 +85,7 @@ export default function TarjetaProyectos(prop) {
     <Background>
       <NavLink exact strict to={"/Proyectos/" + proyects.link}>
         <Imagen>
-          {proyects.estado ? (
-            <img className="imagen" src={imagenPrueba2}></img>
-          ) : (
-            <img className="imagen" src={imagenPrueba}></img>
-          )}
+            <img className="imagen" src={proyects.portada}></img>
         </Imagen>
         <Content>
           <h3> {proyects.titulo} </h3>

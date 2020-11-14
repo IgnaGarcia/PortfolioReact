@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 import { Titulo, Container, breackpoints, colors, fonts, Parrafo } from "../../../assets/styles";
-import imagenPrueba2 from "../../../assets/attachments/SpeechToText.png";
+import fotoPerfil from "../../../assets/attachments/SpeechToText.png";
 
 const Content = styled.div`
   padding: .2em .5em .5em .5em;
@@ -112,7 +112,7 @@ export default function Inicio() {
           </NavLink>
         </Content>
         <Imagen>
-          <img className="imagen" src={imagenPrueba2}></img>
+          <img className="imagen" src={fotoPerfil}></img>
         </Imagen>
       </Container>
     </Background>

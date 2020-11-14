@@ -3,11 +3,8 @@ import styled from "styled-components";
 import { useParams } from "react-router";
 
 import { Parrafo, Titulo, Container, breackpoints, colors, fonts } from "../../../assets/styles";
-import imagenPrueba from "../../../assets/attachments/Penguins.jpg";
-import imagenPrueba2 from "../../../assets/attachments/SpeechToText.png";
-
 import proyects from "../../../data/proyects.json";
-
+import imagen from "../../../assets/attachments/imagenes/CEUNO2018.png";
 const Details = styled.div`
   margin: 15px 0px;
   display: flex;
@@ -130,18 +127,7 @@ export default function Proyecto(props) {
             )}
           </Details>
           <Parrafo>
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipiscing elit rutrum
-            himenaeos ac gravida, facilisis diam auctor eu blandit eleifend quam
-            vel elementum litora, quisque sociis venenatis hendrerit curae
-            posuere proin accumsan integer dictum. Elementum interdum lacinia
-            feugiat dignissim condimentum tincidunt inceptos massa nisl,
-            fermentum sociosqu arcu hac augue nullam suscipit ante et, est
-            imperdiet sagittis erat varius turpis aliquam quis. Dictum neque
-            tristique nascetur conubia mauris interdum viverra lobortis facilisi
-            libero venenatis, morbi praesent per rhoncus vulputate faucibus
-            augue urna felis sagittis.
-            {proyect.descripcion}{" "}
+            {proyect.descripcion}
           </Parrafo>
           <ul>
             {" "}
@@ -151,7 +137,7 @@ export default function Proyecto(props) {
           </ul>
         </Content>
         <Imagen>
-          <img className="imagen" src={imagenPrueba}></img>
+          <img className="imagen" src={proyect.portada}></img>
         </Imagen>
       </Container>
     </Background>
