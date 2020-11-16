@@ -50,7 +50,7 @@ const Imagen = styled.div`
     flex: 1 0 100%;
     text-align: center;
     .imagen {
-      width: 70%;
+      width: 85%;
       height: auto;
       object-fit: cover;
     }
@@ -137,7 +137,7 @@ export default function Proyecto(props) {
           </ul>
         </Content>
         <Imagen>
-          <a href={'/img' + proyect.portada} target="_blank">
+          <a rel="noreferrer" href={'/img' + proyect.portada} target="_blank">
             <img className="imagen" alt={proyect.titulo} src={'/img' + proyect.portada}></img>
           </a>
         </Imagen>

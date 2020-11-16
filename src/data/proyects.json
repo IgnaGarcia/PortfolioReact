@@ -18,25 +18,5 @@
     "descripcion": "A partir de los resultados de las elecciones por el centro de estudiantes de la UNO en 2018 decidí realizar un análisis de los resultados y desarrollar distintas visualizaciones para entender mejor los datos, esto gracias a distintas bibliotecas del lenguaje R.",
     "link": "CEUNO2018",
     "repositorio": "https://github.com/IgnaGarcia/Elecciones_CE_UNO_2018"
-  },
-  {
-    "id": 3,
-    "portada": "../../assets/attachments/Penguins.png",
-    "titulo": "dsadsa",
-    "estado": false,
-    "tecnologias": ["R", "Git"],
-    "descripcion": "dsadsadsadsad",
-    "link": "dsadsadsadsadsa",
-    "repositorio": ""
-  },
-  {
-    "id": 4,
-    "portada": "../../assets/attachments/Penguins.png",
-    "titulo": "dsadsa",
-    "estado": false,
-    "tecnologias": ["Python", "Git"],
-    "descripcion": "dsadsadsadsa",
-    "link": "dsadsadsa",
-    "repositorio": ""
   }
 ]
