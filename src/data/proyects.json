@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "portada": "SpeechToText",
+    "portada": "/SpeechToText.jpg",
     "titulo": "Voz a Texto",
     "estado": true,
     "tecnologias": ["Python"],
@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "portada": "CEUNO2018",
+    "portada": "/CE UNO 2018.png",
     "titulo": "Análisis de Elecciones CE UNO 2018",
     "estado": true,
     "tecnologias": ["R"],

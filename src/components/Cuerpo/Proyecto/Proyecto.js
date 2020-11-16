@@ -137,7 +137,9 @@ export default function Proyecto(props) {
           </ul>
         </Content>
         <Imagen>
-          <img className="imagen" alt={proyect.titulo} src="img.png"/*{proyect.portada}*/></img>
+          <a href={'/img' + proyect.portada} target="_blank">
+            <img className="imagen" alt={proyect.titulo} src={'/img' + proyect.portada}></img>
+          </a>
         </Imagen>
       </Container>
     </Background>

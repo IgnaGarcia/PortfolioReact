@@ -85,7 +85,7 @@ export default function TarjetaProyectos(prop) {
     <Background>
       <NavLink exact strict to={"/Proyectos/" + proyects.link}>
         <Imagen>
-          <img className="imagen" alt={proyects.titulo} src="img.png"/*{proyects.portada}*/></img>
+          <img className="imagen" alt={proyects.titulo} src={'/img' + proyects.portada}></img>
         </Imagen>
         <Content>
           <h3> {proyects.titulo} </h3>
