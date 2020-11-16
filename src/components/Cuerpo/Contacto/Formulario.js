@@ -124,8 +124,22 @@ const Text = styled.textarea`
 
 export default function Formulario() {
   const { register, handleSubmit, errors, formState  } = useForm({ mode: 'onChange' })
-  const onSubmit = data => console.log(data)
   const { isValid, isSubmitted } = formState
+
+  
+  const submiter = (data) => {
+    const serviceId = 'service_29i5u7u';
+    const templateId = 'template_b4j8hnm';
+    const template_params = {
+      'name' : data.name,
+      'mail' : data.mail,
+      'asunt' : data.asunt,
+      'message' : data.message
+    }
+    window.emailjs.send(serviceId, templateId, template_params)
+      .then(res => { console.log('Enviado correctamente: ', res, '; data: ', template_params); })
+      .catch(err => console.error('Error: ', err));
+  }
 
   const submitButton = () => {
     if(isSubmitted){
@@ -142,7 +156,7 @@ export default function Formulario() {
   }
 
   return (
-    <Form autocomplete="off" onSubmit={handleSubmit(onSubmit)}>
+    <Form autocomplete="off" onSubmit={handleSubmit(submiter)}>
       <Caja className={errors.name? "err":""}>
         <i className="fas fa-user"></i>
         <label htmlFor="name">Nombre:</label>
@@ -165,10 +179,10 @@ export default function Formulario() {
           ref={register({ required: true, minLength: 4, maxLength: 50 })} />
       </Caja>
 
-      <Caja className={errors.mesaje? "err":""}>
+      <Caja className={errors.message? "err":""}>
         <i className="fas fa-pen-alt"></i>
-        <label htmlFor="mesaje">Mensaje:</label>
-        <Text id="mesaje" name="mesaje" rows="6" placeholder="Ej Hola ... (mínimo 20 caracteres)" 
+        <label htmlFor="message">Mensaje:</label>
+        <Text id="message" name="message" rows="6" placeholder="Ej Hola ... (mínimo 20 caracteres)" 
           ref={register({ required: true, minLength: 20 })} />
       </Caja>
 
