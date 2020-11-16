@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 import { Titulo, Container, breackpoints, colors, fonts, Parrafo } from "../../../assets/styles";
-//import fotoPerfil from "../../../assets/attachments/imagenes/.png";
 
 const Content = styled.div`
   padding: .2em .5em .5em .5em;
@@ -43,33 +42,29 @@ const Content = styled.div`
 
 const Imagen = styled.div`
   border-radius: 100%;
-  border: 2px solid ${colors.bgGris3};
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.85);
   .imagen {
     border-radius: 100%;
-    width: 100%;
-    height: auto;
     object-fit: cover;
+    object-position: center center ;
+    width: 100%;
+    height: 100%;
   }
   @media ${breackpoints.mobileS} {
-    flex: 0 1 60%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1.4em;
     order: -1;
   }
   @media ${breackpoints.tablet}{
-    flex: 0 1 45%;
-    min-width: 190px;
-    max-width: 250px;
+    width: 300px;
+    height: 300px;
     display: block;
   }
   @media ${breackpoints.laptop} {
-    flex: 0 1 25%;
-    min-width: none;
-    max-width: none;
+    width: 270px;
+    height: 270px;
     order: 0;
-  }
-  @media ${breackpoints.desktop} {
-    flex: 0 1 20%;
-    max-width: 230px;
   }
 `
 
@@ -106,7 +101,7 @@ export default function Inicio() {
           <NavLink exact strict to={"/Proyectos"}> Mis Proyectos </NavLink>
         </Content>
         <Imagen>
-          <img className="imagen" alt="Igna Garcia" src="img.png"/*{fotoPerfil}*/></img>
+          <img className="imagen" alt="Igna Garcia" src={'/img/Igna Garcia (1).jpeg'}></img>
         </Imagen>
       </Container>
     </Background>
