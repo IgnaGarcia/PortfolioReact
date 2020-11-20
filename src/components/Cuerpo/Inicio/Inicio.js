@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { Slide } from 'react-reveal';
 
 import { Titulo, Container, breackpoints, colors, fonts, Parrafo } from "../../../assets/styles";
 
@@ -42,8 +43,8 @@ const Content = styled.div`
 
 const Imagen = styled.div`
   border-radius: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.85);
   .imagen {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.85);
     border-radius: 100%;
     object-fit: cover;
     object-position: center center ;
@@ -85,24 +86,31 @@ export default function Inicio() {
     <Background>
       <Container>
         <Content>
-          <Titulo>BIENVENID@!</Titulo>
-          <Parrafo>
-            Soy estudiante de la Universidad Nacional del Oeste de la carrera de
-            Informática, con casi un 50% de materias aprobadas. <br />
-            Tengo 21 años y soy un apasionado del desarrollo de software y de la ciencia
-            en general, pasion que se transforma en voluntad para crecer en este
-            campo y hacerlo de la mejor manera posible.
-          </Parrafo>
-          <Parrafo>
-            Puedes ver trayectoria profesional y acadéemica, o mis trabajos realizados
-            en los siguientes links.
-          </Parrafo>
-          <NavLink exact strict to={"/Trayectoria"}> Mi Trayectoria </NavLink>
-          <NavLink exact strict to={"/Proyectos"}> Mis Proyectos </NavLink>
+          <Slide left>
+            <Titulo>BIENVENID@!</Titulo>
+            <Parrafo>
+              Soy estudiante de la Universidad Nacional del Oeste de la carrera de
+              Informática, con casi un 50% de materias aprobadas. <br />
+              Tengo 21 años y soy un apasionado del desarrollo de software y de la ciencia
+              en general, pasion que se transforma en voluntad para crecer en este
+              campo y hacerlo de la mejor manera posible.
+            </Parrafo>
+            <Parrafo>
+              Puedes ver trayectoria profesional y acadéemica, o mis trabajos realizados
+              en los siguientes links.
+            </Parrafo>
+            <div>
+              <NavLink exact strict to={"/Trayectoria"}> Mi Trayectoria </NavLink>
+              <NavLink exact strict to={"/Proyectos"}> Mis Proyectos </NavLink>
+            </div>
+          </Slide>
         </Content>
         <Imagen>
-          <img className="imagen" alt="Igna Garcia" src={'/img/Igna Garcia (1).jpeg'}></img>
+          <Slide right>
+            <img className="imagen" alt="Igna Garcia" src={'/img/Igna Garcia (1).jpeg'}></img>
+          </Slide>
         </Imagen>
+        
       </Container>
     </Background>
   );

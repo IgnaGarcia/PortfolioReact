@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Fade, Bounce } from 'react-reveal';
+import { Fade, Slide } from 'react-reveal';
 
 import { Container, colors, fonts, breackpoints } from "../../assets/styles";
 
@@ -86,19 +86,19 @@ export default function Cabecera() {
   return (
     <StyledCabecera>
       <Container>
-        <Bounce duration={1500} top>
+        <Slide duration={800} top>
           <MiniDiv>
-            <Fade duration={2000} delay={700}>
+            <Fade duration={2000} delay={600}>
               <div>
                 <H1> <pre>IGNA </pre> </H1>
-                <H1> <pre>GARCIA RAVLIC</pre> </H1>
+                <H1> GARCIA RAVLIC </H1>
               </div>
             </Fade>
-            <Fade duration={2000} delay={1100}>
+            <Fade duration={2000} delay={1000}>
               <H2>DESARROLLADOR</H2>
             </Fade>
           </MiniDiv>
-        </Bounce>
+        </Slide>
       </Container>
     </StyledCabecera>
   );
