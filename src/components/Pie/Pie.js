@@ -86,7 +86,7 @@ export default function Pie() {
   let redes = []
   for (let i = 0; i < 3; i++) {
     redes[i] = (
-      <a key={social[i].id + " " + social[i].name} href={social[i].url}>
+      <a key={social[i].id + " " + social[i].name} href={social[i].url} target="_blank">
         <i className={social[i].icon.concat(" fa-lg")}></i>
       </a>
     )

@@ -117,7 +117,7 @@ export default function Proyecto(props) {
         <Content>
           <Titulo> {proyect.titulo} </Titulo>
           <Details>
-            <a href={proyect.repositorio}>
+            <a href={proyect.repositorio} target="_blank">
               <i className="fab fa-github"></i>
             </a>
             {proyect.estado ? (

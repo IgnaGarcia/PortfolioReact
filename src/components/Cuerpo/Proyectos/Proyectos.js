@@ -34,7 +34,7 @@ export default function Proyectos() {
             en algunos casos una demo.
           </Parrafo>
           <Parrafo> Puedes encontrar mas de mis trabajos en mi 
-            <a id="githubA" href="https://github.com/IgnaGarcia"> GitHub <i className="fab fa-github"></i></a>
+            <a id="githubA" href="https://github.com/IgnaGarcia" target="_blank"> GitHub <i className="fab fa-github"></i></a>
           </Parrafo>
         </Text>
         <Flex>
