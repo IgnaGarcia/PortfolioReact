@@ -36,11 +36,11 @@ export default function Proyectos() {
               en algunos casos una demo.
             </Parrafo>
             <Parrafo> Puedes encontrar mas de mis trabajos en mi 
-              <a id="githubA" href="https://github.com/IgnaGarcia" target="_blank"> GitHub <i className="fab fa-github"></i></a>
+              <a id="githubA" href="https://github.com/IgnaGarcia" rel="noreferrer" target="_blank"> GitHub <i className="fab fa-github"></i></a>
             </Parrafo>
           </Flip>
         </Text>
-        <Bounce cascade duration={2000} delay={500}>
+        <Bounce duration={2000} delay={500}>
         <Flex>
           {proyects.map((x) => (
             <TarjetaProyectos key={x.id} proyects={x}></TarjetaProyectos>

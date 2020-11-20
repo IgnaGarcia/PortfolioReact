@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useParams } from "react-router";
+import { Flip, Slide } from "react-reveal"
 
 import { Parrafo, Titulo, Container, breackpoints, colors, fonts } from "../../../assets/styles";
 import proyects from "../../../data/proyects.json";
@@ -115,30 +116,34 @@ export default function Proyecto(props) {
     <Background>
       <Container>
         <Content>
-          <Titulo> {proyect.titulo} </Titulo>
-          <Details>
-            <a href={proyect.repositorio} target="_blank">
-              <i className="fab fa-github"></i>
-            </a>
-            {proyect.estado ? (
-              <span className="finish">Finalizado</span>
-            ) : (
-              <span className="develop">En Desarrollo</span>
-            )}
-          </Details>
-          <Parrafo>
-            {proyect.descripcion}
-          </Parrafo>
-          <ul>
-            {" "}
-            {proyect.tecnologias.map((x) => (
-              <Chip key={x}>{x}</Chip>
-            ))}{" "}
-          </ul>
+          <Flip top> 
+            <Titulo> {proyect.titulo} </Titulo>
+            <Details>
+              <a href={proyect.repositorio} rel="noreferrer" target="_blank">
+                <i className="fab fa-github"></i>
+              </a>
+              {proyect.estado ? (
+                <span className="finish">Finalizado</span>
+              ) : (
+                <span className="develop">En Desarrollo</span>
+              )}
+            </Details>
+            <Parrafo>
+              {proyect.descripcion}
+            </Parrafo>
+            <ul>
+              {" "}
+              {proyect.tecnologias.map((x) => (
+                <Chip key={x}>{x}</Chip>
+              ))}{" "}
+            </ul>
+          </Flip>
         </Content>
         <Imagen>
           <a rel="noreferrer" href={'/img' + proyect.portada} target="_blank">
-            <img className="imagen" alt={proyect.titulo} src={'/img' + proyect.portada}></img>
+            <Slide right>
+              <img className="imagen" alt={proyect.titulo} src={'/img' + proyect.portada}></img>
+            </Slide>
           </a>
         </Imagen>
       </Container>

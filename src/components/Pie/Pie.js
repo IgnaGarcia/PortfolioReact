@@ -138,7 +138,7 @@ export default function Pie() {
           </Zoom>
           
         </div>
-        <Fade duration={3000} delay={500}>
+        <Fade duration={2000} delay={500}>
           <p>
             Desarrollado por <span>IGNA GARCIA RAVLIC</span>
           </p>
