@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Fade, Bounce } from 'react-reveal';
 
 import { Container, colors, fonts, breackpoints } from "../../assets/styles";
 
@@ -45,15 +46,13 @@ const H1 = styled.h1`
   }
   @media ${breackpoints.tablet} {
     font-size: 3.5em;
-    display: inline;
+    display: inline-block;
   }
   @media ${breackpoints.laptop} {
     font-size: 4em;
-    display: inline;
   }
   @media ${breackpoints.desktop} {
     font-size: 5em;
-    display: inline;
   } ;
 `;
 
@@ -87,10 +86,19 @@ export default function Cabecera() {
   return (
     <StyledCabecera>
       <Container>
-        <MiniDiv>
-          <H1>IGNA</H1> <H1>GARCIA RAVLIC</H1>
-          <H2>DESARROLLADOR</H2>
-        </MiniDiv>
+        <Bounce duration={1500} top>
+          <MiniDiv>
+            <Fade duration={2000} delay={700}>
+              <div>
+                <H1> <pre>IGNA </pre> </H1>
+                <H1> <pre>GARCIA RAVLIC</pre> </H1>
+              </div>
+            </Fade>
+            <Fade duration={2000} delay={1100}>
+              <H2>DESARROLLADOR</H2>
+            </Fade>
+          </MiniDiv>
+        </Bounce>
       </Container>
     </StyledCabecera>
   );
