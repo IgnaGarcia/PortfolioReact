@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import { Slide } from 'react-reveal';
+import { Rotate } from 'react-reveal';
 
 import { Titulo, Container, breackpoints, colors, fonts, Parrafo } from "../../../assets/styles";
 
@@ -86,7 +86,7 @@ export default function Inicio() {
     <Background>
       <Container>
         <Content>
-          <Slide left>
+          <Rotate bottom left duration={1500} delay={2000}>
             <Titulo>BIENVENID@!</Titulo>
             <Parrafo>
               Soy estudiante de la Universidad Nacional del Oeste de la carrera de
@@ -103,12 +103,12 @@ export default function Inicio() {
               <NavLink exact strict to={"/Trayectoria"}> Mi Trayectoria </NavLink>
               <NavLink exact strict to={"/Proyectos"}> Mis Proyectos </NavLink>
             </div>
-          </Slide>
+          </Rotate>
         </Content>
         <Imagen>
-          <Slide right>
+          <Rotate bottom right duration={1500} delay={1500}>
             <img className="imagen" alt="Igna Garcia" src={'/img/Igna Garcia (1).jpeg'}></img>
-          </Slide>
+          </Rotate>
         </Imagen>
         
       </Container>

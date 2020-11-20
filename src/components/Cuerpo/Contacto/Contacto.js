@@ -1,15 +1,8 @@
 import React from "react"
 import styled from "styled-components"
+import { Flip } from "react-reveal"
 
-import {
-  Text,
-  Parrafo,
-  Titulo,
-  Container,
-  fonts,
-  colors,
-  breackpoints
-} from "../../../assets/styles"
+import { Text, Parrafo, Titulo, Container, fonts, colors, breackpoints } from "../../../assets/styles"
 import social from "../../../data/socialmed.json"
 import Formulario from "./Formulario"
 
@@ -107,17 +100,21 @@ export default function Contacto() {
   return (
     <Background id="Contacto">
       <Container>
-        <Text>
-          <Titulo>CHARLEMOS</Titulo>
-          <Parrafo>
-            Me puedes contactar rellenando el siguiente formulario, o
-            siguiéndome en mis redes
-          </Parrafo>
-        </Text>
-        <FlexDiv>
-          <Formulario></Formulario>
-          <Hijo>{redes.map((x) => x)}</Hijo>
-        </FlexDiv>
+        <Flip bottom duration={1500}>
+          <Text>
+            <Titulo>CHARLEMOS</Titulo>
+            <Parrafo>
+              Me puedes contactar rellenando el siguiente formulario, o
+              siguiéndome en mis redes
+            </Parrafo>
+          </Text>
+        </Flip>
+        <Flip bottom duration={2000}>
+          <FlexDiv>
+            <Formulario></Formulario>
+            <Hijo>{redes.map((x) => x)}</Hijo>
+          </FlexDiv>
+        </Flip>
       </Container>
     </Background>
   )

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Zoom  } from 'react-reveal';
 
 import SkillCard from "./SkillCard";
 import { Text, Parrafo, Titulo, Container, colors, breackpoints } from "../../../assets/styles";
@@ -40,19 +41,23 @@ export default function Habilidades() {
   return (
     <Background id="Habilidades">
       <Container>
-        <Text>
-          <Titulo>CON QUÉ TRABAJO?</Titulo>
-          <Parrafo>
-            Aqui podras ver las tecnologías y lenguajes que manejo, aclarando el
-            nivel de experiencia de cada uno y el tiempo que paso desde mi
-            primera interacción con tal
-          </Parrafo>
-        </Text>
-        <FlexBox>
-          {skills.map((x) => (
-            <SkillCard skill={x} key={x.name}></SkillCard>
-          ))}
-        </FlexBox>
+        <Zoom down duration={1500}>
+          <Text>
+            <Titulo>CON QUÉ TRABAJO?</Titulo>
+            <Parrafo>
+              Aqui podras ver las tecnologías y lenguajes que manejo, aclarando el
+              nivel de experiencia de cada uno y el tiempo que paso desde mi
+              primera interacción con tal
+            </Parrafo>
+          </Text>
+        </Zoom >
+        <Zoom down duration={2000}>
+          <FlexBox>
+            {skills.map((x) => (
+              <SkillCard skill={x} key={x.name}></SkillCard>
+            ))}
+          </FlexBox>
+        </Zoom >
       </Container>
     </Background>
   )
