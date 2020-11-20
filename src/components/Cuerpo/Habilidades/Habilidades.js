@@ -38,8 +38,7 @@ export default function Habilidades() {
   }
   skills.sort(compare);
   return (
-    <Background>
-      <a name="Habilidades"></a>
+    <Background id="Habilidades">
       <Container>
         <Text>
           <Titulo>CON QUÉ TRABAJO?</Titulo>

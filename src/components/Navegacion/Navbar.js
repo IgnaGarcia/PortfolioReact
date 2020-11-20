@@ -70,18 +70,18 @@ function Navbar({ open, handleClick }) {
         <i className="fas fa-project-diagram"></i>
         <span>Trayectoria</span>
       </NavLink>
-      <NavLink exact strict to="/#Habilidades" onClick={handleClick}>
+      <a href="/#Habilidades" onClick={handleClick}>
         <i className="fas fa-brain"></i>
         <span>Habilidades</span>
-      </NavLink>
+      </a>
       <NavLink exact strict activeClassName="is-active" to="/Proyectos" onClick={handleClick}>
         <i className="fas fa-folder-open"></i>
         <span>Proyectos</span>
       </NavLink>
-      <NavLink exact strict to="/#Contacto" onClick={handleClick}>
+      <a href="/#Contacto" onClick={handleClick}>
         <i className="fas fa-comments"></i>
         <span>Contacto</span>
-      </NavLink>
+      </a>
     </Nav>
   );
 }

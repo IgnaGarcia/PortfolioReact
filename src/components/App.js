@@ -18,6 +18,7 @@ import Pie from "./Pie/Pie";
 
 const Main = styled.div`
   margin: 0px;
+  scroll-behavior: smooth; 
 `;
 
 export default function App() {

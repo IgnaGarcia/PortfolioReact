@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
-import {Container, colors, fonts, breackpoints} from "../../assets/styles"
+import { Container, colors, fonts, breackpoints } from "../../assets/styles"
 
 import social from "../../data/socialmed.json"
 
@@ -86,11 +86,15 @@ export default function Pie() {
   let redes = []
   for (let i = 0; i < 3; i++) {
     redes[i] = (
-      <a key={social[i].id + " " + social[i].name} href={social[i].url} target="_blank">
+      <a key={social[i].id + " " + social[i].name} href={social[i].url} rel="noreferrer" target="_blank">
         <i className={social[i].icon.concat(" fa-lg")}></i>
       </a>
     )
   }
+
+  const scrollTop = () =>{
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
 
   return (
     <StyledPie>
@@ -106,26 +110,26 @@ export default function Pie() {
             <p>
               <span>Links:</span>
             </p>
-            <NavLink exact strict to="/">
+            <NavLink exact strict to="/" onClick={scrollTop}>
               <i className="fas fa-address-book"></i>
               <span>Inicio</span>
             </NavLink>
-            <NavLink exact strict to="/Trayectoria">
+            <NavLink exact strict to="/Trayectoria" onClick={scrollTop}>
               <i className="fas fa-project-diagram"></i>
               <span>Trayectoria</span>
             </NavLink>
-            <NavLink exact strict to="/#Habilidades">
+            <a href="/#Habilidades">
               <i className="fas fa-brain"></i>
               <span>Habilidades</span>
-            </NavLink>
-            <NavLink exact strict to="/Proyectos">
+            </a>
+            <NavLink exact strict to="/Proyectos" onClick={scrollTop}>
               <i className="fas fa-folder-open"></i>
               <span>Proyectos</span>
             </NavLink>
-            <NavLink exact strict to="/#Contacto">
+            <a href="/#Contacto">
               <i className="fas fa-comments"></i>
               <span>Contacto</span>
-            </NavLink>
+            </a>
           </div>
         </div>
         <p>

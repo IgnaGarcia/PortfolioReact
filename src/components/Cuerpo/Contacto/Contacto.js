@@ -97,7 +97,7 @@ export default function Contacto() {
   let redes = []
   for (let i = 0; i < 6; i++) {
     redes[i] = (
-      <a key={social[i].id + " " + social[i].name} href={social[i].url} target="_blank">
+      <a key={social[i].id + " " + social[i].name} href={social[i].url} rel="noreferrer" target="_blank">
         <i className={social[i].icon}></i>
         <span>{social[i].name}</span>
       </a>
@@ -105,8 +105,7 @@ export default function Contacto() {
   }
 
   return (
-    <Background>
-      <a name="Contacto"></a>
+    <Background id="Contacto">
       <Container>
         <Text>
           <Titulo>CHARLEMOS</Titulo>
