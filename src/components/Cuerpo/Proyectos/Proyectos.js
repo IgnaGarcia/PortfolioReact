@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Flip, Bounce } from "react-reveal"
 
 import TarjetaProyectos from "./TarjetaProyecto"
 import proyects from "../../../data/proyects.json"
@@ -27,21 +28,25 @@ export default function Proyectos() {
     <Background>
       <Container>
         <Text>
-          <Titulo> REPOSITORIO </Titulo>
-          <Parrafo>
-            Por aca ire dejando mis trabajos realizados, con una breve
-            descripción de mi labor, las tecnologías que use, unas imagenes y si
-            en algunos casos una demo.
-          </Parrafo>
-          <Parrafo> Puedes encontrar mas de mis trabajos en mi 
-            <a id="githubA" href="https://github.com/IgnaGarcia" target="_blank"> GitHub <i className="fab fa-github"></i></a>
-          </Parrafo>
+          <Flip top duration={2000}>
+            <Titulo> REPOSITORIO </Titulo>
+            <Parrafo>
+              Por aca ire dejando mis trabajos realizados, con una breve
+              descripción de mi labor, las tecnologías que use, unas imagenes y si
+              en algunos casos una demo.
+            </Parrafo>
+            <Parrafo> Puedes encontrar mas de mis trabajos en mi 
+              <a id="githubA" href="https://github.com/IgnaGarcia" target="_blank"> GitHub <i className="fab fa-github"></i></a>
+            </Parrafo>
+          </Flip>
         </Text>
+        <Bounce cascade duration={2000} delay={500}>
         <Flex>
           {proyects.map((x) => (
             <TarjetaProyectos key={x.id} proyects={x}></TarjetaProyectos>
           ))}
         </Flex>
+        </Bounce>
       </Container>
     </Background>
   )

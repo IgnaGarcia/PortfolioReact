@@ -83,19 +83,19 @@ export default function TarjetaProyectos(prop) {
   let proyects = prop.proyects;
   return (
     <Background>
-      <NavLink exact strict to={"/Proyectos/" + proyects.link}>
-        <Imagen>
-          <img className="imagen" alt={proyects.titulo} src={'/img' + proyects.portada}></img>
-        </Imagen>
-        <Content>
-          <h3> {proyects.titulo} </h3>
-          <ul>
-            {proyects.tecnologias.map((x) => (
-              <li key={x}>{x}</li>
-            ))}
-          </ul>
-        </Content>
-      </NavLink>
+        <NavLink exact strict to={"/Proyectos/" + proyects.link}>
+          <Imagen>
+            <img className="imagen" alt={proyects.titulo} src={'/img' + proyects.portada}></img>
+          </Imagen>
+          <Content>
+            <h3> {proyects.titulo} </h3>
+            <ul>
+              {proyects.tecnologias.map((x) => (
+                <li key={x}>{x}</li>
+              ))}
+            </ul>
+          </Content>
+        </NavLink>
     </Background>
   );
 }
