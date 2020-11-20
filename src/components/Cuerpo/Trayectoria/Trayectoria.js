@@ -1,14 +1,8 @@
 import React from "react"
 import styled from "styled-components"
+import { Flip } from "react-reveal"
 
-import {
-  Text,
-  Parrafo,
-  Titulo,
-  Container,
-  colors,
-  fonts
-} from "../../../assets/styles"
+import { Text, Parrafo, Titulo, Container, colors, fonts } from "../../../assets/styles"
 import Dropdown from "./Dropdown"
 
 import studies from "../../../data/studies.json"
@@ -41,18 +35,22 @@ export default function Trayectoria() {
     <Background>
       <Container>
         <Text>
-          <Titulo> Mi Historia </Titulo>
-          <Parrafo>
-            Aquí podrás leer acerca de mi desarrollo profesional, académico y
-            personal resumido en actividades concretadas, dando una breve descripción y si es una actividad en progreso o ya finalizada.
-          </Parrafo>
+          <Flip top duration={2000}>
+            <Titulo> Mi Historia </Titulo>
+            <Parrafo>
+              Aquí podrás leer acerca de mi desarrollo profesional, académico y
+              personal resumido en actividades concretadas, dando una breve descripción y si es una actividad en progreso o ya finalizada.
+            </Parrafo>
+          </Flip>
         </Text>
-        <Lista>
-          <Dropdown lista={jobs} open={true} titulo={"Experiencia Laboral"} />
-          <Dropdown lista={studies} open={false} titulo={"Historia Académica"} />
-          <Dropdown lista={activities} open={false} titulo={"Otras Actividades"} />
-          <Dropdown />
-        </Lista>
+        <Flip bottom duration={2000}>
+          <Lista>
+            <Dropdown lista={jobs} open={true} titulo={"Experiencia Laboral"} />
+            <Dropdown lista={studies} open={false} titulo={"Historia Académica"} />
+            <Dropdown lista={activities} open={false} titulo={"Otras Actividades"} />
+            <Dropdown />
+          </Lista>
+        </Flip>
       </Container>
     </Background>
   )

@@ -86,7 +86,7 @@ export default function Inicio() {
     <Background>
       <Container>
         <Content>
-          <Rotate bottom left duration={1500} delay={2000}>
+          <Rotate bottom left duration={1500} delay={500}>
             <Titulo>BIENVENID@!</Titulo>
             <Parrafo>
               Soy estudiante de la Universidad Nacional del Oeste de la carrera de
@@ -108,7 +108,7 @@ export default function Inicio() {
           </Rotate>
         </Content>
         <Imagen>
-          <Rotate bottom right duration={1500} delay={1500}>
+          <Rotate bottom right duration={1500}>
             <img className="imagen" alt="Igna Garcia" src={'/img/Igna Garcia (1).jpeg'}></img>
           </Rotate>
         </Imagen>
