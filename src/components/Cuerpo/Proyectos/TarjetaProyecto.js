@@ -81,9 +81,14 @@ const Content = styled.div`
 
 export default function TarjetaProyectos(prop) {
   let proyects = prop.proyects;
+
+  const scrollTop = () =>{
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+  
   return (
     <Background>
-        <NavLink exact strict to={"/Proyectos/" + proyects.link}>
+        <NavLink exact strict to={"/Proyectos/" + proyects.link} onClick={scrollTop}>
           <Imagen>
             <img className="imagen" alt={proyects.titulo} src={'/img' + proyects.portada}></img>
           </Imagen>

@@ -96,7 +96,7 @@ export default function Inicio() {
               campo y hacerlo de la mejor manera posible.
             </Parrafo>
             <Parrafo>
-              Puedes ver trayectoria profesional y acadéemica, o mis trabajos realizados
+              Puedes ver trayectoria profesional y académica, o mis trabajos realizados
               en los siguientes links.
             </Parrafo>
           </Rotate>

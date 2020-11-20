@@ -86,7 +86,7 @@ export default function Cabecera() {
   return (
     <StyledCabecera>
       <Container>
-        <Slide duration={800} top>
+        <Slide top duration={800}>
           <MiniDiv>
             <Fade duration={2000} delay={600}>
               <div>
