@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { NavLink } from "react-router-dom"
+import { Fade, Zoom } from "react-reveal"
 
 import { Container, colors, fonts, breackpoints } from "../../assets/styles"
 
@@ -100,41 +101,48 @@ export default function Pie() {
     <StyledPie>
       <Contenedor>
         <div className="padre">
-          <div className="hijo1">
-            <p>
-              <span>Redes:</span>
-            </p>{" "}
-            {redes.map((x) => x)}
-          </div>
-          <div className="hijo2">
-            <p>
-              <span>Links:</span>
-            </p>
-            <NavLink exact strict to="/" onClick={scrollTop}>
-              <i className="fas fa-address-book"></i>
-              <span>Inicio</span>
-            </NavLink>
-            <NavLink exact strict to="/Trayectoria" onClick={scrollTop}>
-              <i className="fas fa-project-diagram"></i>
-              <span>Trayectoria</span>
-            </NavLink>
-            <a href="/#Habilidades">
-              <i className="fas fa-brain"></i>
-              <span>Habilidades</span>
-            </a>
-            <NavLink exact strict to="/Proyectos" onClick={scrollTop}>
-              <i className="fas fa-folder-open"></i>
-              <span>Proyectos</span>
-            </NavLink>
-            <a href="/#Contacto">
-              <i className="fas fa-comments"></i>
-              <span>Contacto</span>
-            </a>
-          </div>
+          <Zoom right>
+            <div className="hijo1">
+              <p>
+                <span>Redes:</span>
+              </p>{" "}
+              {redes.map((x) => x)}
+            </div>
+          </Zoom>
+          <Zoom left>
+            <div className="hijo2">
+              <p>
+                <span>Links:</span>
+              </p>
+              <NavLink exact strict to="/" onClick={scrollTop}>
+                <i className="fas fa-address-book"></i>
+                <span>Inicio</span>
+              </NavLink>
+              <NavLink exact strict to="/Trayectoria" onClick={scrollTop}>
+                <i className="fas fa-project-diagram"></i>
+                <span>Trayectoria</span>
+              </NavLink>
+              <a href="/#Habilidades">
+                <i className="fas fa-brain"></i>
+                <span>Habilidades</span>
+              </a>
+              <NavLink exact strict to="/Proyectos" onClick={scrollTop}>
+                <i className="fas fa-folder-open"></i>
+                <span>Proyectos</span>
+              </NavLink>
+              <a href="/#Contacto">
+                <i className="fas fa-comments"></i>
+                <span>Contacto</span>
+              </a>
+            </div>
+          </Zoom>
+          
         </div>
-        <p>
-          Desarrollado por <span>IGNA GARCIA RAVLIC</span>
-        </p>
+        <Fade duration={3000} delay={500}>
+          <p>
+            Desarrollado por <span>IGNA GARCIA RAVLIC</span>
+          </p>
+        </Fade>
       </Contenedor>
     </StyledPie>
   )
