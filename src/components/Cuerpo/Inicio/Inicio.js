@@ -99,6 +99,8 @@ export default function Inicio() {
               Puedes ver trayectoria profesional y acadéemica, o mis trabajos realizados
               en los siguientes links.
             </Parrafo>
+          </Rotate>
+          <Rotate bottom left duration={1500}>
             <div>
               <NavLink exact strict to={"/Trayectoria"}> Mi Trayectoria </NavLink>
               <NavLink exact strict to={"/Proyectos"}> Mis Proyectos </NavLink>
