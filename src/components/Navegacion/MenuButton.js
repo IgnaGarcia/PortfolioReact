@@ -6,10 +6,16 @@ import { colors, breackpoints } from "../../assets/styles";
 const MenuButtonWrapper = styled.button`
   border: none;
   background: transparent;
-  padding-left: 95%;
+  padding-left: 92%;
   font-size: 1.1em;
-  color: ${colors.detalle1};
   outline: none;
+  i{
+    background: ${colors.detalle1};
+    color: ${colors.bgGris1};
+    border-radius: 100%;
+    font-size: .9em;
+    padding: .4em .4em .3em .4em;
+  }
 
   @media ${breackpoints.laptop} {
     display: none;
