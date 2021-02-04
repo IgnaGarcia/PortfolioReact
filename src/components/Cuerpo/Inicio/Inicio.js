@@ -109,7 +109,7 @@ export default function Inicio() {
         </Content>
         <Imagen>
           <Rotate bottom right duration={1500}>
-            <img className="imagen" alt="Igna Garcia" src={'/img/Igna Garcia (1).jpeg'}></img>
+            <img className="imagen" loading="lazy" alt="Igna Garcia" src={'/img/Igna Garcia (1).jpeg'}></img>
           </Rotate>
         </Imagen>
         

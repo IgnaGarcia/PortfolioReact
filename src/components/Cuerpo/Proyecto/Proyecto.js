@@ -142,7 +142,7 @@ export default function Proyecto(props) {
         <Imagen>
           <a rel="noreferrer" href={'/img' + proyect.portada} target="_blank">
             <Slide right>
-              <img className="imagen" alt={proyect.titulo} src={'/img' + proyect.portada}></img>
+              <img className="imagen" loading="lazy" alt={proyect.titulo} src={'/img' + proyect.portada}></img>
             </Slide>
           </a>
         </Imagen>

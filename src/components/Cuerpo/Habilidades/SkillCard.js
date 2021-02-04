@@ -74,7 +74,7 @@ const Content = styled.div`
 
 export default function SkillCard(props) {
   const skill = props.skill;
-  const currentTime = new Date();
+  
   const experience = function (level) {
     if (level === 0) return "Principiante";
     else if (level === 1) return "Avanzado";
@@ -89,7 +89,7 @@ export default function SkillCard(props) {
       <Content>
         <div className="titulo"> {skill.name} </div>
         <div className="nivel"> {experience(skill.level)} </div>
-        <div className="exp"> {currentTime.getFullYear() - skill.years + 1} año/s de uso </div>
+        <div className="exp"> {skill.years} año/s de uso </div>
       </Content>
     </Card>
   );
