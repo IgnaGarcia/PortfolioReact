@@ -9,19 +9,19 @@
     "description": "Carrera diversa, con materias de varias áreas de la Informática como la Programación, la Ingeniería de Software, el Almacenamiento y Explotación de Datos, las Redes, los Sistemas Operativos y demás. \n La carrera está validada por la CONEAU."
   },
   {
-    "title": "Analista de Datos Masivos",
-    "subtitle": "Coursera + Universitat Autónoma de Barcelona",
-    "start": "2020-",
-    "end": "-",
-    "isActive": true,
-    "progress": "25%",
-    "description": "Curso completo, desde la importancia del aplicar Big Data, el proceso que esto conlleva y la puesta en práctica con el entorno de Hadoop, partiendo de la Adquisición y Almacenamiento de Datos, el Procesamiento y Análisis, y la Visualización de Datos y Resultados, con varios cuestionarios y evaluaciones prácticas."
+    "title": "Desarrollador Android",
+    "subtitle": "Capacitacion por Infinix Software",
+    "start": "1/2021",
+    "end": "-2/2021",
+    "isActive": false,
+    "progress": "100%",
+    "description": "Curso de desarrollo android con Kotlin y Android Studio, comenzando con las bases del lenguaje y poniendo en practica los aspectos basicos del desarrollo movil, como actividades, intents, local storage, recycler views y comunicacion con APIs."
   },
   {
     "title": "Programador Python",
     "subtitle": "Coursera + Universidad Austral",
-    "start": "2020-2020",
-    "end": "-",
+    "start": "6/2020",
+    "end": "-8/2020",
     "isActive": false,
     "progress": "100%",
     "description": "Curso completo, desde los Tipos de Datos y Operadores Básicos, hasta manejo de Bases de Datos, Testing Driven Development y Programación Orientada a Objetos, con varios cuestionarios y evaluaciones prácticas."

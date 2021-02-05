@@ -1,5 +1,13 @@
 [
   {
+    "title": "Frontend Developer",
+    "subtitle": "Freelancer",
+    "start": "6/2020",
+    "end": "-",
+    "isActive": true,
+    "description": "Desarrollador independiente de paginas web responsivas, reactivas(con React) o estaticas, dependiendo de los requisitos."
+  },
+  {
     "title": "Transcriptor",
     "subtitle": "Coaching para Microemprendimientos",
     "start": "1/2017-",
