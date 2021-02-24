@@ -80,30 +80,6 @@
     "type": 0
   },
   {
-    "name": "Bootstrap",
-    "icon": "fab fa-bootstrap",
-    "level": 1,
-    "years": "<1",
-    "since": 2020,
-    "type": 1
-  },
-  {
-    "name": "Linux Ubuntu",
-    "icon": "fab fa-ubuntu",
-    "level": 1,
-    "years": ">1",
-    "since": 2019,
-    "type": 2
-  },
-  {
-    "name": "PHP",
-    "icon": "fab fa-php",
-    "level": 0,
-    "years": "<1",
-    "since": 2020,
-    "type": 0
-  },
-  {
     "name": "Python",
     "icon": "fab fa-python",
     "level": 1,
