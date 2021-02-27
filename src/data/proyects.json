@@ -1,35 +1,35 @@
 [
   {
     "id": 3,
-    "portada": "/TasasCriminales (3).png",
+    "portada": "/Crimenes/TasasCriminales (3).png",
     "titulo": "Agrupamiento de Provincias sobre las Tasas Criminales",
     "estado": true,
     "tecnologias": ["R"],
     "descripcion": "A partir de un conjunto de datos proveído por el Ministerio de Seguridad, en el que detalla por provincia y por año las cantidades de casos de diferentes crímenes (robos, homicidios, violaciones, amenazas y demás), realizamos un análisis de los datos y aplicamos distintos métodos de agrupamiento, de manera que podamos obtener grupos de provincias en las que sus tasas criminales son similares. El resultado de ese trabajo se puede observar en la imagen adjuntada, mostrando la intersección entre provincias y crímenes, de manera que para cada provincia muestra el calor de cada delito, donde el calor representa la cantidad de casos, a mayor calor más casos, y los grupos se pueden observar en los distintos dendrogramas.",
     "link": "TasasCriminales",
     "repositorio": "https://github.com/IgnaGarcia/UNO-MineriaDeDatos/tree/master/Act.6%20-%20Clustering",
-    "images": ["/TasasCriminales (3).png", "/SpeechToText.jpg", "/CE UNO 2018.png"]
+    "images": ["/Crimenes/TasasCriminales (3).png", "/Crimenes/TasasCriminales (1).png", "/Crimenes/TasasCriminales (2).png"]
   },
   {
     "id": 2,
-    "portada": "/SpeechToText.jpg",
+    "portada": "/STT/SpeechToText.jpg",
     "titulo": "Voz a Texto",
     "estado": true,
     "tecnologias": ["Python"],
     "descripcion": "A partir de la biblioteca VOSK desarrillo un script donde indicando el nombre de un archivo de audio lo convierte a texto con una prescisión aceptable, para esto se utiliza un modelo acústico y un modelo de lenguaje para realizar la predicción de como transcribirlo.",
     "link": "Transcriptor",
     "repositorio": "https://github.com/IgnaGarcia/SpeechToTextVOSK",
-    "images": ["/TasasCriminales (3).png", "/SpeechToText.jpg", "/CE UNO 2018.png"]
+    "images": ["/STT/SpeechToText.jpg", "/STT/vosk.png"]
   },
   {
     "id": 1,
-    "portada": "/CE UNO 2018.png",
+    "portada": "/UNO18/CE UNO 2018.png",
     "titulo": "Análisis de Elecciones CE UNO 2018",
     "estado": true,
     "tecnologias": ["R"],
     "descripcion": "A partir de los resultados de las elecciones por el centro de estudiantes de la UNO en 2018 decidí realizar un análisis de los resultados y desarrollar distintas visualizaciones para entender mejor los datos, esto gracias a distintas bibliotecas del lenguaje R.",
     "link": "CEUNO2018",
     "repositorio": "https://github.com/IgnaGarcia/Elecciones_CE_UNO_2018",
-    "images": ["/TasasCriminales (3).png", "/SpeechToText.jpg", "/CE UNO 2018.png"]
+    "images": ["/UNO18/CE UNO 2018.png", "/UNO18/resultadosTot.png"]
   }
 ]

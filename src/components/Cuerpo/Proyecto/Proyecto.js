@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 import { Flip } from "react-reveal"
 
 import { Parrafo, Titulo, Container, breackpoints, colors, fonts } from "../../../assets/styles";
+import Carousel from "./Carousel";
 import proyects from "../../../data/proyects.json";
 
 const Details = styled.div`
