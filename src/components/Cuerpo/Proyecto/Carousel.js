@@ -8,7 +8,7 @@ const Imagen = styled.div`
   border-radius: 10px;
   transition: opacity 0.5s linear; 
   .imagen {
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
   }
 `;
@@ -67,14 +67,15 @@ export default function Carousel(prop) {
 
   let [ indx, setIndx ] = useState(0);
   const timeoutRef = useRef(null);
+  const imagesLength = useRef(proyect.images.length);
 
   function resetTimeout() { if(timeoutRef.current) clearTimeout(timeoutRef.current) }
   function changeItem(){
     resetTimeout();
     timeoutRef.current = setTimeout(() =>
       setIndx((prevIndex) =>
-        prevIndex === proyect.images.length - 1 ? 0 : prevIndex + 1
-      ), 3000);
+        prevIndex === imagesLength.current - 1 ? 0 : prevIndex + 1
+      ), 2500);
 
     return () => resetTimeout();
   }
