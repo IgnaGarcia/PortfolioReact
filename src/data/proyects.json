@@ -5,7 +5,7 @@
     "titulo": "TeleFood",
     "estado": true,
     "tecnologias": ["Kotlin", "Android"],
-    "descripcion": "s",
+    "descripcion": "Aplicación creada durante una capacitación de Android con Kotlin, en esta aplique todos los conocimientos adquiridos, a partir de un diseño base fui creando las primeras vistas con unas pocas funcionalidades, luego fui ampliando, agregando funcionalidades y nuevas vistas, como la pagina de busqueda, el carrito de compra. Los datos son traídos de la API spoonacular.",
     "link": "Telefood",
     "repositorio": "https://github.com/IgnaGarcia/Kotlin-FoodDelivery",
     "images": ["/TeleFood/0detail.jpg", "/TeleFood/1home.jpg", "/TeleFood/2search.jpg", "/TeleFood/3index.jpg", "/TeleFood/4login.jpg", "/TeleFood/5shopbox.jpg", "/TeleFood/6signin.jpg"]
