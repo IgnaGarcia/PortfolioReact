@@ -18,7 +18,7 @@ const Background = styled.div`
   background: ${colors.detalle1Oscuro + "cc"};
   border-radius: 10px;
   border: 1px solid ${colors.bgClaro};
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
   @media ${breackpoints.mobileS} {
     flex: 0 1 70%;
     margin: 0.8em;
@@ -47,7 +47,7 @@ const Background = styled.div`
   }
   cursor: pointer;
   :hover {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.35);
   }
 `;
 
@@ -71,7 +71,7 @@ const Content = styled.div`
       text-align: center;
       background: ${colors.bgGris1};
       color: ${colors.bgGris4};
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
       border-radius: 8px;
       padding: 2px 15px;
       margin: 0px 3px;

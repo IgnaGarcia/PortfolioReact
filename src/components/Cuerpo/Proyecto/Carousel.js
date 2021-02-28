@@ -69,8 +69,7 @@ export default function Carousel(prop) {
   const timeoutRef = useRef(null);
 
   function resetTimeout() { if(timeoutRef.current) clearTimeout(timeoutRef.current) }
-
-  useEffect(() => {
+  function changeItem(){
     resetTimeout();
     timeoutRef.current = setTimeout(() =>
       setIndx((prevIndex) =>
@@ -78,7 +77,9 @@ export default function Carousel(prop) {
       ), 3000);
 
     return () => resetTimeout();
-  }, [indx]);
+  }
+
+  useEffect(changeItem, [indx]);
 
   function setStyle(index) {
     return index === indx ? visible : invisible ;
