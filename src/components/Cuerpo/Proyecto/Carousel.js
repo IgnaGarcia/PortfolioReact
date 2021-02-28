@@ -26,9 +26,10 @@ const Dots = styled.div`
 const Dot = styled.div`
   border-radius: 50%;
   padding: 5.6px;
-  margin: 12px 6px;
+  margin: 19px 6px 3px;
   display: inline-block;
   border: 3.2px solid ${colors.bgGris3};
+  :hover{ cursor: pointer }
 `;
 
 const CarouselContainer = styled.div`
@@ -61,6 +62,9 @@ const CarouselContainer = styled.div`
 
 export default function Carousel(prop) {
   let proyect = prop.proyect;
+  let visible = { height: 'auto', opacity: '1' }
+  let invisible = { height: '0px', opacity: '0' }
+
   let [ indx, setIndx ] = useState(0);
   const timeoutRef = useRef(null);
 
@@ -76,15 +80,19 @@ export default function Carousel(prop) {
     return () => resetTimeout();
   }, [indx]);
 
+  function setStyle(index) {
+    return index === indx ? visible : invisible ;
+  }
+
   return (
       <CarouselContainer>
         <ImageContainer>
           {proyect.images.map((image, index) => 
-              <Imagen key={index} style={ index === indx ? {opacity: "1"} : {opacity: "0"} }>
-                <a rel="noreferrer" href={'/img' + image} target="_blank">
-                    <img className="imagen" loading="lazy" alt={proyect.titulo} src={'/img' + image} style={ index === indx ? {height: "auto"} : {height: "0"} }></img>
-                </a>
-              </Imagen>
+            <Imagen key={index} style={setStyle(index)}>
+              <a rel="noreferrer" {...index === indx ? {href:'/img' + image} : ""} target="_blank" style={setStyle(index)}>
+                  <img className="imagen" loading="lazy" alt={proyect.titulo} src={'/img' + image} style={setStyle(index)}></img>
+              </a>
+            </Imagen>
           )}
         </ImageContainer>        
 
