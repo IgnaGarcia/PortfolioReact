@@ -1,114 +1,122 @@
 [
-  {
-    "name": "Git",
-    "icon": "fab fa-git-alt",
-    "level": 1,
-    "years": "1",
-    "since": 2020,
-    "type": 2
-  },
-  {
-    "name": "React",
-    "icon": "fab fa-react",
-    "level": 1,
-    "years": "1",
-    "since": 2020,
-    "type": 1
-  },
-  {
-    "name": "Kotlin",
-    "icon": "icon-kotlin",
-    "level": 1,
-    "years": "<1",
-    "since": 2021,
-    "type": 1
-  },
-  {
-    "name": "JavaScrip",
-    "icon": "fab fa-js",
-    "level": 2,
-    "years": "1",
-    "since": 2020,
-    "type": 0
-  },
-  {
-    "name": "Angular",
-    "icon": "fab fa-angular",
-    "level": 0,
-    "years": "<1",
-    "since": 2020,
-    "type": 1
-  },
-  {
-    "name": "HTML",
-    "icon": "fab fa-html5",
-    "level": 2,
-    "years": "1",
-    "since": 2020,
-    "type": 1
-  },
-  {
-    "name": "CSS",
-    "icon": "fab fa-css3-alt",
-    "level": 2,
-    "years": "1",
-    "since": 2020,
-    "type": 1
-  },
-  {
-    "name": "Java",
-    "icon": "fab fa-java",
-    "level": 2,
-    "years": "2",
-    "since": 2018,
-    "type": 0
-  },
-  {
-    "name": "Sass",
-    "icon": "fab fa-sass",
-    "level": 2,
-    "years": "1",
-    "since": 2020,
-    "type": 1
-  },
-  {
-    "name": "SQL",
-    "icon": "fas fa-database",
-    "level": 2,
-    "years": "2",
-    "since": 2019,
-    "type": 0
-  },
-  {
-    "name": "Python",
-    "icon": "fab fa-python",
-    "level": 1,
-    "years": "1",
-    "since": 2020,
-    "type": 0
-  },
-  {
-    "name": "R",
-    "icon": "fab fa-r-project",
-    "level": 1,
-    "years": "<1",
-    "since": 2020,
-    "type": 0
-  },
-  {
-    "name": "C/C++",
-    "icon": "icon-cppRelleno",
-    "level": 1,
-    "years": ">3",
-    "since": 2016,
-    "type": 0
-  },
-  {
-    "name": "LaTeX",
-    "icon": "icon-tex",
-    "level": 1,
-    "years": "1",
-    "since": 2020,
-    "type": 1
-  }
+    {
+        "name": "Git",
+        "icon": "fab fa-git-alt",
+        "level": 1,
+        "years": ">1",
+        "since": 2020,
+        "type": 2
+    },
+    {
+        "name": "React",
+        "icon": "fab fa-react",
+        "level": 1,
+        "years": ">1",
+        "since": 2020,
+        "type": 1
+    },
+    {
+        "name": "Kotlin",
+        "icon": "icon-kotlin",
+        "level": 1,
+        "years": "<1",
+        "since": 2021,
+        "type": 1
+    },
+    {
+        "name": "JavaScrip",
+        "icon": "fab fa-js",
+        "level": 2,
+        "years": ">1",
+        "since": 2020,
+        "type": 0
+    },
+    {
+        "name": "Angular",
+        "icon": "fab fa-angular",
+        "level": 0,
+        "years": "<1",
+        "since": 2020,
+        "type": 1
+    },
+    {
+        "name": "HTML",
+        "icon": "fab fa-html5",
+        "level": 2,
+        "years": ">1",
+        "since": 2020,
+        "type": 1
+    },
+    {
+        "name": "CSS",
+        "icon": "fab fa-css3-alt",
+        "level": 2,
+        "years": ">1",
+        "since": 2020,
+        "type": 1
+    },
+    {
+        "name": "Java",
+        "icon": "fab fa-java",
+        "level": 2,
+        "years": "2",
+        "since": 2018,
+        "type": 0
+    },
+    {
+        "name": "Sass",
+        "icon": "fab fa-sass",
+        "level": 2,
+        "years": "1",
+        "since": 2020,
+        "type": 1
+    },
+    {
+        "name": "SQL",
+        "icon": "fas fa-database",
+        "level": 2,
+        "years": "2",
+        "since": 2019,
+        "type": 0
+    },
+    {
+        "name": "Python",
+        "icon": "fab fa-python",
+        "level": 1,
+        "years": ">1",
+        "since": 2020,
+        "type": 0
+    },
+    {
+        "name": "R",
+        "icon": "fab fa-r-project",
+        "level": 1,
+        "years": "1",
+        "since": 2020,
+        "type": 0
+    },
+    {
+        "name": "C/C++",
+        "icon": "icon-cppRelleno",
+        "level": 1,
+        "years": ">3",
+        "since": 2016,
+        "type": 0
+    },
+    {
+        "name": "LaTeX",
+        "icon": "icon-tex",
+        "level": 1,
+        "years": "1",
+        "since": 2020,
+        "type": 1
+    },
+    {
+        "name": "TensorFlow",
+        "icon": "icon-tensorflow",
+        "level": 0,
+        "years": "<1",
+        "since": 2021,
+        "type": 1
+    }
 ]
