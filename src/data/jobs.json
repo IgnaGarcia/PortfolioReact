@@ -1,26 +1,26 @@
 [
-  {
-    "title": "Frontend Developer",
-    "subtitle": "Freelancer",
-    "start": "6/2020",
-    "end": "-",
-    "isActive": true,
-    "description": "Desarrollador independiente de paginas web responsivas, reactivas(con React) o estaticas, dependiendo de los requisitos."
-  },
-  {
-    "title": "Transcriptor",
-    "subtitle": "Coaching para Microemprendimientos",
-    "start": "1/2017-",
-    "end": "9/2017",
-    "isActive": false,
-    "description": "Tanscripción de audios basados en entrevistas. Completar Formularios en Word a partir de la transcipción de la entrevista."
-  },
-  {
-    "title": "",
-    "subtitle": "",
-    "start": "",
-    "end": "",
-    "isActive": true,
-    "description": ""
-  }
+    {
+        "title": "Web Developer",
+        "subtitle": "Freelancer",
+        "start": "6/2020",
+        "end": "-",
+        "isActive": true,
+        "description": "Desarrollador independiente de paginas web responsivas, reactivas(con React) o estaticas, dependiendo de los requisitos, y desarrollo de respectivo backend api rest de serlo necesario."
+    },
+    {
+        "title": "Transcriptor",
+        "subtitle": "Coaching para Microemprendimientos",
+        "start": "1/2017-",
+        "end": "9/2017",
+        "isActive": false,
+        "description": "Tanscripción de audios basados en entrevistas. Completar Formularios en Word a partir de la transcipción de la entrevista."
+    },
+    {
+        "title": "",
+        "subtitle": "",
+        "start": "",
+        "end": "",
+        "isActive": true,
+        "description": ""
+    }
 ]

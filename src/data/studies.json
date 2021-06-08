@@ -1,56 +1,47 @@
 [
-  {
-    "title": "Licenciado en Informática",
-    "subtitle": "Universidad Nacional del Oeste",
-    "start": "2017-",
-    "end": "-",
-    "isActive": true,
-    "progress": "47%",
-    "description": "Carrera diversa, con materias de varias áreas de la Informática como la Programación, la Ingeniería de Software, el Almacenamiento y Explotación de Datos, las Redes, los Sistemas Operativos y demás. \n La carrera está validada por la CONEAU."
-  },
-  {
-    "title": "Desarrollador Android",
-    "subtitle": "Capacitacion por Infinix Software",
-    "start": "1/2021",
-    "end": "-2/2021",
-    "isActive": false,
-    "progress": "100%",
-    "description": "Curso de desarrollo android con Kotlin y Android Studio, comenzando con las bases del lenguaje y poniendo en practica los aspectos basicos del desarrollo movil, como actividades, intents, local storage, recycler views y comunicacion con APIs."
-  },
-  {
-    "title": "Programador Python",
-    "subtitle": "Coursera + Universidad Austral",
-    "start": "6/2020",
-    "end": "-8/2020",
-    "isActive": false,
-    "progress": "100%",
-    "description": "Curso completo, desde los Tipos de Datos y Operadores Básicos, hasta manejo de Bases de Datos, Testing Driven Development y Programación Orientada a Objetos, con varios cuestionarios y evaluaciones prácticas."
-  },
-  {
-    "title": "Asistente en Informática",
-    "subtitle": "EES N6 Hipolito Yrigoyen",
-    "start": "2013-",
-    "end": "2016",
-    "isActive": false,
-    "progress": "100%",
-    "description": "Manejo de Paquete Office, Herramientas de Edición de Multimedia, Introducción a la Programación y Diseño Web."
-  },
-  {
-    "title": "Bachiller en Cs Naturales",
-    "subtitle": "EES N6 Hipolito Yrigoyen",
-    "start": "2010-",
-    "end": "2016",
-    "isActive": false,
-    "progress": "100%",
-    "description": "Mejor Promedio (8.7)."
-  },
-  {
-    "title": "",
-    "subtitle": "",
-    "start": "",
-    "end": "",
-    "isActive": true,
-    "progress": null,
-    "description": ""
-  }
+    {
+        "title": "Licenciado en Informática",
+        "subtitle": "Universidad Nacional del Oeste",
+        "start": "2017-",
+        "end": "-",
+        "isActive": true,
+        "progress": "47%",
+        "description": "Carrera diversa, con materias de varias áreas de la Informática como la Programación, la Ingeniería de Software, el Almacenamiento y Explotación de Datos, las Redes, los Sistemas Operativos y demás. \n La carrera está validada por la CONEAU."
+    },
+    {
+        "title": "Desarrollador Android",
+        "subtitle": "Capacitacion por Infinix Software",
+        "start": "1/2021",
+        "end": "-2/2021",
+        "isActive": false,
+        "progress": "100%",
+        "description": "Curso de desarrollo android con Kotlin y Android Studio, comenzando con las bases del lenguaje y poniendo en practica los aspectos basicos del desarrollo movil, como actividades, intents, local storage, recycler views y comunicacion con APIs."
+    },
+    {
+        "title": "Programador Python",
+        "subtitle": "Coursera + Universidad Austral",
+        "start": "6/2020",
+        "end": "-8/2020",
+        "isActive": false,
+        "progress": "100%",
+        "description": "Curso completo, desde los Tipos de Datos y Operadores Básicos, hasta manejo de Bases de Datos, Testing Driven Development y Programación Orientada a Objetos, con varios cuestionarios y evaluaciones prácticas."
+    },
+    {
+        "title": "Asistente en Informática",
+        "subtitle": "EES N6 Hipolito Yrigoyen",
+        "start": "2013-",
+        "end": "2016",
+        "isActive": false,
+        "progress": "100%",
+        "description": "Manejo de Paquete Office, Herramientas de Edición de Multimedia, Introducción a la Programación y Diseño Web."
+    },
+    {
+        "title": "",
+        "subtitle": "",
+        "start": "",
+        "end": "",
+        "isActive": true,
+        "progress": null,
+        "description": ""
+    }
 ]
