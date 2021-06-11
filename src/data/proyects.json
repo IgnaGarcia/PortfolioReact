@@ -24,7 +24,11 @@
         "descripcion": "Página sencilla con el fin de mostrar una serie de links y carpetas de links, En mi agrupación se venía utilizando Linktree y esto era demasiado plano y confuso cuando la cantidad de links era grande, por eso junto a mi compañero decidimos crear esta pagina que lo hace mucho más agradable, también creamos un pequeño backend con el fin de contabilizar los accesos y ver el rendimiento de la página.",
         "link": "gealinks",
         "repositorio": "https://gea-uno.github.io",
-        "images": ["/gealinks/gealinks2.png", "/gealinks/gealinks2.png"]
+        "images": [
+            "/gealinks/gealinks2.png",
+            "/gealinks/gealinks2.png",
+            "/gealinks/gealinks3.png"
+        ]
     },
     {
         "id": 4,
