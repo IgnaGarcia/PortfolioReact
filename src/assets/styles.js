@@ -91,6 +91,10 @@ export const Titulo = styled.h2`
     font-weight: bold;
     color: ${colors.txtBgClaro2 + "df"};
     margin-bottom: 20px;
+    a {
+        color: ${colors.txtBgClaro2 + "df"};
+        text-decoration: underline;
+    }
 `;
 
 export const Parrafo = styled.p`

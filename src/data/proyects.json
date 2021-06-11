@@ -7,7 +7,7 @@
         "tecnologias": ["ReactJS", "JS", "StyledComponets"],
         "descripcion": "Proyecto desarrollado en nombre de GNUno con el fin de recopilar material interesante y armar rutas/guías a seguir para ir aprendiendo de a poco ciertas tecnologías/lenguajes, también adjuntando un link a un grupo en telegram en el cual se dan consultas y dudas sobre ese tema y el aprendizaje se continua en grupo.",
         "link": "GuidesUNO",
-        "repositorio": "https://guidesuno.vercel.app/",
+        "deploy": "https://guidesuno.vercel.app/",
         "images": [
             "/GuidesUNO/guidesuno_1.png",
             "/GuidesUNO/guidesuno_2.png",
@@ -23,7 +23,7 @@
         "tecnologias": ["HTML5", "JS", "CSS3", "NodeJS"],
         "descripcion": "Página sencilla con el fin de mostrar una serie de links y carpetas de links, En mi agrupación se venía utilizando Linktree y esto era demasiado plano y confuso cuando la cantidad de links era grande, por eso junto a mi compañero decidimos crear esta pagina que lo hace mucho más agradable, también creamos un pequeño backend con el fin de contabilizar los accesos y ver el rendimiento de la página.",
         "link": "gealinks",
-        "repositorio": "https://gea-uno.github.io",
+        "deploy": "https://gea-uno.github.io",
         "images": [
             "/gealinks/gealinks2.png",
             "/gealinks/gealinks2.png",
