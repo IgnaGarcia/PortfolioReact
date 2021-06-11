@@ -1,5 +1,21 @@
 [
     {
+        "id": 6,
+        "portada": "/GuidesUNO/guidesuno_1.png",
+        "titulo": "Guides UNO",
+        "estado": false,
+        "tecnologias": ["ReactJS", "JS", "StyledComponets"],
+        "descripcion": "Proyecto desarrollado en nombre de GNUno con el fin de recopilar material interesante y armar rutas/guías a seguir para ir aprendiendo de a poco ciertas tecnologías/lenguajes, también adjuntando un link a un grupo en telegram en el cual se dan consultas y dudas sobre ese tema y el aprendizaje se continua en grupo.",
+        "link": "GuidesUNO",
+        "repositorio": "https://guidesuno.vercel.app/",
+        "images": [
+            "/GuidesUNO/guidesuno_1.png",
+            "/GuidesUNO/guidesuno_2.png",
+            "/GuidesUNO/guidesuno_3.png",
+            "/GuidesUNO/guidesuno_4.png"
+        ]
+    },
+    {
         "id": 5,
         "portada": "/gealinks/gealinks2.png",
         "titulo": "GEA-Links",
