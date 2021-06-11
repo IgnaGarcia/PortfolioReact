@@ -72,7 +72,7 @@
         "tecnologias": ["Python"],
         "descripcion": "A partir de la biblioteca VOSK desarrillo un script donde indicando el nombre de un archivo de audio lo convierte a texto con una prescisión aceptable, para esto se utiliza un modelo acústico y un modelo de lenguaje para realizar la predicción de como transcribirlo.",
         "link": "Transcriptor",
-        "repositorio": "https://github.com/IgnaGarcia/SpeechToTextVOSK",
+        "repositorio": "https://github.com/IgnaGarcia/proy_transcript-revisor/tree/main/VOSK-Transcriptor",
         "images": ["/STT/SpeechToText.jpg", "/STT/vosk.png"]
     },
     {
